@@ -1,0 +1,22 @@
+{
+  "name": "gencat",
+  "version": "1.0.0",
+  "description": "Skills corporatives de la Generalitat de Catalunya: sistema de disseny, comunicació clara i accessibilitat per al desenvolupament d'aplicacions i serveis digitals públics.",
+  "author": {
+    "name": "Generalitat de Catalunya",
+    "url": "https://web.gencat.cat"
+  },
+  "repository": "https://github.com/gencat/gencat-skills",
+  "license": "CC0-1.0",
+  "keywords": [
+    "gencat",
+    "generalitat",
+    "catalunya",
+    "disseny",
+    "accessibilitat",
+    "comunicacio-clara",
+    "wcag",
+    "administracio-publica",
+    "catala"
+  ]
+}
