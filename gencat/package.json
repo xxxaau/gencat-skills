@@ -1,0 +1,11 @@
+{
+  "name": "gencat",
+  "version": "1.0.0",
+  "description": "Skills corporatives de la Generalitat de Catalunya per a Claude Code",
+  "author": "Generalitat de Catalunya",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gencat/gencat-skills"
+  }
+}
