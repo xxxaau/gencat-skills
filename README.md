@@ -49,6 +49,17 @@ Genera literals i textos per a UI seguint la [Guia de Comunicació Clara](https:
 
 ---
 
+### `gencat-accessibilitat`
+Garanteix el compliment de les directrius d'accessibilitat digital de la Generalitat, basades en el [Decret 216/2023](https://dogc.gencat.cat/ca/document-del-dogc/?documentId=973470), l'EN 301 549 V3.2.1 i la [WCAG 2.1 AA](https://www.w3.org/Translations/WCAG21-ca/). Inclou:
+- 50 criteris WCAG A+AA obligatoris amb implementació tècnica
+- 12 errors habituals en webs Gencat amb correccions i exemples de codi
+- Patrons HTML/ARIA per a 15+ components accessibles
+- Metodologia IRA/WCAG-EM i eines d'avaluació recomanades
+
+**S'activa** quan implementes o revises components, formularis, navegació, contingut multimèdia o qualsevol interfície per a serveis Gencat.
+
+---
+
 ## Estructura del repositori
 
 ```
@@ -60,16 +71,23 @@ gencat-skills/
         ├── gencat-design-system/
         │   ├── SKILL.md
         │   └── references/
-        │       ├── foundations.md   ← colors, tipografia, tokens CSS
-        │       ├── components.md    ← catàleg de components
-        │       └── patterns.md      ← patrons d'ús
-        └── gencat-comunicacio-clara/
+        │       ├── foundations.md        ← colors, tipografia, tokens CSS
+        │       ├── components.md         ← catàleg de components
+        │       └── patterns.md           ← patrons d'ús
+        ├── gencat-comunicacio-clara/
+        │   ├── SKILL.md
+        │   └── references/
+        │       ├── redaccio.md           ← 10 pilars, veu activa, nominalitzacions
+        │       ├── vocabulari.md         ← substitucions, anglicismes, inclusiu
+        │       ├── ui-literals.md        ← botons, errors, formularis, avisos
+        │       └── titols-i-estructura.md ← títols, llistes, format
+        └── gencat-accessibilitat/
             ├── SKILL.md
             └── references/
-                ├── redaccio.md      ← 10 pilars, veu activa, nominalitzacions
-                ├── vocabulari.md    ← substitucions, anglicismes, inclusiu
-                ├── ui-literals.md   ← botons, errors, formularis, avisos
-                └── titols-i-estructura.md  ← títols, llistes, format
+                ├── wcag-criteris.md      ← 50 criteris A+AA + WCAG 2.2
+                ├── errors-habituals.md   ← 12 errors freqüents + correccions
+                ├── components-accessibles.md ← patrons HTML/ARIA
+                └── eines-i-avaluacio.md  ← eines, IRA, metodologia
 ```
 
 ## Contribució
