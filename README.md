@@ -60,6 +60,28 @@ Garanteix el compliment de les directrius d'accessibilitat digital de la General
 
 ---
 
+### `gencat-tramits`
+Aplica el [Manual de redacció i estil de fitxes de tràmit](https://atenciociutadana.gencat.cat/ca/serveis/tramits/manuals-i-guies/) (febrer 2026) quan redactes o revises fitxes de tràmit per a gencat.cat. Inclou:
+- Regles de redacció per a tots els camps: títol, descripció, requisits, documentació, terminis, taxes
+- Passos de tramitació i textos estàndard obligatoris
+- Vocabulari i substitucions per a un llenguatge clar i proper
+- Tractament personal coherent (tu / vós) i frases de 20-30 paraules
+
+**S'activa** quan treballes amb tràmits administratius, fitxes de tràmit, GECO, OGE, SAC o qualsevol camp d'una fitxa de tràmit gencat.
+
+---
+
+### `gencat-xarxes-socials`
+Genera i revisa contingut per a xarxes socials seguint la [Guia de Xarxes Socials](https://atenciociutadana.gencat.cat/web/.content/manuals/xarxes/guia_xarxa.pdf) de la Generalitat. Inclou:
+- Normes específiques per a 7 plataformes: X (Twitter), Facebook, Instagram, LinkedIn, YouTube, Threads i TikTok
+- Workflow dual: GENERAR (des de zero) i REVISAR (amb informe ✅/⚠️/❌)
+- 6 plantilles reutilitzables: avís, convocatòria, emergència, campanya, resposta a comentari, fil/thread
+- Normes d'accessibilitat transversals: alt text, CamelCase en hashtags, emojis
+
+**S'activa** quan generes o revises posts, publicacions, hashtags, fils o qualsevol contingut per a xarxes socials institucionals de la Generalitat.
+
+---
+
 ## Estructura del repositori
 
 ```
@@ -81,13 +103,30 @@ gencat-skills/
         │       ├── vocabulari.md         ← substitucions, anglicismes, inclusiu
         │       ├── ui-literals.md        ← botons, errors, formularis, avisos
         │       └── titols-i-estructura.md ← títols, llistes, format
-        └── gencat-accessibilitat/
+        ├── gencat-accessibilitat/
+        │   ├── SKILL.md
+        │   └── references/
+        │       ├── wcag-criteris.md      ← 50 criteris A+AA + WCAG 2.2
+        │       ├── errors-habituals.md   ← 12 errors freqüents + correccions
+        │       ├── components-accessibles.md ← patrons HTML/ARIA
+        │       └── eines-i-avaluacio.md  ← eines, IRA, metodologia
+        ├── gencat-tramits/
+        │   ├── SKILL.md
+        │   └── references/
+        │       ├── camps.md              ← regles per a cada camp de la fitxa
+        │       ├── passos.md             ← passos de tramitació i textos estàndard
+        │       └── vocabulari.md         ← substitucions i bones pràctiques
+        └── gencat-xarxes-socials/
             ├── SKILL.md
             └── references/
-                ├── wcag-criteris.md      ← 50 criteris A+AA + WCAG 2.2
-                ├── errors-habituals.md   ← 12 errors freqüents + correccions
-                ├── components-accessibles.md ← patrons HTML/ARIA
-                └── eines-i-avaluacio.md  ← eines, IRA, metodologia
+                ├── x-twitter.md          ← normes X (Twitter)
+                ├── facebook.md           ← normes Facebook
+                ├── instagram.md          ← normes Instagram
+                ├── linkedin.md           ← normes LinkedIn
+                ├── youtube.md            ← normes YouTube (elements textuals)
+                ├── threads.md            ← normes Threads
+                ├── tiktok.md             ← normes TikTok (elements textuals)
+                └── plantilles.md         ← 6 plantilles reutilitzables
 ```
 
 ## Contribució
