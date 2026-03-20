@@ -25,8 +25,7 @@ Font oficial: https://identitatcorporativa.gencat.cat/ca/inici
 - Colors, tipografia o logotip → llegir `references/marca-visual.md`
 - Documents, presentacions, PDFs → llegir `references/documents.md`
 - Signatura de correu, newsletters → llegir `references/comunicacio-digital.md`
-- Mode VALIDAR → llegir `references/validacio.md` + el fitxer corresponent al tipus de material
-- Tipus de material no identificable → preguntar: "De quin tipus de material es tracta? (document Word/PowerPoint, signatura de correu, PDF...)"
+- Mode VALIDAR → llegir `references/validacio.md` + el fitxer de referència corresponent al tipus de material; si el tipus no és identificable, preguntar: "De quin tipus de material es tracta? (document Word/PowerPoint, signatura de correu, PDF...)"
 
 ---
 
