@@ -28,7 +28,6 @@
 | `gencat/skills/gencat-xarxes-socials/references/tiktok.md` | Crear | Normes específiques de TikTok (elements textuals) |
 | `gencat/skills/gencat-xarxes-socials/references/plantilles.md` | Crear | 6 plantilles reutilitzables per tipus de contingut |
 | `gencat/README.md` | Modificar | Afegir entrada del nou skill a la taula |
-| `gencat/package.json` | Modificar | Incrementar versió si escau |
 
 ---
 
@@ -423,7 +422,7 @@ Valors clau per Threads:
 | Element | Valor |
 |---------|-------|
 | Post | 500 caràcters màxim |
-| Hashtags | Màxim 5; recomanat 1-3 |
+| Hashtags | Límit tècnic: ~10; **norma Gencat: màxim 3, recomanat 1-2** |
 | To | Similar a X però lleugerament menys formal; conversacional |
 | Formats clau | Text, imatge, vídeo (màx. 5 min), fil (thread) |
 | Particularitat | Plataforma nova (2023); audiència jove; integrada amb Instagram. No té funció de RT directe. |
@@ -754,7 +753,15 @@ Per a cada fitxer `references/<xarxa>.md`, verifica que conté les seccions:
 
 Les 6 plantilles: Avís/informació · Convocatòria/ajut · Emergència/alerta · Campanya institucional · Resposta a comentari · Fil/thread
 
-- [ ] **Pas 5: Commit final si tot és correcte**
+- [ ] **Pas 5: Verifica que el README s'ha actualitzat**
+
+```bash
+grep "gencat-xarxes-socials" gencat/README.md
+```
+
+Resultat esperat: una línia amb la fila de la taula i una altra amb l'URL de la guia.
+
+- [ ] **Pas 6: Commit final si tot és correcte**
 
 ```bash
 git log --oneline -10
