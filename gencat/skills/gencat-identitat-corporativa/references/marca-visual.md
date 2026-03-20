@@ -22,13 +22,15 @@ Font oficial: https://identitatcorporativa.gencat.cat/ca/identitat-visual/ (cita
 - **Groc** i **or** s'usen exclusivament en aplicacions molt específiques; no en documents estàndard
 - Cap altre color és permès com a color dominant en materials corporatius
 
+> **Nota:** Els valors CMYK i RGB per a Groc i Or no estan publicats a la guia oficial. Usar únicament els valors Pantone i Hex en materials d'ús específic.
+
 ---
 
 ## Tipografia per suport
 
 | Suport | Tipografia | Notes |
 |--------|-----------|-------|
-| Corporativa (logotip) | Helvetica Neue 75 Bold / 45 Light | Llicència de pagament; no usar en documents Office sense llicència |
+| Corporativa (logotip) | Helvetica Neue 75 Bold / 45 Light | Llicència de pagament. Sense llicència, substituir per Arial (veure fila Documents Office) |
 | Documents Office (Word, PowerPoint, formularis) | Arial / Arial Bold | Gratuïta; substitut oficial de Helvetica Neue |
 | Digital (web, newsletters, infografies, vídeo) | Open Sans | Preferida per legibilitat en pantalla |
 | Signatura de correu electrònic | Arial | **Excepció tècnica:** les signatures es renderitzen al client del receptor, que no té accés a fonts web. Open Sans **no** s'ha d'usar en signatures de correu |
@@ -40,7 +42,7 @@ Font oficial: https://identitatcorporativa.gencat.cat/ca/identitat-visual/ (cita
 
 - **Mida mínima:** 4,7 mm d'alçada
 - **Colors permesos:** vermell (#C00000) o negre (#000000)
-- **Versió 3 colors** (vermell + negre + daurat): únicament en aplicacions molt específiques
+- **Versió 3 colors** (vermell + negre + or): únicament en aplicacions molt específiques (ex: medalles, material commemoratiu)
 - **Espai de seguretat:** no superposar text ni elements visuals sobre el senyal
 - **Prohibit:** distorsionar, estirar o comprimir; canviar les proporcions originals
 - **Reversible:** el disseny és simètric per evitar errors de reproducció
