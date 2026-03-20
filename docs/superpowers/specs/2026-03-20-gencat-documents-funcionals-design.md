@@ -51,6 +51,10 @@ gencat/skills/gencat-documents-funcionals/
 - Ruta de fitxer `.docx` local
 - Múltiples documents: ≤3 en paral·lel, >3 un per un
 
+**Càrrega de referències:**
+- Mode REVISAR → carregar `estructura-ctti.md` + `criteris-qualitat.md` + `puntuacio-i-informe.md`
+- Mode CONSULTAR → carregar `estructura-ctti.md` + `criteris-qualitat.md`
+
 ---
 
 ## Nivell 1 — Estructura CTTI (DT_ERQ)
@@ -70,7 +74,7 @@ Avaluació: ✅ si present amb contingut, ❌ si absent o buida.
 
 ## Nivell 2 — Criteris de qualitat
 
-Per a cada secció present, avaluar els 5 criteris:
+Els 5 criteris s'avaluen **globalment** per al document sencer (no per secció). Cada criteri es puntua un cop, independentment del nombre de seccions afectades:
 
 | Criteri | ❌ Error | ⚠️ Millora |
 |---------|---------|-----------|
@@ -80,13 +84,17 @@ Per a cada secció present, avaluar els 5 criteris:
 | **Verificabilitat** | Requisit no comprovable ("ha de ser ràpid", "fàcil d'usar") | Criteri d'acceptació poc precís |
 | **Traçabilitat** | Cap referència a necessitats de negoci o origen del requisit | Traçabilitat parcial |
 
+**Seccions opcionals (Informació de suport):** quan presenten, els criteris de qualitat s'apliquen però les penalitzacions es compten al ritme de ⚠️ (−5) independentment de la gravetat, per reflectir el caràcter optatiu de la secció.
+
 ---
 
 ## Puntuació i llindar d'aprovació
 
 - Base: 100 punts
-- −15 per cada ❌ en secció obligatòria (estructura o qualitat)
-- −5 per cada ⚠️
+- Nivell 1: −15 per cada ❌ en secció obligatòria absent o buida
+- Nivell 2: −15 per cada criteri de qualitat ❌ (avaluat globalment, 1 cop per criteri)
+- −5 per cada ⚠️ (tant d'estructura com de qualitat, i tots els criteris de seccions opcionals)
+- La puntuació no pot ser inferior a 0
 - **Aprovat automàtic: ≥ 80 punts**
 - Per sota de 80: recomanació "Retornar a l'autor"
 
@@ -119,7 +127,7 @@ Per a cada secció present, avaluar els 5 criteris:
 
 ### Resum executiu (per al validador final)
 Punts crítics que impedeixen aprovació: [llista]
-Recomanació: ✅ Aprovat / 🔄 Retornar
+Recomanació: ✅ Aprovat / ❌ Retornar a l'autor
 ```
 
 ---
