@@ -118,7 +118,7 @@ Puntuació = (camps sense ❌) / (total camps trobats o absents) × 10
 | Puntuació | Prioritat de revisió | Descripció |
 |-----------|---------------------|------------|
 | 8–10 | BAIXA | Sense errors; possibles millores menors (⚠️) |
-| 5–7 | MITJANA | 1–3 camps amb ❌ |
+| 5–7 | MITJANA | 3–5 camps amb ❌ |
 | 0–4 | ALTA | 4 o més camps amb ❌ |
 
 ### Format de l'informe per tràmit
