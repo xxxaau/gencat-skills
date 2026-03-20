@@ -125,8 +125,8 @@ Abans de revisar cap URL, llegir:
 |----------|-------|
 | URL no accessible | Avisar: "No he pogut accedir a [URL]. Continuo amb les altres." i seguir |
 | Contingut truncat (fitxa molt llarga) | Avisar: "He recuperat el contingut parcialment. Els camps no trobats es marcaran com a absents." i continuar |
-| Pàgina sense estructura de tràmit — mode ≤3 URLs | Demanar confirmació: "La pàgina [URL] no sembla una fitxa de tràmit estàndard. Vols que intenti revisar-la igualment?" |
-| Pàgina sense estructura de tràmit — mode >3 URLs | Marcar com a "no processada" i continuar sense interrompre el lot |
+| Pàgina sense estructura de tràmit reconeixible — mode ≤3 URLs | Demanar confirmació: "La pàgina [URL] no sembla una fitxa de tràmit estàndard. Vols que intenti revisar-la igualment?" |
+| Pàgina sense estructura de tràmit reconeixible — mode >3 URLs | Marcar com a "no processada" i continuar sense interrompre el lot |
 | Camp no trobat | Marcar com ❌ "camp absent" — compta com a camp trobat amb error al denominador |
 
 ---
@@ -145,7 +145,7 @@ Si un camp té simultàniament un ❌ i un ⚠️, mostrar tots dos problemes pe
 | Camp | ❌ Error (obligatori corregir) | ⚠️ Millora (recomanada) |
 |------|-------------------------------|------------------------|
 | **Títol** | Conté "sol·licitud", "inscripció" o "convocatòria" · té punt final · >80 caràcters *sense comptar espais, any de convocatòria, acrònims i sigles* | Estructura incorrecta (no segueix tipus+objecte+concreció) |
-| **Títol de la modalitat** | No segueix l'estructura verb-infinitiu + tipus · conté nominalitzacions ("Sol·licitud de...") | |
+| **Títol de la modalitat** | No segueix l'estructura verb-infinitiu + tipus (p. ex. "Sol·licitar la subvenció") · conté nominalitzacions ("Sol·licitud de...") | |
 | **Avís general del tràmit** | Falta la frase obligatòria per a subjectes obligats · frase present però incorrecta (no coincideix amb el text estàndard de `camps.md`) | |
 | **Descripció** | Cita departament o normativa a l'inici · repeteix literalment el títol | Frases de >30 paraules de mitjana |
 | **A qui va dirigit** | Falta la preposició "a" davant de cada destinatari · camp absent | Redacció poc clara o massa genèrica |
@@ -169,7 +169,7 @@ Puntuació = (camps sense ❌) / (total camps trobats o absents) × 10
 |-----------|---------------------|------------|
 | 8–10 | BAIXA | Sense errors; possibles millores menors (⚠️) |
 | 5–7 | MITJANA | 3–5 camps amb ❌ |
-| 0–4 | ALTA | 6 o més camps amb ❌ |
+| 0–4 | ALTA | 4 o més camps amb ❌ |
 
 ---
 
