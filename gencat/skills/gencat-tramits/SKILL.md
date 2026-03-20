@@ -78,6 +78,6 @@ Llegeix `references/vocabulari.md` per a substitucions de vocabulari i bones pr�
 
 S'activa quan l'usuari proporciona una o més URLs de fitxes de tràmit de gencat.cat.
 
-Pas 0 obligatori: llegir `references/camps.md`, `references/passos.md` i `references/vocabulari.md` per tenir les normes carregades abans de començar la revisió.
+Pas 0 obligatori: llegir `references/camps.md`, `references/passos.md` i `references/vocabulari.md` per tenir les normes carregades. Carregar també els criteris dels skills `gencat-comunicacio-clara` i `gencat-accessibilitat` per a l'avaluació transversal de qualitat lingüística i accessibilitat de contingut.
 
 Llegeix `references/revisio-web.md` per al workflow complet, el criteri de puntuació i el format de l'informe.

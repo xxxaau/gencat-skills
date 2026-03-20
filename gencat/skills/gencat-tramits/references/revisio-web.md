@@ -1,6 +1,6 @@
 # Revisió Web de Fitxes de Tràmit — Workflow
 
-Font de normes: `camps.md`, `passos.md`, `vocabulari.md`
+Font de normes: `camps.md`, `passos.md`, `vocabulari.md`, `gencat-comunicacio-clara`, `gencat-accessibilitat`
 
 ---
 
@@ -10,6 +10,8 @@ Abans de revisar cap URL, llegir:
 - `references/camps.md` — normes per a cada camp
 - `references/passos.md` — textos estàndard per als passos
 - `references/vocabulari.md` — substitucions i bones pràctiques
+- Skill `gencat-comunicacio-clara` → `references/redaccio.md` i `references/vocabulari.md` — criteris de text clar i vocabulari planer
+- Skill `gencat-accessibilitat` → `references/wcag-criteris.md` i `references/errors-habituals.md` — criteris d'accessibilitat de contingut
 
 ---
 
@@ -27,7 +29,8 @@ Abans de revisar cap URL, llegir:
 1. **Fetch** → obtenir el contingut de la fitxa amb WebFetch
 2. **Identificació de camps** → buscar els camps estàndard (veure taula de camps)
 3. **Avaluació camp per camp** → aplicar les normes de `camps.md`, `passos.md` i `vocabulari.md`
-4. **Generació de l'informe** → tres capes (veure format d'informe)
+4. **Avaluació transversal** → aplicar criteris de comunicació clara i accessibilitat de contingut (veure taula transversal)
+5. **Generació de l'informe** → quatre capes (veure format d'informe)
 
 ---
 
@@ -66,6 +69,35 @@ Si un camp té simultàniament un ❌ i un ⚠️, mostrar tots dos problemes pe
 | **Requisits** | Conté frase introductòria · no és en forma de llista directa | |
 | **Taxes** | Camp absent o buit (ha d'indicar sempre import o "gratuït") | Import sense format clar |
 | **Passos** | Falta avís obligatori de tramitació al pas 1 · falta indicació de silenci administratiu al pas 4 | Textos no estàndard (comparar amb `passos.md`) |
+
+---
+
+## Criteris transversals
+
+S'apliquen al conjunt del contingut de la fitxa. Complementen l'avaluació per camp sense modificar la puntuació /10.
+
+### Comunicació clara
+
+Aplicar els criteris de `gencat-comunicacio-clara` al text de tots els camps:
+
+| Criteri | ❌ Error | ⚠️ Millora |
+|---------|---------|-----------|
+| **Llargada de frases** | Mitjana >30 paraules a la Descripció o als Passos | Frases d'entre 20 i 30 paraules (recomanat ≤20) |
+| **Veu activa** | Passiva sistemàtica ("serà resolt", "ha estat aprovat", "es presentarà") | Passiva puntual en contextos formals |
+| **Tractament personal** | Barreja de tu/vós en el mateix tràmit | |
+| **Vocabulari planer** | Termes administratius evitables (contrastar amb `gencat-comunicacio-clara/references/vocabulari.md`) | |
+| **Frases en positiu** | Dobles negatius ("no s'acceptarà si no s'adjunta") | |
+
+### Accessibilitat de contingut
+
+Aplicar els criteris de contingut de `gencat-accessibilitat` (no s'avalua el codi HTML, només el text visible):
+
+| Criteri | ❌ Error | ⚠️ Millora |
+|---------|---------|-----------|
+| **Textos d'enllaços** | Textos genèrics: "aquí", "clica aquí", "llegir més", "accedeix" | Textos poc descriptius fora de context |
+| **Jerarquia de títols** | Salt de nivells de títol (p. ex. h2 → h4 sense h3) | |
+| **Instruccions sensorials** | Instruccions basades en color o posició: "el botó vermell", "a la dreta", "la icona blava" | |
+| **Majúscules** | Blocs de text íntegrament en majúscules | |
 
 ---
 
@@ -116,6 +148,18 @@ Només per als camps amb ⚠️ o ❌:
 ```
 ### [Nom del camp] — Proposta
 [Text corregit seguint les normes de camps.md / passos.md / vocabulari.md]
+```
+
+### Capa 4 — Avaluació transversal
+
+Per a cada criteri transversal, indicar resultat i exemple del text problemàtic:
+
+```
+## Comunicació clara
+✅ / ⚠️ / ❌ [Criteri] — [descripció del problema i exemple literal del text]
+
+## Accessibilitat de contingut
+✅ / ⚠️ / ❌ [Criteri] — [descripció del problema i exemple literal del text]
 ```
 
 ---
