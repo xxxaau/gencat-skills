@@ -40,9 +40,21 @@ gencat/skills/gencat-xarxes-socials/
 
 ## SKILL.md
 
-### Trigger / descripció
+### Frontmatter (format exacte requerit)
 
-S'activa quan l'usuari demana crear, revisar o adaptar contingut per a xarxes socials Gencat, menciona plataformes concretes (X, Instagram, LinkedIn, Facebook, YouTube, Threads, TikTok), o paraules clau com "post", "publicació", "xarxa social", "hashtag", "tweet", "fil", "thread", "reel", "story", "contingut digital".
+```yaml
+---
+name: gencat-xarxes-socials
+description: "Aplica la Guia de Xarxes Socials de la Generalitat de Catalunya quan generis, revisis o adaptis contingut per a plataformes digitals. Usa aquesta skill sempre que l'usuari treballi amb publicacions a X (Twitter), Facebook, Instagram, LinkedIn, YouTube, Threads o TikTok en el context de comunicació institucional de la Generalitat. Activa-la també quan mencioni 'post', 'publicació', 'hashtag', 'tweet', 'fil', 'thread', 'reel', 'story', 'contingut digital', 'xarxa social', o demani adaptar un comunicat, nota de premsa o tràmit per a xarxes socials."
+---
+```
+
+### Detecció del mode (GENERAR vs REVISAR)
+
+- Si l'usuari **proporciona text existent** → mode REVISAR per defecte (revisar i proposar versió corregida)
+- Si l'usuari **no proporciona text** → mode GENERAR
+- Si l'usuari demana "millora" o "adapta" text existent → mode REVISAR amb proposta de nova versió
+- En cas de dubte → preguntar: "Vols que generi un post nou o que revisi un text que ja tens?"
 
 ### Normes transversals (al SKILL.md)
 
@@ -53,7 +65,7 @@ S'activa quan l'usuari demana crear, revisar o adaptar contingut per a xarxes so
   - Hashtags en CamelCase: `#GeneralitatDeCatalunya` no `#generalitat de catalunya`
   - Evitar emojis consecutius (dificulten lectors de pantalla)
   - Evitar emojis com a substituts de paraules
-- **Contingut sensible:** no generar sense avís explícit per a temes de salut, emergències, menors o violència
+- **Contingut sensible:** per a temes de salut, menors o violència, afegir un avís al post generat indicant que cal revisió humana abans de publicar. La plantilla "Emergència / alerta" (PROCICAT, METEOCAT) és l'excepció: és contingut planificat i l'usuari la invoca explícitament.
 - **Sigles:** desplegar sempre la primera vegada
 
 ### Workflow — Mode GENERAR
@@ -69,18 +81,22 @@ S'activa quan l'usuari demana crear, revisar o adaptar contingut per a xarxes so
 
 1. Identificar la xarxa del contingut (o preguntar si no és evident)
 2. Llegir `references/<xarxa>.md`
-3. Verificar cada norma de la plataforma
+3. Verificar cada norma, distingint entre **obligatòries** (marcades com a tal al fitxer de xarxa) i **recomanades**
 4. Lliurar informe estructurat:
    - ✅ Aspectes correctes
-   - ⚠️ Aspectes millorables (amb proposta)
-   - ❌ Incompliments (amb correcció obligatòria)
-5. Oferir versió corregida si hi ha incompliments
+   - ⚠️ Recomanació no seguida (millora opcional, amb proposta)
+   - ❌ Norma obligatòria incomplerta (cal corregir abans de publicar, amb correcció)
+5. Oferir sempre versió corregida si hi ha algun ❌
+
+> **Criteri de severitat:** és ❌ quan incompleix un límit tècnic (caràcters, hashtags màxims) o una norma d'accessibilitat. És ⚠️ quan és una recomanació d'estil o to.
 
 ---
 
 ## references/<xarxa>.md — Estructura tipus
 
 Cada fitxer de xarxa inclou:
+
+Cada secció del fitxer indica si la norma és **obligatòria** o **recomanada**, per facilitar la classificació ❌/⚠️ al mode REVISAR.
 
 | Secció | Contingut |
 |--------|-----------|
@@ -98,15 +114,17 @@ Cada fitxer de xarxa inclou:
 
 ### Xarxes cobertes
 
-| Xarxa | Fitxer |
-|-------|--------|
-| X (Twitter) | `references/x-twitter.md` |
-| Facebook | `references/facebook.md` |
-| Instagram | `references/instagram.md` |
-| LinkedIn | `references/linkedin.md` |
-| YouTube | `references/youtube.md` |
-| Threads | `references/threads.md` |
-| TikTok | `references/tiktok.md` |
+| Xarxa | Fitxer | Abast del skill |
+|-------|--------|----------------|
+| X (Twitter) | `references/x-twitter.md` | Posts, fils (threads), respostes |
+| Facebook | `references/facebook.md` | Posts, esdeveniments, respostes |
+| Instagram | `references/instagram.md` | Posts, stories, reels (descripció), captions |
+| LinkedIn | `references/linkedin.md` | Posts, articles (títol+intro), respostes |
+| YouTube | `references/youtube.md` | Títol, descripció i etiquetes del vídeo (no guions) |
+| Threads | `references/threads.md` | Posts, fils |
+| TikTok | `references/tiktok.md` | Descripció del vídeo, hashtags |
+
+> **Nota YouTube i TikTok:** el skill cobreix els **elements textuals** (títol, descripció, etiquetes, hashtags). No guionitza vídeos.
 
 ---
 
@@ -125,7 +143,7 @@ Plantilles reutilitzables per tipus de contingut. Cada plantilla inclou:
 | **Convocatòria / ajut** | Obertura de terminis, subvencions, beques |
 | **Emergència / alerta** | METEOCAT, PROCICAT — to i estructura especials |
 | **Campanya institucional** | Missatge de campanya amb crida a l'acció (CTA) |
-| **Resposta a comentari** | Gestió de comunitat, to empàtic i resolutiu |
+| **Resposta a comentari** | Gestió de comunitat, to empàtic i resolutiu. To varia: formal (LinkedIn) vs proper (Instagram/TikTok). Cobreix totes les xarxes amb variants per plataforma. |
 | **Fil / thread** | Estructura per desglossar temes complexos (X / Threads) |
 
 ---
