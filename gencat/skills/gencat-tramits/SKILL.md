@@ -1,6 +1,6 @@
 ---
 name: gencat-tramits
-description: "Aplica el Manual de redacció i estil de fitxes de tràmit de la Generalitat de Catalunya (febrer 2026) quan redactis, revisis o generis contingut per a fitxes de tràmit al web gencat.cat. Usa aquesta skill sempre que l'usuari treballi amb tràmits administratius, fitxes de tràmit, modalitats, camps de tràmit (títol, descripció, requisits, documentació, terminis, taxes, passos), o demani redactar textos per a tràmits en línia. Activa-la també quan mencioni 'fitxa de tràmit', 'modalitat de tràmit', 'silenci administratiu', 'pas de tramitació', 'canal de tramitació', 'GECO', 'OGE', 'SAC' o qualsevol camp d'una fitxa de tràmit gencat."
+description: "Aplica el Manual de redacció i estil de fitxes de tràmit de la Generalitat de Catalunya (febrer 2026) quan redactis, revisis o generis contingut per a fitxes de tràmit al web gencat.cat. Usa aquesta skill sempre que l'usuari treballi amb tràmits administratius, fitxes de tràmit, modalitats, camps de tràmit (títol, descripció, requisits, documentació, terminis, taxes, passos), o demani redactar textos per a tràmits en línia. Activa-la també quan mencioni 'fitxa de tràmit', 'modalitat de tràmit', 'silenci administratiu', 'pas de tramitació', 'canal de tramitació', 'GECO', 'OGE', 'SAC' o qualsevol camp d'una fitxa de tràmit gencat. Activa-la també per al mode REVISAR WEB quan l'usuari proporcioni URLs de fitxes de tràmit de gencat.cat per revisar, auditar o avaluar, o mencioni 'revisió de tràmit', 'auditoria de tràmit', 'revisar tràmit web', 'llista d'URLs de tràmits', o enganxi directament una URL de tramit.gencat.cat o cat.gencat.cat."
 ---
 
 # Manual de Redacció de Fitxes de Tràmit — Gencat (febrer 2026)
@@ -71,3 +71,13 @@ Llegeix `references/vocabulari.md` per a substitucions de vocabulari i bones pr�
 - [ ] **Taxes**: informat sempre (gratuït o import)?
 - [ ] **Passos**: avisos obligatoris sobre tramitació per internet inclosos?
 - [ ] **Silenci administratiu**: positiu o negatiu indicat al pas 4?
+
+---
+
+## Mode REVISAR WEB
+
+S'activa quan l'usuari proporciona una o més URLs de fitxes de tràmit de gencat.cat.
+
+Pas 0 obligatori: llegir `references/camps.md`, `references/passos.md` i `references/vocabulari.md` per tenir les normes carregades abans de començar la revisió.
+
+Llegeix `references/revisio-web.md` per al workflow complet, el criteri de puntuació i el format de l'informe.
