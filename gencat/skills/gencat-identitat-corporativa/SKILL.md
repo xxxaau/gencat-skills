@@ -47,7 +47,7 @@ Llegir `references/validacio.md` per al workflow complet, els criteris d'avaluac
 ## Llista de verificació ràpida
 
 - [ ] Colors: s'usa el vermell #C00000 com a color corporatiu principal?
-- [ ] Tipografia: Arial o Helvetica Neue (amb llicència) per a documents Office; Open Sans per a digital; cap Calibri?
+- [ ] Tipografia: Arial per a documents Office (Helvetica Neue amb llicència com a alternativa); Open Sans per a digital; cap Calibri?
 - [ ] Logotip: mida mínima 4,7 mm; no distorsionat; espai de seguretat respectat?
 - [ ] Comunicacions a la ciutadania: logotip de la Generalitat (no el departamental)?
 - [ ] Signatura de correu: estructura correcta amb les 3 seccions obligatòries?

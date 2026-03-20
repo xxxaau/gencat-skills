@@ -12,7 +12,7 @@ Abans de validar, identificar:
 
 Si el tipus no és identificable, preguntar: *"De quin tipus de material es tracta? (document Word/PowerPoint, signatura de correu, PDF...)"*
 
-Carregar `validacio.md` + el fitxer de referència corresponent:
+Carregar el fitxer de referència corresponent:
 - Document/Presentació/PDF → `documents.md`
 - Signatura de correu / Newsletter → `comunicacio-digital.md`
 - Consulta sobre marca en general → `marca-visual.md`
