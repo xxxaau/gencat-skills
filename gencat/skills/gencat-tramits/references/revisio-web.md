@@ -75,14 +75,14 @@ Si un camp té simultàniament un ❌ i un ⚠️, mostrar tots dos problemes pe
 |------|-------------------------------|------------------------|
 | **Títol** | Conté "sol·licitud", "inscripció" o "convocatòria" · té punt final · >80 caràcters *sense comptar espais, any de convocatòria, acrònims i sigles* | Estructura incorrecta (no segueix tipus+objecte+concreció) |
 | **Títol de la modalitat** | No segueix l'estructura verb-infinitiu + tipus (p. ex. "Sol·licitar la subvenció") · conté nominalitzacions ("Sol·licitud de...") | |
-| **Avís general del tràmit** | Falta la frase obligatòria per a subjectes obligats · frase present però incorrecta (no coincideix amb el text estàndard de `camps.md`) | |
-| **Descripció** | Cita departament o normativa a l'inici · repeteix literalment el títol | Frases de >30 paraules de mitjana |
-| **A qui va dirigit** | Falta la preposició "a" davant de cada destinatari · camp absent | Redacció poc clara o massa genèrica |
+| **Avís general del tràmit** | Falta la frase obligatòria per a subjectes obligats · frase present però incorrecta (no coincideix amb el text estàndard de `camps.md`) · *Nota: si el tràmit és únicament per a persones físiques (no hi ha subjectes obligats a tramitació electrònica exclusiva), l'absència és ✅ correcta i no compta com a error* | |
+| **Descripció** | Cita departament o normativa a l'inici · reprodueix el títol o inicia amb la mateixa estructura (p. ex. títol "Prestació per a famílies amb infants" → descripció "Prestació per a famílies que han tingut un fill...") | Frases de >30 paraules de mitjana |
+| **A qui va dirigit** | Falta la preposició "a" davant de cada destinatari · camp absent | Inclou condicions econòmiques o d'edat que haurien d'anar als Requisits · Redacció poc clara o massa genèrica |
 | **Terminis** | Format de data incorrecte (p. ex. 17/02/2025 en lloc de "17 de febrer de 2025") | |
 | **Documentació** | Inclou el formulari de sol·licitud · no és en forma de llista · redacció no esquemàtica (frases completes en lloc d'ítems breus) | |
 | **Requisits** | Conté frase introductòria · no és en forma de llista directa | |
 | **Taxes** | Camp absent o buit (ha d'indicar sempre import o "gratuït") | Import sense format clar |
-| **Passos** | Falta avís obligatori de tramitació al pas 1 · falta indicació de silenci administratiu al pas 4 | Textos no estàndard (comparar amb `passos.md`) |
+| **Passos** | Falta avís obligatori de tramitació al pas 1 · falta indicació de silenci administratiu al pas de resposta de l'Administració (Pas 3 si el tràmit és gratuït, Pas 4 si té taxa) | Textos no estàndard (comparar amb `passos.md`) |
 
 ---
 
