@@ -35,7 +35,7 @@ Els fitxers `camps.md`, `passos.md` i `vocabulari.md` no es modifiquen: el mode 
 
 Afegir al final de la cadena `description` existent:
 ```
-"[...] Activa-la també per al mode REVISAR WEB quan l'usuari proporcioni URLs de fitxes de tràmit de gencat.cat per revisar, auditar o avaluar, o mencioni 'revisió de tràmit', 'auditoria de tràmit', 'revisar tràmit web' o 'llista d'URLs de tràmits'."
+"[...] Activa-la també per al mode REVISAR WEB quan l'usuari proporcioni URLs de fitxes de tràmit de gencat.cat per revisar, auditar o avaluar, o mencioni 'revisió de tràmit', 'auditoria de tràmit', 'revisar tràmit web', 'llista d'URLs de tràmits', o enganxi directament una URL de tramit.gencat.cat o cat.gencat.cat."
 ```
 
 ### Nova secció al SKILL.md
@@ -45,12 +45,21 @@ Afegir al final de la cadena `description` existent:
 
 S'activa quan l'usuari proporciona una o més URLs de fitxes de tràmit de gencat.cat.
 
+Pas 0 obligatori: llegir `references/camps.md`, `references/passos.md` i `references/vocabulari.md` per tenir les normes carregades abans de començar la revisió.
+
 Llegeix `references/revisio-web.md` per al workflow complet, el criteri de puntuació i el format de l'informe.
 ```
 
 ---
 
 ## references/revisio-web.md — Contingut complet
+
+### Pas 0 — Càrrega de normes (obligatori)
+
+Abans de revisar cap URL, llegir:
+- `references/camps.md` — normes per a cada camp
+- `references/passos.md` — textos estàndard per als passos
+- `references/vocabulari.md` — substitucions i bones pràctiques
 
 ### Detecció del nombre d'URLs
 
@@ -62,52 +71,70 @@ Llegeix `references/revisio-web.md` per al workflow complet, el criteri de puntu
 ### Workflow per a cada URL
 
 1. **Fetch** → obtenir el contingut de la fitxa amb WebFetch
-2. **Identificació de camps** → buscar els 8 camps estàndard (veure taula de camps)
-3. **Avaluació camp per camp** → aplicar les normes de `references/camps.md`, `references/passos.md` i `references/vocabulari.md`
+2. **Identificació de camps** → buscar els camps estàndard (veure taula de camps)
+3. **Avaluació camp per camp** → aplicar les normes de `camps.md`, `passos.md` i `vocabulari.md`
 4. **Generació de l'informe** → tres capes (veure format d'informe)
 
 ### Gestió d'errors
 
-- **URL no accessible** → avisar l'usuari ("No he pogut accedir a [URL]. Continuo amb les altres.") i seguir
-- **Pàgina sense estructura de tràmit reconeixible** → avisar i demanar confirmació: "La pàgina [URL] no sembla una fitxa de tràmit estàndard. Vols que intenti revisar-la igualment?"
-- **Camp no trobat** → marcar directament com ❌ "camp absent"
+| Situació | Acció |
+|----------|-------|
+| URL no accessible | Avisar: "No he pogut accedir a [URL]. Continuo amb les altres." i seguir |
+| Contingut truncat (fitxa molt llarga) | Avisar: "He recuperat el contingut parcialment. Els camps no trobats es marcaran com a absents." i continuar |
+| Pàgina sense estructura de tràmit reconeixible — mode ≤3 URLs | Demanar confirmació: "La pàgina [URL] no sembla una fitxa de tràmit estàndard. Vols que intenti revisar-la igualment?" |
+| Pàgina sense estructura de tràmit reconeixible — mode >3 URLs | Marcar com a "no processada" i continuar sense interrompre el lot |
+| Camp no trobat | Marcar com ❌ "camp absent" — compta com a camp trobat amb error al denominador |
+
+### Tràmits amb múltiples modalitats
+
+Quan una fitxa té diverses modalitats, revisar cadascuna de forma independent per als camps específics de modalitat (títol de modalitat, passos). Els camps globals (títol principal, descripció, taxes) es revisen una sola vegada per al tràmit.
 
 ### Taula de camps i criteris d'avaluació
 
-Cada camp val **1 punt** si passa la revisió sense errors.
+Cada camp val **1 punt** si passa la revisió sense errors (cap ❌).
+Si un camp té simultàniament un ❌ i un ⚠️, mostrar tots dos problemes però comptar-lo com a erroni (0 punts).
 
 | Camp | ❌ Error (obligatori corregir) | ⚠️ Millora (recomanada) |
 |------|-------------------------------|------------------------|
-| **Títol** | >80 caràcters · conté "sol·licitud", "inscripció" o "convocatòria" · té punt final | Estructura incorrecta (no segueix tipus+objecte+concreció) |
+| **Títol** | Conté "sol·licitud", "inscripció" o "convocatòria" · té punt final · >80 caràcters *sense comptar espais, any de convocatòria, acrònims i sigles* | Estructura incorrecta (no segueix tipus+objecte+concreció) |
+| **Títol de la modalitat** | No segueix l'estructura verb-infinitiu + tipus (p. ex. "Sol·licitar la subvenció") · conté nominalitzacions ("Sol·licitud de...") | |
+| **Avís general del tràmit** | Falta la frase obligatòria per a subjectes obligats · frase present però incorrecta (no coincideix amb el text estàndard de `camps.md`) | |
 | **Descripció** | Cita departament o normativa a l'inici · repeteix literalment el títol | Frases de >30 paraules de mitjana |
 | **A qui va dirigit** | Falta la preposició "a" davant de cada destinatari · camp absent | Redacció poc clara o massa genèrica |
-| **Terminis** | Format de data incorrecte (p. ex. 17/02/2025 en lloc de 17 de febrer de 2025) | |
-| **Documentació** | Inclou el formulari de sol·licitud · no és en forma de llista | |
+| **Terminis** | Format de data incorrecte (p. ex. 17/02/2025 en lloc de "17 de febrer de 2025") | |
+| **Documentació** | Inclou el formulari de sol·licitud · no és en forma de llista · redacció no esquemàtica (frases completes en lloc d'ítems breus) | |
 | **Requisits** | Conté frase introductòria · no és en forma de llista directa | |
 | **Taxes** | Camp absent o buit (ha d'indicar sempre import o "gratuït") | Import sense format clar |
-| **Passos** | Falta avís obligatori de tramitació al pas 1 · falta silenci administratiu al pas 4 | Textos no estàndard (apartat `references/passos.md`) |
+| **Passos** | Falta avís obligatori de tramitació al pas 1 · falta indicació de silenci administratiu al pas 4 | Textos no estàndard (comparar amb `passos.md`) |
 
 ### Puntuació global
 
 ```
-Puntuació = (camps sense ❌) / (total camps trobats) × 10
+Puntuació = (camps sense ❌) / (total camps trobats o absents) × 10
 ```
 
-| Puntuació | Prioritat de revisió |
-|-----------|---------------------|
-| 8-10 | BAIXA — tot ✅ o quasi |
-| 5-7 | MITJANA — tot ⚠️, cap ❌ |
-| 0-4 | ALTA — hi ha algun ❌ |
+> **Nota:** Un camp absent compta com a "trobat amb ❌", no s'exclou del denominador.
+
+| Puntuació | Prioritat de revisió | Descripció |
+|-----------|---------------------|------------|
+| 8–10 | BAIXA | Sense errors; possibles millores menors (⚠️) |
+| 5–7 | MITJANA | 1–3 camps amb ❌ |
+| 0–4 | ALTA | 4 o més camps amb ❌ |
 
 ### Format de l'informe per tràmit
 
 #### Capa 1 — Avaluació per camp
 
+Si un camp té múltiples problemes, mostrar-los tots:
+
 ```
 ## [Nom del camp]
 ✅ Correcte — [breu justificació]
+
 ⚠️ Millora recomanada — [descripció del problema]
+
 ❌ Error — [descripció del problema i norma incomplerta]
+❌ Error — [segon problema si n'hi ha]
 ```
 
 #### Capa 2 — Puntuació global
@@ -149,7 +176,10 @@ Quan es revisen múltiples tràmits, afegir al final una taula resum:
 | Decisió | Raó |
 |---------|-----|
 | Mode dins del skill existent (no skill nou) | El workflow comparteix totes les normes de `gencat-tramits`; una skill separada duplicaria la base de coneixement |
-| WebFetch per accedir a les URLs | Eina disponible a Claude Code; suficient per a pàgines HTML públiques |
-| Camp absent = ❌ | Tots els camps de la fitxa de tràmit són obligatoris segons el manual |
+| WebFetch per accedir a les URLs | Eina disponible a Claude Code; suficient per a pàgines HTML públiques de gencat.cat |
+| Camp absent = ❌ i compta al denominador | Tots els camps de la fitxa són obligatoris; excloure-los inflaria artificialment la puntuació |
 | Proposta de redacció només per a ⚠️/❌ | Evita generar text innecessari per als camps ja correctes |
 | Processament ≤3 paral·lel / >3 seqüencial | Equilibri entre velocitat (llistes curtes) i control (llistes llargues) |
+| Mode >3 URLs: no interrompre per confirmació | En lot gran, les interrupcions per cada pàgina atípica fan el procés inutilitzable; es marca i es continua |
+| Múltiples modalitats: revisió independent per modalitat | Evita contaminació de textos entre modalitats en l'avaluació dels passos |
+| Criteri títol: excepcions de comptatge del manual | El límit de 80 caràcters exclou espais, any, acrònims i sigles, igual que el manual; per evitar falsos positius |
