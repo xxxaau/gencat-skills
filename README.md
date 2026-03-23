@@ -82,6 +82,28 @@ Genera i revisa contingut per a xarxes socials seguint la [Guia de Xarxes Social
 
 ---
 
+### `gencat-identitat-corporativa`
+Aplica les normes d'[Identitat Corporativa](https://www.gencat.cat/web/.content/manuals/guia_identitatcorporativa_2023.pdf) de la Generalitat quan crees o revises materials de comunicació. Inclou:
+- Colors corporatius (Pantone, CMYK, RGB, Hex), tipografia per suport i normes d'ús del senyal
+- Normes per a documents Word, PowerPoint i PDF institucionals
+- Signatures de correu electrònic i newsletters
+- Workflow de validació amb modes CONSULTAR, CREAR i VALIDAR
+
+**S'activa** quan crees o revises documents, presentacions, materials de comunicació o qualsevol element visual d'una entitat de la Generalitat de Catalunya.
+
+---
+
+### `gencat-documentacio-ctti`
+Valida i redacta documentació tècnica seguint els estàndards del [CTTI](https://ctti.gencat.cat) (Centre de Telecomunicacions i Tecnologies de la Informació). Inclou:
+- Estructura obligatòria de l'ERQ (Especificació de Requisits) i el DA (Descripció d'Arquitectura)
+- Criteris de qualitat i escala de puntuació per a la revisió de documents tècnics
+- Modes REVISAR (informe detallat amb puntuació) i CONSULTAR (resposta directa)
+- Detecció automàtica del tipus de document i càrrega dinàmica de referències
+
+**S'activa** quan treballes amb documents tècnics CTTI, ERQ, DA, arquitectures de sistemes o documentació d'aprovisionament de la Generalitat de Catalunya.
+
+---
+
 ## Estructura del repositori
 
 ```
@@ -110,12 +132,27 @@ gencat-skills/
         │       ├── errors-habituals.md   ← 12 errors freqüents + correccions
         │       ├── components-accessibles.md ← patrons HTML/ARIA
         │       └── eines-i-avaluacio.md  ← eines, IRA, metodologia
+        ├── gencat-documentacio-ctti/
+        │   ├── SKILL.md
+        │   └── references/
+        │       ├── erq-estructura.md     ← seccions obligatòries ERQ
+        │       ├── da-estructura.md      ← seccions obligatòries DA
+        │       ├── criteris-qualitat.md  ← criteris de qualitat global
+        │       └── puntuacio-i-informe.md ← escala de puntuació i informe
+        ├── gencat-identitat-corporativa/
+        │   ├── SKILL.md
+        │   └── references/
+        │       ├── marca-visual.md       ← colors, tipografia, senyal, logotip
+        │       ├── documents.md          ← Word, PowerPoint, PDF institucionals
+        │       ├── comunicacio-digital.md ← signatures de correu, newsletters
+        │       └── validacio.md          ← workflow de validació
         ├── gencat-tramits/
         │   ├── SKILL.md
         │   └── references/
         │       ├── camps.md              ← regles per a cada camp de la fitxa
         │       ├── passos.md             ← passos de tramitació i textos estàndard
-        │       └── vocabulari.md         ← substitucions i bones pràctiques
+        │       ├── vocabulari.md         ← substitucions i bones pràctiques
+        │       └── revisio-web.md        ← workflow revisió fitxes a gencat.cat
         └── gencat-xarxes-socials/
             ├── SKILL.md
             └── references/
