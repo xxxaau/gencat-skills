@@ -5,9 +5,9 @@ https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com
 
 ---
 
-## Components Core
+## Components Bàsics
 
-### Navegació i layout
+### Navegació i maquetació
 
 | Nom oficial (català) | Equivalent comú | Descripció |
 |---------------------|-----------------|------------|
@@ -113,9 +113,9 @@ https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com
 
 ---
 
-## Patrons (Patterns)
+## Patrons
 
-### Patrons Core
+### Patrons Bàsics
 
 | Patró | Descripció |
 |-------|------------|

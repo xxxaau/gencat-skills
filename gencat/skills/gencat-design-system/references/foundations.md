@@ -25,10 +25,10 @@
 ### Colors d'estat
 | Estat | Color | Ús |
 |-------|-------|-----|
-| Èxit / Success | `#2E7D32` | Confirmació, validació positiva |
-| Avís / Warning | `#ED6C02` | Alertes, avisos d'atenció |
+| Èxit | `#2E7D32` | Confirmació, validació positiva |
+| Avís | `#ED6C02` | Alertes, avisos d'atenció |
 | Error | `#C00000` | Errors, validació negativa |
-| Informatiu / Info | `#0288D1` | Informació neutral |
+| Informatiu | `#0288D1` | Informació neutral |
 
 ---
 
@@ -78,13 +78,13 @@ Base: `8px` (0.5rem)
 
 ## Grid i punts de tall
 
-| Breakpoint | Amplada | Columnes | Gutter |
+| Punt de tall | Amplada | Columnes | Gotera |
 |-----------|---------|----------|--------|
-| Mobile (xs) | < 576px | 4 | 16px |
-| Tablet (sm) | ≥ 576px | 8 | 24px |
-| Tablet L (md) | ≥ 768px | 12 | 24px |
-| Desktop (lg) | ≥ 992px | 12 | 24px |
-| Desktop L (xl) | ≥ 1200px | 12 | 32px |
+| Mòbil (xs) | < 576px | 4 | 16px |
+| Tauleta (sm) | ≥ 576px | 8 | 24px |
+| Tauleta L (md) | ≥ 768px | 12 | 24px |
+| Escriptori (lg) | ≥ 992px | 12 | 24px |
+| Escriptori L (xl) | ≥ 1200px | 12 | 32px |
 
 ---
 

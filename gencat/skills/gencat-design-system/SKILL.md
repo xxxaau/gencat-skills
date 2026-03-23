@@ -1,6 +1,6 @@
 ---
 name: gencat-design-system
-description: "Apply the official Generalitat de Catalunya (Gencat) corporate design system when developing web applications, components, or UI for Gencat. Use this skill whenever the user mentions Gencat, Generalitat de Catalunya, aplicació gencat, sistema de disseny, or asks to build, style, or review any Catalan government digital interface. Ensures alignment with official brand, accessibility, and component standards."
+description: "Aplica el Sistema de Disseny oficial de la Generalitat de Catalunya quan desenvolupes aplicacions web, components o interfícies d'usuari per a serveis digitals de la Generalitat. Utilitza aquesta skill quan es mencioni Gencat, Generalitat de Catalunya, aplicació gencat, sistema de disseny, o quan es demani construir, estilitzar o revisar qualsevol interfície digital del govern català. Garanteix l'alineació amb la marca oficial, l'accessibilitat i els estàndards de components."
 ---
 
 # Sistema de Disseny de la Generalitat de Catalunya
@@ -88,7 +88,7 @@ Usa **sempre** els noms en català dels components tal com apareixen al sistema 
 }
 ```
 
-### Accesibilitat obligatòria
+### Accessibilitat obligatòria
 
 - Tots els `<img>` han de tenir `alt`
 - Tots els inputs han de tenir `<label>` associat

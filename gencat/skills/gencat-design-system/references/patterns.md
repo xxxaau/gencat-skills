@@ -123,7 +123,7 @@ Patrons recomanats per als casos d'ús més habituals en aplicacions de la Gener
 
 ---
 
-## Gestió interna (Backoffice)
+## Gestió interna
 
 ### Taules de dades amb accions
 
