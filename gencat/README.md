@@ -7,6 +7,7 @@ Plugin de Claude Code amb les skills corporatives de la Generalitat de Catalunya
 - [gencat-design-system](#gencat-design-system)
 - [gencat-comunicacio-clara](#gencat-comunicacio-clara)
 - [gencat-accessibilitat](#gencat-accessibilitat)
+- [gencat-seguretat](#gencat-seguretat)
 - [gencat-documentacio-ctti](#gencat-documentacio-ctti)
 - [gencat-tramits](#gencat-tramits)
 - [gencat-xarxes-socials](#gencat-xarxes-socials)
@@ -17,6 +18,7 @@ Plugin de Claude Code amb les skills corporatives de la Generalitat de Catalunya
 | <a name="gencat-design-system"></a>`gencat-design-system` | Sistema de Disseny oficial — components, colors, tipografia, patrons |
 | <a name="gencat-comunicacio-clara"></a>`gencat-comunicacio-clara` | Comunicació Clara — literals UI, redacció planera, vocabulari |
 | <a name="gencat-accessibilitat"></a>`gencat-accessibilitat` | Accessibilitat digital — WCAG 2.1 AA, Decret 216/2023, components accessibles |
+| <a name="gencat-seguretat"></a>`gencat-seguretat` | Seguretat d'aplicacions — autenticació, permisos, tokens, API i dades sensibles |
 | <a name="gencat-documentacio-ctti"></a>`gencat-documentacio-ctti` | Documentació Tècnica CTTI — valida i orienta sobre ERQ (Especificació de Requisits) i DA (Descripció d'Arquitectura) |
 | <a name="gencat-tramits"></a>`gencat-tramits` | Fitxes de tràmit — redacció i estil de camps, passos i vocabulari per a gencat.cat |
 | <a name="gencat-xarxes-socials"></a>`gencat-xarxes-socials` | Xarxes Socials — genera i revisa contingut per a X, Facebook, Instagram, LinkedIn, YouTube, Threads i TikTok seguint la guia corporativa |

@@ -60,6 +60,17 @@ Garanteix el compliment de les directrius d'accessibilitat digital de la General
 
 ---
 
+### `gencat-seguretat`
+Orienta sobre seguretat d'aplicacions quan treballes amb autenticació, permisos, tokens, credencials, accés a documents o dades sensibles i peticions a API. Inclou:
+- Criteris de mínim privilegi i validació d'accés al servidor
+- Bones pràctiques per a tokens, claus, secrets i sessions
+- Revisió de riscos en fluxos amb dades sensibles o recursos interns
+- Checklist pràctica amb enllaços a referències OWASP
+
+**S'activa** quan revises o dissenyes fluxos de login, autorització, gestió de permisos, protecció de dades o qualsevol funcionalitat amb risc de seguretat aplicacional.
+
+---
+
 ### `gencat-tramits`
 Aplica el [Manual de redacció i estil de fitxes de tràmit](https://atenciociutadana.gencat.cat/ca/serveis/tramits/manuals-i-guies/) (febrer 2026) quan redactes o revises fitxes de tràmit per a gencat.cat. Inclou:
 - Regles de redacció per a tots els camps: títol, descripció, requisits, documentació, terminis, taxes
@@ -116,6 +127,7 @@ Combinacions recomanades més habituals:
 
 - **gencat-tramits** + **gencat-comunicacio-clara** + **gencat-accessibilitat**
 - **gencat-design-system** + **gencat-accessibilitat** + **gencat-comunicacio-clara**
+- **gencat-seguretat** + **gencat-accessibilitat** + **gencat-comunicacio-clara** quan hi ha login, permisos, dades sensibles o fluxos amb API
 - **gencat-xarxes-socials** + **gencat-comunicacio-clara** (+ **gencat-identitat-corporativa** quan hi ha requeriments de marca)
 - **gencat-documentacio-ctti** (+ **gencat-accessibilitat** o **gencat-design-system** quan hi ha requisits funcionals de UI o no funcionals)
 
@@ -149,6 +161,10 @@ gencat-skills/
         │       ├── errors-habituals.md   ← 12 errors freqüents + correccions
         │       ├── components-accessibles.md ← patrons HTML/ARIA
         │       └── eines-i-avaluacio.md  ← eines, IRA, metodologia
+        ├── gencat-seguretat/
+        │   ├── SKILL.md
+        │   └── references/
+        │       └── checklist-seguretat.md ← checklist i referències OWASP
         ├── gencat-documentacio-ctti/
         │   ├── SKILL.md
         │   └── references/
