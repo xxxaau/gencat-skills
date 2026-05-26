@@ -5,6 +5,25 @@ description: "Aplica les directrius d'accessibilitat digital de la Generalitat d
 
 # Accessibilitat Digital — Generalitat de Catalunya
 
+## Abast de la skill
+
+### Què cobreix
+- Compliment de WCAG 2.1 AA, EN 301 549 i marc normatiu aplicable
+- Revisió tècnica de components, formularis, navegació, multimèdia i documents
+- Guia d'implementació HTML/ARIA i metodologia d'avaluació
+
+### Què NO cobreix
+- Definició visual de marca o identitat corporativa (delegar a `gencat-identitat-corporativa`)
+- Disseny de catàleg de components i sistematització visual completa (delegar a `gencat-design-system`)
+- Redacció d'estil administratiu o de campanyes més enllà de la comprensió accessible (delegar a `gencat-comunicacio-clara`)
+
+### Skills complementàries
+- `gencat-design-system` per aplicar patrons visuals i de component oficials
+- `gencat-comunicacio-clara` per missatges i contingut textual entenedor
+- `gencat-tramits` quan es revisen fitxes de tràmit publicades a gencat.cat
+
+---
+
 ## Marc legal obligatori
 
 | Norma | Àmbit | Requeriment |

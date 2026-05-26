@@ -12,6 +12,25 @@ Skill per validar i orientar sobre els dos documents tècnics principals del cic
 
 ---
 
+## Abast de la skill
+
+### Què cobreix
+- Revisió estructural i de qualitat de documents ERQ i DA
+- Orientació sobre seccions obligatòries, criteris i puntuació
+- Flux de revisió formal en modes REVISAR i CONSULTAR
+
+### Què NO cobreix
+- Implementació tècnica de codi, components o interfícies finals
+- Revisió funcional de marca corporativa o maquetació institucional
+- Auditoria WCAG completa de productes digitals (fora de l'abast documental)
+
+### Skills complementàries
+- `gencat-design-system` quan els requisits afecten components i patrons de UI
+- `gencat-accessibilitat` quan cal concretar requisits no funcionals d'accessibilitat
+- `gencat-comunicacio-clara` per millorar llegibilitat en resums executius i contingut textual
+
+---
+
 ## Detecció del mode
 
 | Situació | Mode |

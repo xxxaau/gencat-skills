@@ -104,6 +104,23 @@ Valida i redacta documentació tècnica seguint els estàndards del [CTTI](https
 
 ---
 
+## Criteri comú d'abast i combinació
+
+Per mantenir el repositori coherent i evitar solapaments, cada skill defineix:
+
+- **Què cobreix**: l'àmbit principal de treball
+- **Què NO cobreix**: límits explícits de la skill
+- **Skills complementàries**: quines skills cal combinar segons el cas
+
+Combinacions recomanades més habituals:
+
+- **gencat-tramits** + **gencat-comunicacio-clara** + **gencat-accessibilitat**
+- **gencat-design-system** + **gencat-accessibilitat** + **gencat-comunicacio-clara**
+- **gencat-xarxes-socials** + **gencat-comunicacio-clara** (+ **gencat-identitat-corporativa** quan hi ha requeriments de marca)
+- **gencat-documentacio-ctti** (+ **gencat-accessibilitat** o **gencat-design-system** quan hi ha requisits funcionals de UI o no funcionals)
+
+---
+
 ## Estructura del repositori
 
 ```

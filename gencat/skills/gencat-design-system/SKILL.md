@@ -9,6 +9,23 @@ Quan desenvolupis aplicacions per a la Generalitat de Catalunya, **sempre** has 
 - Documentació principal: https://sistemadedisseny.gencat.cat
 - Storybook de components: https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com
 
+## Abast de la skill
+
+### Què cobreix
+- Fonaments visuals (colors, tipografia, espaiat, tokens)
+- Ús correcte del catàleg de components oficials
+- Patrons d'interfície per a casos d'ús habituals de serveis digitals Gencat
+
+### Què NO cobreix
+- Redacció detallada de literals i microcopy (delegar a `gencat-comunicacio-clara`)
+- Auditories d'accessibilitat completes o informes de compliment normatiu (delegar a `gencat-accessibilitat`)
+- Redacció específica de fitxes de tràmit (delegar a `gencat-tramits`)
+
+### Skills complementàries
+- `gencat-accessibilitat` per validar WCAG en components i fluxos
+- `gencat-comunicacio-clara` per literals de UI, missatges i contingut textual
+- `gencat-identitat-corporativa` quan hi ha materials no web o peces institucionals de marca
+
 ## Principis fonamentals
 
 1. **Accessibilitat primer** — compliment WCAG. Tots els components han de ser accessibles.
