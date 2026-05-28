@@ -13,16 +13,16 @@ Plugin de Claude Code amb les skills corporatives de la Generalitat de Catalunya
 - [gencat-xarxes-socials](#gencat-xarxes-socials)
 - [gencat-identitat-corporativa](#gencat-identitat-corporativa)
 
-| Skill | Descripció |
-|-------|-----------|
-| <a name="gencat-design-system"></a>`gencat-design-system` | Sistema de Disseny oficial — components, colors, tipografia, patrons |
-| <a name="gencat-comunicacio-clara"></a>`gencat-comunicacio-clara` | Comunicació Clara — literals UI, redacció planera, vocabulari |
-| <a name="gencat-accessibilitat"></a>`gencat-accessibilitat` | Accessibilitat digital — WCAG 2.1 AA, Decret 216/2023, components accessibles |
-| <a name="gencat-seguretat"></a>`gencat-seguretat` | Seguretat d'aplicacions — autenticació, permisos, tokens, API i dades sensibles |
-| <a name="gencat-documentacio-ctti"></a>`gencat-documentacio-ctti` | Documentació Tècnica CTTI — valida i orienta sobre ERQ (Especificació de Requisits) i DA (Descripció d'Arquitectura) |
-| <a name="gencat-tramits"></a>`gencat-tramits` | Fitxes de tràmit — redacció i estil de camps, passos i vocabulari per a gencat.cat |
-| <a name="gencat-xarxes-socials"></a>`gencat-xarxes-socials` | Xarxes Socials — genera i revisa contingut per a X, Facebook, Instagram, LinkedIn, YouTube, Threads i TikTok seguint la guia corporativa |
-| <a name="gencat-identitat-corporativa"></a>`gencat-identitat-corporativa` | Identitat Corporativa — aplica i valida les normes de marca en documents, presentacions i comunicació digital |
+| Skill | Descripció | Dependències |
+|-------|-----------|-----------|
+| <a name="gencat-design-system"></a>`gencat-design-system` | Sistema de Disseny oficial — components, colors, tipografia, patrons | `gencat-accessibilitat`, `gencat-comunicacio-clara`, `gencat-identitat-corporativa` |
+| <a name="gencat-comunicacio-clara"></a>`gencat-comunicacio-clara` | Comunicació Clara — literals UI, redacció planera, vocabulari | `gencat-accessibilitat`, `gencat-tramits`, `gencat-xarxes-socials` |
+| <a name="gencat-accessibilitat"></a>`gencat-accessibilitat` | Accessibilitat digital — WCAG 2.1 AA, Decret 216/2023, components accessibles | `gencat-design-system`, `gencat-comunicacio-clara`, `gencat-tramits` |
+| <a name="gencat-seguretat"></a>`gencat-seguretat` | Seguretat d'aplicacions — autenticació, permisos, tokens, API i dades sensibles | `gencat-design-system`, `gencat-comunicacio-clara`, `gencat-accessibilitat`, `gencat-documentacio-ctti` |
+| <a name="gencat-documentacio-ctti"></a>`gencat-documentacio-ctti` | Documentació Tècnica CTTI — valida i orienta sobre ERQ (Especificació de Requisits) i DA (Descripció d'Arquitectura) | `gencat-design-system`, `gencat-accessibilitat`, `gencat-comunicacio-clara` |
+| <a name="gencat-tramits"></a>`gencat-tramits` | Fitxes de tràmit — redacció i estil de camps, passos i vocabulari per a gencat.cat | `gencat-comunicacio-clara`, `gencat-accessibilitat`, `gencat-design-system` |
+| <a name="gencat-xarxes-socials"></a>`gencat-xarxes-socials` | Xarxes Socials — genera i revisa contingut per a X, Facebook, Instagram, LinkedIn, YouTube, Threads i TikTok seguint la guia corporativa | `gencat-comunicacio-clara`, `gencat-identitat-corporativa`, `gencat-accessibilitat` |
+| <a name="gencat-identitat-corporativa"></a>`gencat-identitat-corporativa` | Identitat Corporativa — aplica i valida les normes de marca en documents, presentacions i comunicació digital | `gencat-comunicacio-clara`, `gencat-xarxes-socials`, `gencat-design-system` |
 
 ## Documentació oficial
 
