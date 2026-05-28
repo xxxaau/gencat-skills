@@ -30,6 +30,8 @@ Plugin de Claude Code amb les skills corporatives de la Generalitat de Catalunya
 - Comunicació Clara: https://atenciociutadana.gencat.cat/ca/comunicacio-clara/
 - Guia de Comunicació Clara (PDF): https://presidencia.bibliotecadigital.gencat.cat/handle/20.500.14623/1156
 - Accessibilitat digital: https://atenciociutadana.gencat.cat/ca/accessibilitat/
+- Model de Qualitat de Solucions: https://qualitat.solucions.gencat.cat/
+- Quality Gates: https://qualitat.solucions.gencat.cat/qualitygates
 - Especificació de Requisits (ERQ): https://qualitat.solucions.gencat.cat/procediments/analisi-disseny/especificacio_requisits/
 - Descripció d'Arquitectura (DA / AiDA): https://canigo.ctti.gencat.cat/arquitectura/da/aida/
 - Manual de redacció de tràmits: https://atenciociutadana.gencat.cat/ca/serveis/tramits/manuals-i-guies/

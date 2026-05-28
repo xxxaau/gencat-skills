@@ -7,6 +7,14 @@ description: "Aplica criteris de seguretat d'aplicacions quan dissenyes, revises
 
 Aquesta skill ajuda a revisar i orientar criteris de seguretat per a aplicacions i serveis digitals de la Generalitat de Catalunya. No substitueix una revisió de codi completa ni una auditoria de pentesting, però sí serveix per detectar riscos habituals i establir criteris de base coherents.
 
+## Fonts oficials de referència
+
+- Model de Qualitat de Solucions: https://qualitat.solucions.gencat.cat/procediments/
+- Quality Gates: https://qualitat.solucions.gencat.cat/qualitygates
+
+
+Aquesta font és especialment útil quan la seguretat forma part de requisits no funcionals, gates de qualitat o documentació de projecte.
+
 ## Abast de la skill
 
 ### Què cobreix
@@ -28,7 +36,8 @@ Aquesta skill ajuda a revisar i orientar criteris de seguretat per a aplicacions
 - `gencat-design-system` quan la seguretat afecta components o fluxos de UI
 - `gencat-comunicacio-clara` per missatges d'error, alerta i confirmació
 - `gencat-accessibilitat` per no comprometre l'ús per teclat, focus o feedback visible
-- `gencat-documentacio-ctti` quan la seguretat s'hagi de reflectir en ERQ o DA
+- `gencat-documentacio-ctti` quan la seguretat s'hagi de reflectir en ERQ o DA i el Model de Qualitat de Solucions quan la seguretat s'ha de traçar en lliurables, criteris o quality gates
+
 
 ## Flux ràpid de revisió
 
