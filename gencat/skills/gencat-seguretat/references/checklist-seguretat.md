@@ -35,10 +35,9 @@ Quan la seguretat forma part d'un projecte amb lliurables o gates de qualitat, a
 - Els missatges d'error i auditoria no revelen informació delicada?
 
 ### Enllaços de referència
-- OWASP Top 10: https://owasp.org/www-project-top-ten/
+- OWASP Top 10: https://owasp.org/Top10/2025/
 - OWASP ASVS: https://owasp.org/www-project-application-security-verification-standard/
 - OWASP Cheat Sheet Series: https://cheatsheetseries.owasp.org/
-- Auth0 Security Checklist (general): https://auth0.com/blog/complete-guide-to-api-security/
 
 ## Criteri pràctic
 Si una funcionalitat permet llegir, modificar o exportar dades sensibles, la pregunta mínima és: qui hi pot accedir, com es valida i què passa si falla.
