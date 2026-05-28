@@ -3,7 +3,7 @@
 ## Objectiu
 Aquesta referència resumeix els punts mínims que cal revisar quan una funcionalitat tracta autenticació, permisos, tokens, accés a documents o dades sensibles.
 
-## Referències de qualitat
+## Referències institucionals de qualitat 
 
 - Model de Qualitat de Solucions: https://qualitat.solucions.gencat.cat/
 - Quality Gates: https://qualitat.solucions.gencat.cat/qualitygates
