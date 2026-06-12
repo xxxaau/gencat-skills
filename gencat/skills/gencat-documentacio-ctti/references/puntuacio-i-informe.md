@@ -13,8 +13,8 @@
 | **Floor** | 0 (mai negatiu) |
 | **Llindar d'aprovació** | **≥ 80 punts** |
 
-**Nota important sobre asimetria per tipus de DA:**
-El nombre de vistes obligatòries varia per tipus (Cloud Privat: 7, SaaS: 4). Amb la mateixa fórmula, el llindar de 80 és proporcionalment més difícil d'assolir en documents amb poques vistes. Això és **intencionat**: fallar una vista en un SaaS DA (1 de 4) és un problema proporcional a fallar-ne dues en un Cloud Privat DA (2 de 7).
+**Nota sobre la fórmula i el nombre de vistes:**
+La deducció per vista absent és fixa (−15) sigui quin sigui el nombre de vistes obligatòries del tipus (Cloud Privat: 7, SaaS: 4), tot i que proporcionalment una vista absent pesa més en un SaaS (1 de 4) que en un Cloud Privat (1 de 7). És una simplificació deliberada: la fórmula única fa la puntuació predictible i comparable entre documents.
 
 ---
 
@@ -88,3 +88,47 @@ Usa aquesta plantilla exacta per al mode REVISAR:
 - Els detalls del Nivell 2 han d'incloure un exemple extret del document (una frase o un RF concret)
 - Les preguntes obertes han de ser accionables: l'autor ha de poder respondre-les per millorar el document
 - El resum executiu ha de ser llegible en 30 segons — màxim 5 punts crítics
+
+---
+
+## Exemple complet d'informe (ERQ fictici)
+
+~~~markdown
+## Informe de Validació — Sistema de Gestió d'Expedients (ERQ) — Data: 2026-06-12
+
+### Puntuació global
+**40/100** — ❌ Retornar a l'autor
+
+### Nivell 1 — Estructura
+| Secció/Vista | Estat | Observació |
+|--------------|-------|------------|
+| Visió general del sistema | ✅ | Present; manca el diagrama de context de les integracions, però el text les descriu |
+| Usuaris de la solució | ✅ | 5 perfils amb responsabilitats clares |
+| Requisits funcionals | ✅ | 35 RF (RF-001 a RF-035) |
+| Requisits no funcionals | ❌ | Secció absent: cap referència a rendiment, seguretat ni disponibilitat. Crític per a un sistema que tracta dades personals |
+| Casos d'ús | ✅ | 8 casos d'ús amb flux principal i alternatius |
+
+### Nivell 2 — Qualitat del contingut
+| Criteri | Estat | Detall |
+|---------|-------|--------|
+| Claredat | ⚠️ | RF-015: "assignar expedients de manera flexible" — flexible com? Afecta 5 RF de 35 (menys d'un terç → ⚠️) |
+| Detall suficient | ❌ | RF-012 "Cercar expedients" no diu quins camps es cerquen ni el límit de resultats; els 3 casos d'ús crítics no tenen fluxos d'error |
+| Consistència | ⚠️ | La Visió general parla de 3 tipus d'expedient; els RF només treballen amb un de genèric |
+| Verificabilitat | ❌ | RF-018: "el sistema ha de respondre ràpidament" — sense xifres; passa a 10+ RF |
+| Traçabilitat | ⚠️ | Només 8 de 35 RF citen l'origen (normativa o necessitat de negoci) |
+
+### Preguntes obertes per a l'autor
+1. **Requisits no funcionals:** quins objectius de rendiment (temps de resposta, usuaris concurrents), seguretat (autenticació, xifratge, auditoria) i disponibilitat (SLA) ha de complir el sistema?
+2. **RF-015:** quins usuaris poden assignar expedients i a qui (mateix grup, qualsevol grup)?
+3. **Tipus d'expedient:** els 3 tipus de la Visió general tenen comportaments diferents? Si és així, calen RF específics.
+
+### Resum executiu (per al validador final)
+**Punts crítics que impedeixen aprovació:**
+- Requisits no funcionals absents (−15): sistema amb dades personals sense cap requisit de seguretat
+- Verificabilitat fallada (−15): més de 10 RF sense criteri mesurable
+- Detall insuficient (−15): fluxos d'error absents als casos d'ús crítics
+
+**Recomanació: ❌ Retornar a l'autor**
+~~~
+
+Desglossament del càlcul de l'exemple: 100 − 15×3 (❌: RNF absents, Detall suficient, Verificabilitat) − 5×3 (⚠️: Claredat, Consistència, Traçabilitat) = **40/100**. Recorda restar tots els ⚠️ (és l'oblit més habitual) i indica sempre el desglossament al costat de la puntuació.

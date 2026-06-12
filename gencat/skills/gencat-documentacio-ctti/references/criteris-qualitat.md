@@ -15,8 +15,8 @@ Avalua si la redacció és unívoca i interpretable per qualsevol membre de l'eq
 | Estat | Criteri | Exemples |
 |-------|---------|---------|
 | ✅ | Tota la redacció té una sola interpretació possible | "El sistema denegarà l'accés i mostrarà el missatge ERR-401 si les credencials no són vàlides" |
-| ⚠️ | La redacció és confusa però interpretable amb esforç | "El sistema gestionarà els errors adequadament" |
-| ❌ | Redacció amb múltiples interpretacions possibles | "El sistema processarà les sol·licituds de forma òptima" (ERQ) / "L'arquitectura ha de ser flexible" (DA) |
+| ⚠️ | Redacció vaga en punts concrets o en seccions secundàries (afecta **menys d'un terç** del document) | "El sistema gestionarà els errors adequadament" en una secció de suport |
+| ❌ | Redacció ambigua estesa (**un terç o més** del document) o en seccions/vistes obligatòries senceres | "El sistema processarà les sol·licituds de forma òptima" com a patró repetit (ERQ) / "L'arquitectura ha de ser flexible" com a única descripció (DA) |
 
 Preguntes de detecció:
 - Podrien dos developers implementar-ho de manera diferent llegint el mateix text?
@@ -27,6 +27,8 @@ Preguntes de detecció:
 ## 2. Detall suficient
 
 Avalua si el document té prou informació per implementar sense haver de prendre decisions de disseny no documentades.
+
+> **Frontera amb Verificabilitat (evita la doble penalització):** si **falta informació** (no hi ha mètrica, no hi ha flux d'error), penalitza només *Detall suficient*. Si la informació hi és però **no es pot comprovar objectivament** (condicions vagues, xifres sense context), penalitza només *Verificabilitat*. Un mateix defecte no pot puntuar ❌ als dos criteris.
 
 | Estat | Criteri | Exemples |
 |-------|---------|---------|
@@ -77,14 +79,15 @@ Paraules de risc (probable ❌ si no s'acompanyen de xifres):
 
 ## 5. Traçabilitat
 
-Avalua si es pot seguir l'origen de cada requisit o decisió fins a una necessitat de negoci documentada.
+Avalua si es pot seguir l'origen de cada requisit o decisió fins a una necessitat de negoci documentada. Per a una DA, inclou també la **traçabilitat cap als RF de l'ERQ associat** (si n'hi ha o es revisen junts).
 
 | Estat | Criteri | Exemples |
 |-------|---------|---------|
-| ✅ | Cada RF/vista referencia el seu origen (necessitat de negoci, normativa, cas d'ús) | "RF-015 [origen: requeriment legal RGPD art. 17]" |
-| ⚠️ | Traçabilitat parcial — alguns RF o decisions sense origen documentat | La majoria de RF tenen origen però uns quants no |
-| ❌ | Cap referència a l'origen de cap requisit o decisió | Document que llista RF numerats sense cap referència a objectius de negoci o normativa |
+| ✅ | Cada RF/vista referencia el seu origen (necessitat de negoci, normativa, cas d'ús). En una DA: components i integracions traçables als RF | "RF-015 [origen: requeriment legal RGPD art. 17]" / Vista Funcional: "El component de tràmits implementa RF-001 a RF-010" |
+| ⚠️ | Traçabilitat parcial — alguns RF o decisions sense origen documentat | La majoria de RF tenen origen però uns quants no / Alguns components de la DA no es relacionen amb cap RF |
+| ❌ | Cap referència a l'origen de cap requisit o decisió | Document que llista RF numerats sense cap referència a objectius de negoci o normativa / DA desconnectada del seu ERQ |
 
 Preguntes de detecció:
 - Si un stakeholder demana "per què tenim aquest requisit?", pot el document respondre-ho?
 - Les decisions d'arquitectura clau (DA) justifiquen per què s'ha triat una solució sobre les alternatives?
+- (DA amb ERQ conegut) Les integracions i components esmentats a l'ERQ apareixen a les vistes? Hi ha components a la DA que cap RF justifica?

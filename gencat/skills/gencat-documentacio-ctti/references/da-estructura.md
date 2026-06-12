@@ -15,6 +15,12 @@ Abans de validar, confirmar el tipus:
 
 Si el tipus no consta al document: preguntar: "Quin tipus d'arquitectura és? (Cloud Privat, Cloud Públic, SaaS, Low Code, On-Premise)"
 
+**Arquitectures mixtes** (p. ex. Cloud Públic per a l'aplicatiu + On-Premise per a una BD legacy):
+- Aplicar les vistes obligatòries del **tipus principal** (el que cobreix la major part del sistema)
+- Afegir les vistes dels tipus secundaris quan siguin rellevants (p. ex. Vista Operacional per al component On-Premise)
+- Exigir que la Vista de Context identifiqui explícitament cada tipus i la seva responsabilitat
+- Si no és clar quin tipus predomina, preguntar-ho abans de validar
+
 ---
 
 ## Matriu de vistes obligatòries per tipus

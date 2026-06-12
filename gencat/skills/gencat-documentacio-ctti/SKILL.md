@@ -1,6 +1,6 @@
 ---
 name: gencat-documentacio-ctti
-description: "Valida documents tècnics CTTI quan l'usuari comparteixi o demani revisar un document funcional o d'arquitectura. Usa aquesta skill per a l'Especificació de Requisits (ERQ / DT_ERQ) i la Descripció d'Arquitectura (DA). Activa-la quan l'usuari mencioni 'document funcional', 'especificació de requisits', 'ERQ', 'document d'arquitectura', 'DA', 'DT_ERQ', 'descripció d'arquitectura', 'vistes d'arquitectura', 'CTTI document', o quan enganxi el contingut d'un document tècnic per revisar. Activa-la també en mode CONSULTAR quan l'usuari pregunti sobre com redactar o estructurar un ERQ o una DA."
+description: "Valida i orienta sobre documents tècnics CTTI: l'Especificació de Requisits (ERQ/DT_ERQ) i la Descripció d'Arquitectura (DA). Activa-la quan es mencioni ERQ, DA, document funcional, especificació de requisits o vistes d'arquitectura, o quan l'usuari enganxi un document tècnic per revisar o pregunti com redactar-lo."
 ---
 
 # Documentació Tècnica CTTI — Generalitat de Catalunya
@@ -28,9 +28,10 @@ Skill per validar i orientar sobre els dos documents tècnics principals del cic
 |-----------------|-------|
 | Conté "requisits funcionals", "RF-", "casos d'ús", "especificació de requisits" | ERQ |
 | Conté almenys un de: "vista de context", "vista funcional", "vista de desplegament", "vista operacional", "Descripció d'Arquitectura", "DA" com a codi | DA |
+| Conté indicis d'ERQ **i** de DA alhora (p. ex. RF numerats i vistes d'arquitectura) | **ERQ+DA** (document integrat) — confirmar amb l'usuari i revisar les dues parts |
 | Ambigú o cap indicador clar | Preguntar: "És un document de requisits funcionals (ERQ) o una descripció d'arquitectura (DA)?" |
 
-> La paraula "arquitectura" per si sola **no** és indicador de DA — pot aparèixer en la Visió general d'un ERQ.
+> La paraula "arquitectura" per si sola **no** és indicador de DA — pot aparèixer en la Visió general d'un ERQ. Els indicadors fiables de DA són els noms de les vistes ("vista de context", "vista de desplegament"...).
 
 ---
 
@@ -40,6 +41,7 @@ Skill per validar i orientar sobre els dos documents tècnics principals del cic
 |------|-------|--------------------|
 | REVISAR | ERQ | `references/erq-estructura.md` + `references/criteris-qualitat.md` + `references/puntuacio-i-informe.md` |
 | REVISAR | DA | `references/da-estructura.md` + `references/criteris-qualitat.md` + `references/puntuacio-i-informe.md` |
+| REVISAR | ERQ+DA | Tots quatre fitxers — avaluar cada part amb la seva estructura (dos informes de Nivell 1, un de Nivell 2 conjunt) i validar la traçabilitat creuada RF → components |
 | CONSULTAR | ERQ | `references/erq-estructura.md` + `references/criteris-qualitat.md` |
 | CONSULTAR | DA | `references/da-estructura.md` + `references/criteris-qualitat.md` |
 | CONSULTAR | tipus no determinat | Preguntar: "La consulta és sobre un ERQ (requisits funcionals) o una DA (arquitectura)?" |
@@ -64,3 +66,11 @@ Abans de lliurar l'informe, verifica:
 - [ ] S'han avaluat els 5 criteris de qualitat globalment (Nivell 2)?
 - [ ] La puntuació és correcta i té floor a 0?
 - [ ] El resum executiu indica clarament si el document és ✅ Aprovat o ❌ Retornar a l'autor?
+
+---
+
+## Fora d'abast
+
+Aquesta skill només cobreix **ERQ i DA**. Resten fora d'abast els altres documents del cicle de vida CTTI: pla de proves, manual d'operació, document de desplegament, documentació de seguretat, conformitat RGPD i manuals d'usuari.
+
+Si l'usuari demana revisar-ne un, indica-ho: "Aquesta skill es limita a l'ERQ i la DA; per a [document], consulta el procediment corresponent a https://qualitat.solucions.gencat.cat/procediments/". Pots fer-ne una lectura general si l'usuari ho vol, però sense aplicar la puntuació ni la plantilla d'informe d'aquesta skill.
