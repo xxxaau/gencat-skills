@@ -30,6 +30,8 @@
 | Error | `#C00000` | Errors, validació negativa |
 | Informatiu | `#0288D1` | Informació neutral |
 
+> **Doble ús del vermell `#C00000`:** és alhora el color de marca (botons primaris, links) i el color d'error. Diferencia'ls pel context: els errors van sempre acompanyats d'una icona o d'un text d'error (`role="alert"`), mai com a fons de grans superfícies; i no posis missatges d'error sobre fons de marca vermell.
+
 ---
 
 ## Tipografia
@@ -85,6 +87,25 @@ Base: `8px` (0.5rem)
 | Tauleta L (md) | ≥ 768px | 12 | 24px |
 | Escriptori (lg) | ≥ 992px | 12 | 24px |
 | Escriptori L (xl) | ≥ 1200px | 12 | 32px |
+
+### Exemple d'aplicació del grid
+
+```css
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* xs: 4 columnes */
+  gap: 16px;
+}
+@media (min-width: 576px) {
+  .grid { grid-template-columns: repeat(8, 1fr); gap: 24px; }   /* sm */
+}
+@media (min-width: 768px) {
+  .grid { grid-template-columns: repeat(12, 1fr); gap: 24px; }  /* md, lg */
+}
+@media (min-width: 1200px) {
+  .grid { gap: 32px; }                                          /* xl */
+}
+```
 
 ---
 
@@ -144,6 +165,11 @@ El sistema utilitza un conjunt estandarditzat d'icones. Sempre usa les icones de
   /* Font */
   --font-family:            'Open Sans', sans-serif;
   --font-size-base:         16px;
+  --font-weight-regular:    400;
+  --font-weight-semibold:   600;
+  --font-weight-bold:       700;
+  --line-height-tight:      1.25;
+  --line-height-base:       1.5;
 
   /* Espaiat */
   --space-1: 4px;

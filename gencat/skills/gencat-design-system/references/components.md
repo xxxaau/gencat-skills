@@ -1,7 +1,7 @@
 # Catàleg de Components — Sistema de Disseny Gencat
 
 Referència completa dels components oficials. Consulta el Storybook per a exemples visuals:
-https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com
+https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com (build de Chromatic — si no respon, busca l'enllaç vigent a https://sistemadedisseny.gencat.cat)
 
 ---
 
@@ -92,7 +92,8 @@ https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com
 | Etiquetes | Tags | Etiquetes de categorització |
 | Divisor | Divider | Separador visual entre continguts |
 | Calendari | Calendar | Visualització de calendari |
-| Descripció emergent | Tooltip / Popover | Informació contextual en hover/click |
+| Descripció emergent (hover) | Tooltip | Informació contextual breu en hover/focus; desapareix sola |
+| Descripció emergent (click) | Popover | Contingut o accions en clic; persisteix fins que es tanca |
 | Modals | Modal Dialog | Diàleg superposat a la pàgina |
 | Panell emergent | Side Panel / Drawer | Panell lateral que apareix des de la vora |
 | Panell destacat | Featured Panel | Panell de contingut rellevant |
@@ -153,3 +154,19 @@ Usa: `Avisos` (inline), `Notificació emergent` (temporal), `Bàner` (important 
 
 ### Per a accions destructives o importants
 Usa sempre `Modals` per confirmar accions destructives o irreversibles.
+
+---
+
+## Exemple: Botons amb estats
+
+```html
+<button class="btn btn-primary">Desar</button>
+<button class="btn btn-secondary">Cancel·lar</button>
+<button class="btn btn-danger">Eliminar</button>
+<button class="btn btn-primary" disabled>Desar</button>
+<button class="btn btn-primary" aria-busy="true">
+  <span class="spinner" aria-hidden="true"></span> S'està desant…
+</button>
+```
+
+Per a exemples HTML complets de formularis i taules de dades, consulta `references/patterns.md`.

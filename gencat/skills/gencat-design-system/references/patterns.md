@@ -17,7 +17,6 @@ Patrons recomanats per als casos d'ús més habituals en aplicacions de la Gener
   <div class="form-group">
     <label for="nom">Nom complet *</label>
     <input type="text" id="nom" name="nom" required
-           aria-required="true"
            aria-describedby="nom-error" />
     <span id="nom-error" class="error-message" role="alert"></span>
   </div>
@@ -25,7 +24,7 @@ Patrons recomanats per als casos d'ús més habituals en aplicacions de la Gener
   <!-- Selector -->
   <div class="form-group">
     <label for="provincia">Província *</label>
-    <select id="provincia" name="provincia" required aria-required="true">
+    <select id="provincia" name="provincia" required>
       <option value="">Selecciona una opció</option>
       <option value="bcn">Barcelona</option>
       <option value="gir">Girona</option>
@@ -46,7 +45,7 @@ Patrons recomanats per als casos d'ús més habituals en aplicacions de la Gener
 - Tots els camps requerits s'indiquen amb `*` i el text "Els camps marcats amb * són obligatoris"
 - La validació es mostra sota el camp afectat
 - Els missatges d'error han de ser descriptius: "El DNI ha de tenir 8 dígits i una lletra"
-- Usa `aria-required`, `aria-invalid` i `aria-describedby` per accessibilitat
+- Usa `required` natiu (no cal duplicar-lo amb `aria-required`); marca els camps amb error amb `aria-invalid="true"` i associa el missatge amb `aria-describedby`
 
 ---
 
@@ -172,32 +171,27 @@ Accions: [Tornar enrere] [Tornar a l'inici]
 
 ---
 
-## Accessibilitat: llista de verificació
+## Accessibilitat: mínims abans de lliurar
 
-Abans de lliurar qualsevol component o pàgina, verifica:
+- [ ] Inputs amb `<label>` associat i imatges amb `alt` (o `alt=""` si són decoratives)
+- [ ] Navegable completament amb teclat, amb `:focus` visible
+- [ ] Errors anunciats amb `role="alert"` o `aria-live`
+- [ ] Contrast ≥ 4.5:1 (text normal) / ≥ 3:1 (text gran i components UI)
 
-- [ ] Tots els `<img>` tenen `alt` descriptiu (o `alt=""` si són decoratives)
-- [ ] Tots els inputs tenen `<label>` associat
-- [ ] Rati de contrast de text ≥ 4.5:1 (text normal) o ≥ 3:1 (text gran)
-- [ ] La pàgina és navegable completament amb teclat (Tab, Enter, Escape, fletxes)
-- [ ] Els elements interactius tenen estats `:focus` visibles
-- [ ] Els modals gestionen el focus (focus trap)
-- [ ] Els missatges d'error s'anuncien amb `role="alert"` o `aria-live`
-- [ ] L'idioma de la pàgina és `lang="ca"` (català)
-- [ ] Les taules usen `<th scope="">` correctament
-- [ ] Els botons d'icona tenen `aria-label`
+La llista de verificació completa, els patrons ARIA i els errors freqüents són a la skill **gencat-accessibilitat** — usa-la per a qualsevol auditoria.
 
 ---
 
 ## Idioma i textos
 
 ### Regles de redacció
-- Llengua principal: **català**
-- Usa "vostè" per a les formes de tractament formals
-- Usa "tu" per a aplicacions dirigides a joves o en contextos informals
+- Llengua principal: **català** (`lang="ca"`)
+- Tractament: **vós** en textos administratius (criteri de la Guia de Comunicació Clara); "tu" només en aplicacions dirigides a joves o contextos informals
 - Missatges d'error: clars, concrets, i orientats a la solució
   - ❌ "Error de validació"
   - ✅ "El número de DNI ha de tenir 8 dígits seguits d'una lletra majúscula"
+
+Per a la redacció de literals, to i vocabulari, usa la skill **gencat-comunicacio-clara**.
 
 ### Textos habituals
 | Context | Text recomanat |

@@ -1,13 +1,13 @@
 ---
 name: gencat-design-system
-description: "Aplica el Sistema de Disseny oficial de la Generalitat de Catalunya quan desenvolupes aplicacions web, components o interfícies d'usuari per a serveis digitals de la Generalitat. Utilitza aquesta skill quan es mencioni Gencat, Generalitat de Catalunya, aplicació gencat, sistema de disseny, o quan es demani construir, estilitzar o revisar qualsevol interfície digital del govern català. Garanteix l'alineació amb la marca oficial, l'accessibilitat i els estàndards de components."
+description: "Aplica el Sistema de Disseny oficial de la Generalitat de Catalunya quan construeixis, estilitzis o revisis interfícies web per a serveis digitals Gencat. Activa-la quan es mencioni Gencat, sistema de disseny, components UI, tokens, colors o tipografia corporativa en el desenvolupament web per a la Generalitat de Catalunya."
 ---
 
 # Sistema de Disseny de la Generalitat de Catalunya
 
 Quan desenvolupis aplicacions per a la Generalitat de Catalunya, **sempre** has de seguir el Sistema de Disseny oficial. Documenta't en:
 - Documentació principal: https://sistemadedisseny.gencat.cat
-- Storybook de components: https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com
+- Storybook de components: https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com (enllaç de build de Chromatic — si no respon, busca l'enllaç vigent a sistemadedisseny.gencat.cat)
 
 ## Principis fonamentals
 
@@ -54,48 +54,22 @@ Usa **sempre** els noms en català dels components tal com apareixen al sistema 
 - Skeleton → `Esquelet`
 - Empty state → `Estat buit`
 - Stepper → `Pas a pas`
-- Tooltip → `Descripció emergent`
-- Popover → `Descripció emergent`
+- Tooltip → `Descripció emergent` (variant hover: informació breu, desapareix sola)
+- Popover → `Descripció emergent` (variant click: contingut o accions, persisteix fins que es tanca)
 - Side panel → `Panell emergent`
 - Progress bar → `Barra de progrés`
 - Loading → `Indicador de càrrega`
 
-### Font
+### Tokens i estils
 
-```css
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-:root {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px; /* base rem */
-}
-```
-
-### Colors principals
-
-```css
-:root {
-  /* Brand */
-  --color-brand-primary: #C00000;      /* Vermell Gencat - acció, links */
-
-  /* Text */
-  --color-text-primary:   #333333;
-  --color-text-secondary: #5C5C5C;
-
-  /* Background */
-  --color-bg-default: rgb(250, 250, 250);
-  --color-bg-white:   #FFFFFF;
-}
-```
+Tots els tokens (colors, tipografia Open Sans, espaiat, arrodoniment, ombres) són a `references/foundations.md`: copia el bloc de variables CSS d'allà. No redefineixis valors a mà.
 
 ### Accessibilitat obligatòria
 
-- Tots els `<img>` han de tenir `alt`
-- Tots els inputs han de tenir `<label>` associat
-- Contrast mínim 4.5:1 per a text normal
-- Contrast mínim 3:1 per a text gran (>18px o bold >14px)
-- Suport de navegació per teclat en tots els components interactius
-- `aria-label` / `aria-describedby` quan calgui
+Mínims en escriure qualsevol component (cobertura completa a la skill `gencat-accessibilitat`):
+- Tots els inputs amb `<label>` associat i tots els `<img>` amb `alt`
+- Contrast mínim 4.5:1 (text normal) i 3:1 (text gran i components UI)
+- Navegació completa per teclat amb focus visible
 
 ## Workflow per a noves funcionalitats
 
