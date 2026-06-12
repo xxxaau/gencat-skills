@@ -1,6 +1,6 @@
 # Normes Threads — Gencat
 
-> **Nota especial:** Threads és la plataforma amb menys historial d'ús institucional (llançada el 2023). Aplicar criteri conservador: preferir X per a comunicació oficial urgent. Threads és adequat per a contingut més conversacional i de proximitat.
+> **Nota especial:** per a comunicació oficial urgent, preferir X (és on la ciutadania i els mitjans esperen els avisos institucionals). Threads és adequat per a contingut conversacional i de proximitat.
 
 ## Límits tècnics [OBLIGATORI]
 
@@ -16,9 +16,7 @@
 ## Hashtags [RECOMANAT]
 
 - **Límit tècnic:** aproximadament 10 hashtags per post.
-- **Norma Gencat:** màxim **3 hashtags** per post; recomanat **1-2**.
-- Col·locar al **final** del post.
-- Escriure en **CamelCase** (ex.: `#SalutCatalunya`, `#GenCat`).
+- **Norma Gencat:** màxim **3 hashtags** per post; recomanat **1-2**. Al **final** del post.
 - Superar 3 hashtags genera ⚠️.
 
 > Distinció important: el límit tècnic de la plataforma (~10) és diferent de la norma Gencat (màxim 3, recomanat 1-2). La norma Gencat és més restrictiva per mantenir un to net i no semblar spam.
@@ -64,12 +62,9 @@
 - ❌ Usar Threads per a comunicació oficial urgent (preferir X)
 - ❌ Missatges massa llargs o enciclopèdics per a una plataforma conversacional
 
-## Accessibilitat [OBLIGATORI]
+## Accessibilitat i normes comunes [OBLIGATORI]
 
-- Afegir **alt text** a totes les imatges del post.
-- Activar **subtítols** als vídeos o afegir-los manualment.
-- Escriure hashtags en **CamelCase** per facilitar la lectura pels lectors de pantalla.
-- No transmetre informació essencial únicament en format d'imatge.
+Aplica **`normes-transversals.md`** (alt text, subtítols, CamelCase, emojis, sigles). Threads no té particularitats addicionals.
 
 ## Exemple bo ✅
 

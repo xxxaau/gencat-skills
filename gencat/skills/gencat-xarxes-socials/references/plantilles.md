@@ -162,10 +162,55 @@ Pots consultar tota la informació actualitzada aquí: ➡️ [URL]
 
 ---
 
-## 6. Fil / thread
+## 6. Resposta a crítica pública / gestió de crisi
+
+**Quan usar-la:** Queixes amb visibilitat, crítiques al servei, informació errònia circulant, incidents amb impacte reputacional.
+**Xarxes recomanades:** La xarxa on s'ha produït la crítica (respondre al mateix canal).
+**⚠️ Nota:** Si la crítica escala (mitjans, volum alt de mencions) o afecta un incident greu, NO respondre amb plantilla: derivar al gabinet de comunicació. Aquesta plantilla és per a la gestió ordinària.
+
+**Principis:**
+- Respondre **sempre amb empatia i sense actitud defensiva**; mai discutir ni esborrar crítiques legítimes
+- Reconèixer el problema si és real; no prometre res que no estigui confirmat
+- Donar informació útil o derivar al canal adequat; resoldre en privat el que requereixi dades personals
+- Una sola resposta pública per crítica; si la conversa continua, derivar a missatge privat o bústia
+
+**Estructura:**
+```
+[RECONEIXEMENT del problema o de la molèstia, sense justificar-se].
+
+[INFORMACIÓ ÚTIL: què s'està fent o què pot fer la persona].
+
+[DERIVACIÓ a canal adequat si calen dades personals] ➡️ [URL o canal]
+```
+
+**Exemple (X, queixa per un tràmit que falla):**
+```
+Hola. Tens raó, ahir el servei va estar interromput durant unes hores i això va afectar les sol·licituds en curs.
+
+Ja funciona amb normalitat. Si la teva sol·licitud no apareix com a registrada, escriu-nos per missatge privat amb el número de referència i ho revisem.
+```
+
+**Exemple (informació errònia circulant):**
+```
+Aquesta informació no és correcta: el termini NO s'ha tancat. Podeu presentar sol·licituds fins al 30 d'abril.
+
+Tota la informació actualitzada, sempre a: ➡️ [URL oficial]
+```
+
+---
+
+## 7. Fil / thread
 
 **Quan usar-la:** Temes complexos, processos amb passos, notícies llargues, explicació de normatives.
+**Quan NO usar-la:** Si el missatge cap en un sol post, un fil el dilueix. Criteri: fil només si hi ha **3 o més idees independents** que mereixen un post cadascuna.
 **Xarxes recomanades:** X, Threads.
+
+**Principis:**
+- **Post 1 (ganxo):** ha de funcionar sol — molta gent només veurà aquest; inclou la marca de fil (🧵, "1/N")
+- **Un punt per post**, autocontingut (es poden compartir posts solts fora de context)
+- **Numerar** (1/4, 2/4...) perquè el lector sàpiga on és i quant queda
+- **Post final:** resum o CTA amb enllaç; és l'únic lloc del fil on van els hashtags
+- Publicar el fil sencer de cop (no espaiat en hores): els fils trencats perden lectors
 
 **Estructura:**
 ```

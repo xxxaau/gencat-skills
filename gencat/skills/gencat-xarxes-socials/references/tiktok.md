@@ -19,7 +19,6 @@
 
 - Màxim **5 hashtags rellevants** per vídeo.
 - Evitar hashtags massa genèrics (ex.: `#fyp`, `#viral`, `#video`) que no aporten visibilitat rellevant.
-- Escriure en **CamelCase** (ex.: `#SalutCatalunya`, `#GenCat`).
 - Col·locar al **final** de la descripció o integrats naturalment si s'escau.
 - Superar 5 hashtags genera ⚠️.
 
@@ -62,11 +61,10 @@
 - ❌ Copiar la descripció d'Instagram o X sense adaptar al to de TikTok
 - ❌ Missatges que semblin un comunicat de premsa en format vídeo
 
-## Accessibilitat [OBLIGATORI]
+## Accessibilitat i normes comunes [OBLIGATORI]
 
-- **Subtítols als vídeos**: fonamental tant per a accessibilitat (persones sordes o amb dificultat auditiva) com per a usuaris que veuen el vídeo sense so.
-- TikTok ofereix subtítols automàtics, però cal **revisar-los i corregir-los** en català.
-- Escriure hashtags en **CamelCase** per facilitar la lectura pels lectors de pantalla.
+Aplica **`normes-transversals.md`** (alt text, subtítols, CamelCase, emojis, sigles). Específic de TikTok:
+- Els subtítols automàtics de TikTok s'han de **revisar i corregir en català** abans de publicar.
 - La descripció ha de tenir sentit per si sola (no dependre exclusivament del so o la imatge del vídeo).
 
 ## Exemple bo ✅

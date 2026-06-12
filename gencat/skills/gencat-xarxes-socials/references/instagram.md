@@ -20,11 +20,10 @@
 - **Límit tècnic:** 30 hashtags per post.
 - **Norma Gencat:** entre **5 i 10 hashtags rellevants** per post.
 - Sempre al **final** del caption, separats del text principal (doble salt de línia).
-- Escriure en **CamelCase** (ex.: `#SalutCatalunya`, `#GenCat`).
 - Evitar hashtags massa genèrics (ex.: `#foto`, `#vida`) que no aporten visibilitat rellevant.
 - Superar 10 hashtags genera ⚠️.
 
-**Particularitat important:** els **links no funcionen al caption** d'Instagram. Per dirigir la ciutadania a un recurs extern, usar l'expressió "link a la bio" o un **link sticker** a les stories.
+**Particularitat important:** tradicionalment els **links del caption no són clicables** a Instagram. L'opció segura és sempre "link a la bio" o un **link sticker** a les stories. Si una campanya depèn d'un enllaç al caption, verifica el comportament vigent de la plataforma abans de publicar.
 
 ## Emojis [RECOMANAT]
 
@@ -69,13 +68,11 @@
 - ❌ Text dens i en bloc sense estructura visual
 - ❌ Captions que funcionen sense la imatge (el format és visual per definició)
 
-## Accessibilitat [OBLIGATORI]
+## Accessibilitat i normes comunes [OBLIGATORI]
 
-- Afegir **alt text** a totes les imatges del post (Instagram permet editar l'alt text en publicar).
-- Activar **subtítols** als reels i vídeos, o afegir-los manualment.
-- Escriure hashtags en **CamelCase** per facilitar la lectura pels lectors de pantalla.
-- No transmetre informació essencial únicament en format d'imatge.
-- En stories, assegurar-se que el text sobreposat és llegible (contrast suficient amb el fons).
+Aplica **`normes-transversals.md`** (alt text, subtítols, CamelCase, emojis, sigles). Específic d'Instagram:
+- L'alt text s'edita en publicar (Configuració avançada → "Escriu el text alternatiu").
+- En stories, el text sobreposat ha de ser llegible (contrast suficient amb el fons).
 
 ## Exemple bo ✅
 

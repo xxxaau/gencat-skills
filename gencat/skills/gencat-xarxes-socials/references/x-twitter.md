@@ -14,9 +14,7 @@
 
 ## Hashtags [OBLIGATORI]
 
-- Màxim **2 hashtags** per post.
-- Sempre al **final** del post.
-- Escriure en **CamelCase** (ex.: `#SalutPública`, `#GenCat`).
+- Màxim **2 hashtags** per post, sempre al **final**.
 - Superar 2 hashtags genera ❌.
 
 ## Emojis [RECOMANAT]
@@ -63,13 +61,10 @@
 - ❌ Retuitear contingut extern sense afegir-hi un comentari institucional
 - ❌ Hashtags en minúscules (dificulten la lectura i l'accessibilitat)
 
-## Accessibilitat [OBLIGATORI]
+## Accessibilitat i normes comunes [OBLIGATORI]
 
-- Afegir **alt text** a totes les imatges (X permet fins a 1.000 caràcters d'alt text).
-- Activar **subtítols** als vídeos o afegir-los manualment.
-- Escriure hashtags en **CamelCase** per facilitar-ne la lectura pels lectors de pantalla.
-- Evitar text incrustrat a les imatges (la informació ha de constar també al text del post).
-- No transmetre informació essencial únicament mitjançant emojis.
+Aplica **`normes-transversals.md`** (alt text, subtítols, CamelCase, emojis, sigles). Específic de X:
+- L'alt text de les imatges admet fins a 1.000 caràcters.
 
 ## Exemple bo ✅
 

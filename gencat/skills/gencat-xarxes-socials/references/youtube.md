@@ -16,9 +16,7 @@
 ## Hashtags [RECOMANAT]
 
 - **Límit tècnic:** 15 hashtags a la descripció (YouTube en mostra els 3 primers sobre el títol).
-- **Norma Gencat:** màxim **5 hashtags** a la descripció (criteri conservador).
-- Col·locar al **final de la descripció**.
-- Escriure en **CamelCase** (ex.: `#SalutCatalunya`, `#GenCat`).
+- **Norma Gencat:** màxim **5 hashtags** a la descripció (criteri conservador), al **final**.
 - Superar 5 hashtags genera ⚠️.
 
 ## Emojis [RECOMANAT]
@@ -66,12 +64,12 @@
 - ❌ Paraula clau absent del títol
 - ❌ Primers 150 caràcters de la descripció sense informació rellevant
 
-## Accessibilitat [OBLIGATORI]
+## Accessibilitat i normes comunes [OBLIGATORI]
 
-- **Subtítols obligatoris**: YouTube pot generar-los automàticament, però cal **revisar-los i corregir-los** abans de publicar.
+Aplica **`normes-transversals.md`** (alt text, subtítols, CamelCase, emojis, sigles). Específic de YouTube:
+- Els subtítols automàtics de YouTube s'han de **revisar i corregir** abans de publicar.
 - La descripció ha de contenir la informació clau en text (no únicament en format visual al vídeo).
-- Si s'afegeix una **miniatura manual** amb text sobreposat, el text ha de ser llegible (contrast suficient, grandària adequada).
-- Les etiquetes no afecten l'accessibilitat, però una descripció ben escrita sí que ajuda els usuaris amb lectors de pantalla.
+- Si la **miniatura manual** porta text sobreposat, ha de ser llegible (contrast i mida suficients).
 
 ## Exemple bo ✅
 

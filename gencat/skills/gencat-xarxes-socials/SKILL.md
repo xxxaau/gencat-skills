@@ -1,6 +1,6 @@
 ---
 name: gencat-xarxes-socials
-description: "Aplica la Guia de Xarxes Socials de la Generalitat de Catalunya quan generis, revisis o adaptis contingut per a plataformes digitals. Usa aquesta skill sempre que l'usuari treballi amb publicacions a X (Twitter), Facebook, Instagram, LinkedIn, YouTube, Threads o TikTok en el context de comunicació institucional de la Generalitat. Activa-la també quan mencioni 'post', 'publicació', 'hashtag', 'tweet', 'fil', 'thread', 'reel', 'story', 'contingut digital', 'xarxa social', o demani adaptar un comunicat, nota de premsa o tràmit per a xarxes socials."
+description: "Aplica la Guia de Xarxes Socials de la Generalitat quan generis, revisis o adaptis contingut per a X, Facebook, Instagram, LinkedIn, YouTube, Threads o TikTok en comunicació institucional. Activa-la quan es mencioni post, publicació, hashtag, fil, reel, story o l'adaptació de comunicats i tràmits a xarxes socials."
 ---
 
 # Xarxes Socials — Generalitat de Catalunya
@@ -20,34 +20,30 @@ Font oficial: https://atenciociutadana.gencat.cat/web/.content/manuals/xarxes/gu
 
 ## Normes transversals
 
-### Llengua
-- **Català per defecte**
-- Castellà només si la xarxa o la campanya ho requereix explícitament
+Les normes comunes a totes les plataformes (llengua, to, hashtags CamelCase, emojis, sigles, alt text, subtítols, contingut sensible) són a **`references/normes-transversals.md`** — llegeix-lo sempre, en tots dos modes, juntament amb el fitxer de la xarxa.
 
-### To
-- Institucional però proper, mai burocràtic
-- Veu activa, frases curtes
-- Primera persona del plural per referir-se a la Generalitat ("us informem", "us convoquem")
+---
 
-### Accessibilitat [OBLIGATORI]
-- Alt text descriptiu per a totes les imatges (màx. 125 caràcters)
-- Hashtags en **CamelCase**: `#GeneralitatDeCatalunya`, mai `#generalitat de catalunya`
-- Evitar emojis consecutius (dificulten els lectors de pantalla)
-- Evitar emojis com a substituts de paraules
+## Taula ràpida de límits per plataforma
 
-### Sigles
-- Desplegar la primera vegada: "idCAT Mòbil (identificació digital)"
+| Plataforma | Límit principal | Hashtags (norma Gencat) | To |
+|---|---|---|---|
+| X (Twitter) | 280 c. | màx. 2 | Directe i concís |
+| Facebook | < 400 c. recomanats | màx. 3 | Proper i explicatiu |
+| Instagram | caption 2.200 c. (~300 visibles) | 5-10 | Visual i proper |
+| LinkedIn | < 1.300 c. visibles | 3-5 | Professional |
+| YouTube | títol 70 c. / desc. 150 c. visibles | màx. 5 | Descriptiu |
+| Threads | 500 c. | màx. 3 (rec. 1-2) | Conversacional |
+| TikTok | desc. 150 c. visibles | màx. 5 | Espontani, gens burocràtic |
 
-### Contingut sensible
-- Temes de salut, menors o violència: afegir avís al post generat → "⚠️ Revisió humana recomanada abans de publicar"
-- Plantilla "Emergència / alerta" (PROCICAT, METEOCAT): excepció, és contingut planificat
+El detall de cada plataforma (formats, exemples, checklist) és a `references/<xarxa>.md`.
 
 ---
 
 ## Workflow — Mode GENERAR
 
-1. Si no s'especifica la xarxa → preguntar abans de fer res
-2. Llegir `references/<xarxa>.md` (límits, normes, exemples)
+1. Identificar la xarxa: si el missatge conté indicis clars ("tweet", "reel", "story", "post de LinkedIn", el nom de la plataforma), dedueix-la; si és genèric ("fes un post") → preguntar abans de fer res
+2. Llegir `references/normes-transversals.md` + `references/<xarxa>.md`
 3. Si no s'indica el to → preguntar: informatiu / divulgatiu / d'urgència / de campanya
 4. Generar respectant: límit de caràcters, nombre màxim de hashtags, to corporatiu, accessibilitat
 5. Oferir adaptació a altres xarxes si escau
@@ -58,7 +54,7 @@ Font oficial: https://atenciociutadana.gencat.cat/web/.content/manuals/xarxes/gu
 ## Workflow — Mode REVISAR
 
 1. Identificar la xarxa (o preguntar)
-2. Llegir `references/<xarxa>.md`
+2. Llegir `references/normes-transversals.md` + `references/<xarxa>.md`
 3. Verificar cada norma (les **obligatòries** estan marcades al fitxer de xarxa)
 4. Informe:
    - ✅ Correcte
@@ -72,7 +68,7 @@ Font oficial: https://atenciociutadana.gencat.cat/web/.content/manuals/xarxes/gu
 
 ## Plantilles
 
-Llegeix `references/plantilles.md` per a estructures reutilitzables: avís, convocatòria, emergència, campanya, resposta a comentari, fil/thread.
+Llegeix `references/plantilles.md` per a estructures reutilitzables: avís, convocatòria, emergència, campanya, resposta a comentari, resposta a crítica/crisi, fil/thread.
 
 ---
 

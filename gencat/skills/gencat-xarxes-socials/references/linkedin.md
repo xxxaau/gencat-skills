@@ -18,7 +18,6 @@
 - Màxim **3-5 hashtags** per post.
 - Sempre al **final** del post.
 - Usar hashtags professionals i temàtics, no genèrics.
-- Escriure en **CamelCase** (ex.: `#AdministracióPública`, `#InnovacióSocial`).
 - Superar 5 hashtags genera ⚠️.
 
 ## Emojis [RECOMANAT]
@@ -66,13 +65,10 @@
 - ❌ Missatges massa curts sense substància per a una plataforma professional
 - ❌ Respostes a comentaris en to fred o evasiu
 
-## Accessibilitat [OBLIGATORI]
+## Accessibilitat i normes comunes [OBLIGATORI]
 
-- Afegir **alt text** a totes les imatges del post.
-- Activar **subtítols** als vídeos o afegir-los manualment.
-- Els documents PDF han de ser **accessibles** (text seleccionable, no imatge escanejada).
-- Escriure hashtags en **CamelCase** per facilitar la lectura pels lectors de pantalla.
-- Usar un llenguatge clar; evitar tecnicismes sense explicació.
+Aplica **`normes-transversals.md`** (alt text, subtítols, CamelCase, emojis, sigles). Específic de LinkedIn:
+- Els documents PDF (carrusels) han de ser **accessibles**: text seleccionable, no imatge escanejada.
 
 ## Exemple bo ✅
 

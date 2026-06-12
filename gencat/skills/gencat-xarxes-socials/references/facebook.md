@@ -63,12 +63,9 @@
 - ❌ Tecnicismes o sigles sense explicar
 - ❌ Posts sense cap crida a l'acció (CTA) quan el contingut ho requereix
 
-## Accessibilitat [OBLIGATORI]
+## Accessibilitat i normes comunes [OBLIGATORI]
 
-- Afegir **alt text** a totes les imatges del post.
-- Activar **subtítols** als vídeos o afegir-los manualment.
-- No transmetre informació essencial únicament en format d'imatge.
-- Usar un llenguatge clar i comprensible (evitar tecnicismes innecessaris).
+Aplica **`normes-transversals.md`** (alt text, subtítols, CamelCase, emojis, sigles). Específic de Facebook:
 - Estructurar el text amb paràgrafs curts per facilitar la lectura.
 
 ## Exemple bo ✅
