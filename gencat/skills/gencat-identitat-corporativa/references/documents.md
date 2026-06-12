@@ -14,6 +14,16 @@ Font oficial: https://identitatcorporativa.gencat.cat/ca/aplicacions/papereria/ 
 - **Posicionament del senyal:** part superior esquerra o centrat a la capçalera
 - **Peu:** informació de contacte del departament en cos petit (Arial 8–9 pt)
 
+### Estructura d'una carta oficial (ordre d'elements)
+
+1. **Capçalera** — senyal corporatiu + identificació del departament/unitat
+2. **Bloc de destinatari i referències** (si escau)
+3. **Cos del document** — Arial, negre; títols en vermell corporatiu si escau
+4. **Signatura** — nom, càrrec i lloc/data
+5. **Peu** — contacte del departament (Arial 8–9 pt)
+
+> **Usa les plantilles oficials** — les mides exactes de marges, capçalera i peus les fixen les plantilles descarregables (https://identitatcorporativa.gencat.cat/ca/descarregues/); no les recreïs a mà. Si no hi ha plantilla per al teu cas, recomanacions pràctiques: cos de text 11 pt, interlineat 1,15–1,5, marges 2–2,5 cm.
+
 ---
 
 ## PowerPoint / Presentacions

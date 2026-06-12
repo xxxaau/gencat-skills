@@ -56,3 +56,12 @@ Font oficial: https://identitatcorporativa.gencat.cat/ca/identitat-visual/ (cita
 - **Distribució:** una línia (composicions centrades) o dues línies entre "Generalitat" i "de Catalunya"
 - **Escriptura correcta:** "Generalitat de Catalunya" (G i C en majúscula, la resta en minúscula)
 - **Regla clau:** en comunicacions adreçades a la ciutadania, usar el logotip de la Generalitat, **NO el departamental**
+
+---
+
+## Coexistència amb altres marques
+
+- **Comunicacions a la ciutadania:** el senyal de la Generalitat és sempre la marca principal (vegeu la regla clau de sobre).
+- **Organismes amb identificació pròpia:** mostren la seva identificació juntament amb el senyal de la Generalitat (per a signatures de correu, vegeu la variant 3 a `comunicacio-digital.md`).
+- **Projectes finançats per la Unió Europea:** cal incloure-hi l'emblema de la UE amb la declaració de finançament corresponent, segons les normes europees de visibilitat: https://commission.europa.eu/funding-tenders/managing-your-project/communicating-and-raising-eu-visibility_en
+- **Casos no coberts** (convenis, patrocinis, marques de programes): consulta la font oficial https://identitatcorporativa.gencat.cat — no improvisis jerarquies de marques.

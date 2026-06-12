@@ -40,10 +40,14 @@ Carregar el fitxer de referència corresponent:
 
 ### Pas de validació visual (imatge)
 
-- Color dominant: és el vermell corporatiu (#C00000) el color principal?
-- Logotip: present? No distorsionat? Mida aparentment ≥ 4,7 mm?
-- Tipografia visible: sembla Arial / Helvetica Neue / Open Sans? (no Calibri ni altres)
-- Composició: espai de seguretat respectat al voltant del logotip?
+Comprova en aquest ordre:
+
+1. **Logotip:** present? Forma íntegra (no tallat)? Proporcions originals (no estirat ni comprimit)? Espai de seguretat sense text ni elements a sobre?
+2. **Color:** el color d'accent dominant és el vermell corporatiu (#C00000), negre o blanc? Hi ha colors no corporatius usats com a principals?
+3. **Tipografia aparent:** sense serifs i neutra (compatible amb Arial/Helvetica Neue/Open Sans)? Indicis de Calibri o d'altres fonts: terminacions arrodonides característiques, proporcions diferents. Si no es pot determinar amb seguretat des de la imatge, indicar-ho com a "no verificable des de la imatge" en lloc de marcar error.
+4. **Composició general:** jerarquia clara, fons blanc o corporatiu.
+
+> En la validació des d'imatge, marca ❌ només el que sigui **clarament constatable** (logotip distorsionat, Calibri evident, color principal no corporatiu). El que no es pugui constatar (mida en mm, llicència de la font) es reporta com a "no verificable".
 
 ### Pas de validació de contingut (fitxer/text)
 

@@ -38,11 +38,43 @@ Font oficial: https://identitatcorporativa.gencat.cat/ca/aplicacions/signatura-d
 | **2. Amb identificació bàsica** | Identificació amb el senyal de la Generalitat |
 | **3. Amb identificació pròpia** | Organismes autònoms: logotip propi + senyal de la Generalitat |
 
+### Plantilla — Variant 1 (sense imatge)
+
+```
+Nom i cognoms
+Càrrec
+Unitat o direcció general
+Departament
+Tel. 93 XXX XX XX
+nom.cognoms@gencat.cat
+
+[CLÀUSULA LEGAL — text oficial; vegeu la nota de sota]
+[AVÍS D'IMPRESSIÓ — opcional]
+```
+
+### Exemple HTML (per a clients de correu compatibles)
+
+```html
+<div style="font-family: Arial, sans-serif; font-size: 12px; color: #000000; background: #FFFFFF;">
+  <p style="margin: 0;"><strong>Núria Vila i Serra</strong></p>
+  <p style="margin: 0;">Tècnica de comunicació</p>
+  <p style="margin: 0;">Direcció General d'Atenció Ciutadana</p>
+  <p style="margin: 0;">Departament de la Presidència</p>
+  <p style="margin: 0;">Tel. 93 402 46 00</p>
+  <p style="margin: 0;">
+    <a href="mailto:nuria.vila@gencat.cat" style="color: #0000FF;">nuria.vila@gencat.cat</a>
+  </p>
+  <p style="margin: 10px 0 0; font-size: 10px; color: #6F6F6F;">
+    [Clàusula legal oficial]
+  </p>
+</div>
+```
+
 ### Clàusula legal
 
-Disponible en 6 idiomes: **català, castellà, anglès, francès, alemany i occità**.
+**Obligatòria i amb text oficial fixat** — disponible en 6 idiomes: català, castellà, anglès, francès, alemany i occità.
 
-Plantilles Word editables disponibles a: https://identitatcorporativa.gencat.cat/ca/aplicacions/signatura-de-correu/
+> **No redactis cap versió pròpia de la clàusula legal.** Copia el text exacte de les plantilles Word editables de la font oficial: https://identitatcorporativa.gencat.cat/ca/aplicacions/signatura-de-correu/
 
 ---
 

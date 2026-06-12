@@ -1,6 +1,6 @@
 ---
 name: gencat-identitat-corporativa
-description: "Aplica les normes d'identitat corporativa de la Generalitat de Catalunya quan creïs o validis documents, presentacions, signatures de correu o qualsevol material de comunicació institucional. Usa aquesta skill quan l'usuari treballi amb la marca Gencat fora del web: documents Word, presentacions PowerPoint, PDFs, cartes oficials, formularis, newsletters o signatures de correu. Activa-la quan mencioni 'identitat corporativa', 'marca gencat', 'logotip generalitat', 'colors corporatius', 'tipografia corporativa gencat', 'signatura correu corporativa', 'presentació corporativa', 'document oficial gencat', 'Open Sans gencat', 'Helvetica Neue gencat', o demani crear o validar material institucional de la Generalitat. Activa-la també en mode VALIDAR quan l'usuari enviï una imatge o fitxer per comprovar el compliment de la marca."
+description: "Aplica les normes d'identitat corporativa de la Generalitat quan creïs o validis material institucional fora del web: documents, presentacions, signatures de correu, cartes o newsletters. Activa-la quan es mencioni identitat corporativa, marca o logotip Gencat, colors o tipografia corporativa, o quan l'usuari enviï una imatge o fitxer per validar-ne el compliment de marca."
 ---
 
 # Identitat Corporativa — Generalitat de Catalunya
@@ -45,6 +45,8 @@ Llegir `references/validacio.md` per al workflow complet, els criteris d'avaluac
 ---
 
 ## Llista de verificació ràpida
+
+Per a una comprovació informal. Per a una auditoria amb informe i puntuació, usa el **mode VALIDAR** (`references/validacio.md`).
 
 - [ ] Colors: s'usa el vermell #C00000 com a color corporatiu principal?
 - [ ] Tipografia: Arial per a documents Office (Helvetica Neue amb llicència com a alternativa); Open Sans per a digital; cap Calibri?
