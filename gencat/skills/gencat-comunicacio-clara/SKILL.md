@@ -1,6 +1,6 @@
 ---
 name: gencat-comunicacio-clara
-description: "Aplica la Guia de Comunicació Clara de la Generalitat de Catalunya quan generes literals, textos, missatges d'error, etiquetes, descripcions, botons, formularis o qualsevol text de la UI per a aplicacions i serveis digitals de Gencat. Usa aquesta skill sempre que hagis d'escriure o revisar textos per a aplicacions corporatives, serveis digitals de l'administració catalana, notificacions, pantalles de confirmació, formularis, pàgines d'error, onboardings, avisos o qualsevol contingut textual destinat a la ciutadania o als empleats públics. Activa-la també quan l'usuari mencioni 'comunicació clara', 'llenguatge planer', 'literals gencat', 'textos ui gencat' o demani revisar textos administratius."
+description: "Aplica la Guia de Comunicació Clara de la Generalitat quan redactis o revisis textos per a serveis digitals Gencat: literals d'UI, missatges d'error, formularis, avisos i notificacions. Activa-la quan es mencioni comunicació clara, llenguatge planer, literals, microcopy o textos administratius per simplificar."
 ---
 
 # Comunicació Clara — Generalitat de Catalunya
@@ -23,29 +23,12 @@ Tots els textos de les aplicacions Gencat han de complir la **Guia de Comunicaci
 
 ## Regles d'aplicació immediata
 
-### Estructura de la frase
-- Ordre natural: **subjecte + verb + complements**
-- Una idea per frase, màxim **30 paraules**
-- Veu activa sempre que sigui possible
-- Evita insercions parentètiques llargues que trenquen el fil
+- **Frase**: ordre subjecte + verb + complements; una idea per frase; màxim **30 paraules**; veu activa.
+- **Tractament**: **vós** en textos administratius; **tu** només en aplicacions per a joves o contextos informals. Mai barrejats en un mateix flux. Taula de contextos a `references/ui-literals.md`.
+- **Vocabulari**: paraula curta i comuna > paraula llarga i tècnica (`usar` > `utilitzar`); explica els tecnicismes inevitables.
+- **Llengua inclusiva**: col·lectius genèrics (`ciutadania`, `alumnat`, `la gerència`); `persona amb discapacitat`. Detall a `references/vocabulari.md`.
 
-### To i tractament
-- **"Vós"** és el tractament recomanat en textos administratius (evita ambigüitats de gènere i nombre)
-- **"Tu"** per a aplicacions dirigides a joves o en contextos informals
-- No barreges tractaments en un mateix text
-- Directe, accessible, sense condescendència
-
-### Vocabulari
-- Paraules curtes i comunes > paraules llargues i tècniques
-- `problema` > `problemàtica`
-- `usar` > `utilitzar`
-- `abans` > `amb caràcter previ`
-- Explica els termes tècnics quan siguin inevitables
-
-### Llengua inclusiva
-- Col·lectius genèrics: `ciutadania`, `alumnat`, `jovent`, `personal`
-- `persona amb discapacitat` (no `disminuït/a`)
-- Càrrecs genèrics: `la gerència`, `la presidència`, `el personal tècnic`
+El detall complet (taules d'exemples, nominalitzacions, gerundis, paraules buit) és a `references/redaccio.md`.
 
 ---
 

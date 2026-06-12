@@ -4,6 +4,18 @@ Patrons de text per als elements d'interfície d'aplicacions de la Generalitat d
 
 ---
 
+## Tractament segons context
+
+| Context | Tractament | Exemple |
+|---------|-----------|---------|
+| Textos administratius, tràmits, resolucions, notificacions | Vós | "Hem rebut la vostra sol·licitud" |
+| Missatges d'error i d'estat de la UI | Vós | "Comproveu la connexió i torneu-ho a intentar" |
+| Aplicacions adreçades específicament a joves, contextos informals | Tu | "T'hem afegit a la llista d'espera" |
+
+Mai barregis tractaments en un mateix flux. En cas de dubte, usa **vós**.
+
+---
+
 ## Botons d'acció
 
 ### Principis per a botons
@@ -77,6 +89,18 @@ Patrons de text per als elements d'interfície d'aplicacions de la Generalitat d
 | Pàgina no trobada (404) | "No hem trobat la pàgina que cercàveu. Potser ha canviat d'adreça o ja no existeix" |
 | Accés denegat (403) | "No teniu permís per accedir a aquesta secció" |
 | Temps d'espera superat | "L'operació ha trigat massa. Comproveu la connexió i torneu-ho a intentar" |
+
+### Errors d'autenticació i seguretat
+
+| Situació | ✅ Text recomanat |
+|---------|-----------------|
+| Credencials incorrectes | "El nom d'usuari o la contrasenya no són correctes" |
+| Compte blocat per intents fallits | "Heu superat el nombre màxim d'intents. Per seguretat, el compte queda blocat durant [X] minuts" |
+| Certificat digital no detectat | "No hem detectat cap certificat digital. Comproveu que el teniu instal·lat i torneu-ho a intentar" |
+| Certificat digital caducat | "El vostre certificat digital ha caducat. Renoveu-lo per continuar amb el tràmit" |
+| Codi de verificació (dos passos) | "Us hem enviat un codi de verificació al mòbil acabat en [XXX]. Introduïu-lo per continuar" |
+
+> Per seguretat: no especifiquis quin dels dos camps (usuari o contrasenya) és incorrecte, i no revelis detalls interns del sistema en cap missatge d'error.
 
 ---
 
@@ -160,6 +184,25 @@ Patrons de text per als elements d'interfície d'aplicacions de la Generalitat d
 | **Avís** (groc/taronja) | Situació que requereix atenció però no és urgent | "Teniu canvis sense desar. Deseu-los abans de sortir" |
 | **Error** (vermell) | Problema que impedeix continuar | "No s'ha pogut enviar la sol·licitud. Torneu-ho a intentar" |
 | **Èxit** (verd) | Confirmació d'acció completada | "La sol·licitud s'ha enviat correctament" |
+
+---
+
+## Notificacions (correu electrònic i push)
+
+### Correu electrònic transaccional
+
+| Element | Pauta | ✅ Exemple |
+|---------|-------|-----------|
+| Assumpte | Breu (< 60 caràcters), descriu el fet o l'estat; sense codis al davant | "Hem rebut la vostra sol·licitud" |
+| Primera frase | Confirma el fet principal i la data | "Hem rebut la vostra sol·licitud d'ajut el 15/03/2026." |
+| Cos | Número de referència, pas següent i termini si n'hi ha | "El número de referència és REF-1234. Rebreu resposta abans del 30 d'abril." |
+| Tancament | Enllaç per consultar l'estat o canal de contacte | "Podeu consultar l'estat a la vostra àrea privada." |
+
+### Notificacions push
+
+- Títol: màxim ~50 caràcters, el fet principal ("Nova resposta a la vostra sol·licitud")
+- Cos: màxim ~120 caràcters, **sense dades personals ni informació sensible** (es veu amb la pantalla blocada)
+- Sempre amb una acció clara en obrir-la
 
 ---
 

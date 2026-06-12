@@ -37,7 +37,9 @@ La veu activa identifica qui fa l'acció. Fa el text més clar i directe.
 
 | ❌ Massa llarg | ✅ Dividit |
 |--------------|---------|
-| "Per poder accedir al servei cal que l'usuari estigui donat d'alta al sistema, tingui el DNI vigent i hagi acceptat les condicions d'ús." | "Per accedir al servei cal que: estigueu donat d'alta, tingueu el DNI vigent i hagueu acceptat les condicions d'ús." |
+| "Per poder accedir al servei cal que l'usuari estigui donat d'alta al sistema, tingui el DNI vigent i hagi acceptat les condicions d'ús." | "Per accedir al servei cal que:<br>- estigueu donats d'alta;<br>- tingueu el DNI vigent;<br>- hàgiu acceptat les condicions d'ús." |
+
+> Quan converteixis una frase llarga en llista, segueix les regles de puntuació de llistes de `titols-i-estructura.md` (punt i coma si els elements continuen la frase introductòria; punt final a l'últim).
 
 ### 5. Connectors per guiar el lector
 Usa connectors que indiquin la relació lògica entre idees:
@@ -119,13 +121,17 @@ Les nominalitzacions fan els textos pesats i impersonals. Substitueix-les per co
 ## Gerundis: usa'ls amb cura
 
 Gerundis que expressen accions simultànies: correcte.
-Gerundis que expressen accions anteriors o posteriors: substitueix-los.
+Gerundis que expressen accions anteriors, posteriors o condicions: substitueix-los.
 
 | ❌ Gerundi incorrecte | ✅ Alternativa |
 |--------------------|--------------|
-| "Havent presentat la documentació, es procedirà..." | "Un cop presentada la documentació, procedim a..." |
-| "Sent que no compliu els requisits..." | "Com que no compliu els requisits..." |
-| "Complint les condicions establertes..." | "Si compliu les condicions / Si es compleixen les condicions..." |
+| "Havent presentat la documentació, es procedirà..." (acció anterior) | "Un cop presentada la documentació, procedim a..." |
+| "Sent que no compliu els requisits..." (causa) | "Com que no compliu els requisits..." |
+| "Complint les condicions establertes..." (condició) | "Si compliu les condicions / Si es compleixen les condicions..." |
+
+✅ Gerundi correcte (l'acció passa alhora que la del verb principal):
+- "Podeu seguir l'estat de la sol·licitud consultant la vostra àrea privada."
+- "Acabeu el tràmit signant electrònicament el formulari."
 
 ---
 

@@ -168,6 +168,13 @@ Quan hi ha dues paraules que signifiquen el mateix, usa la que la ciutadania ja 
 
 ## Llenguatge inclusiu: formes recomanades
 
+**Ordre de preferència:**
+1. **Col·lectius genèrics** (`la ciutadania`, `l'alumnat`) — la forma preferida sempre que existeixi.
+2. **Formes genèriques amb "persona"** (`les persones sol·licitants`) — quan no hi ha col·lectiu.
+3. **Formes dobles amb barra** (`Benvingut/da`) — només en salutacions o camps molt curts on les anteriors no encaixen; no les usis en text seguit.
+
+Evita la `@` i la `x` com a marques de gènere (`usuari@`, `totxs`): dificulten la lectura i els lectors de pantalla no les pronuncien bé.
+
 ### Col·lectius i càrrecs
 | ❌ Forma no inclusiva | ✅ Forma inclusiva |
 |---------------------|-----------------|
