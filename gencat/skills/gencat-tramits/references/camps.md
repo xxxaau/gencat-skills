@@ -212,3 +212,25 @@ Apareix a la **part superior del tràmit**. Canals configurables:
 
 ### Web de suport a la tramitació
 - Incloure l'enllaç en els idiomes disponibles
+
+---
+
+## Casos límit i excepcions
+
+### Tràmits sense termini establert
+- Camp Terminis: "En qualsevol moment." — sense afegir l'any ni la convocatòria
+- No repetir aquesta informació al pas de resposta de l'Administració
+
+### Modalitats amb terminis diferents
+- Documentar cada termini dins la seva modalitat (cada `moda=N` té els seus camps de termini)
+- Si el camp Terminis és global, estructurar-lo per modalitat: "Modalitat 1 (presentació): del 13 al 25 de febrer de 2026. Modalitat 2 (justificació): de l'1 de març al 30 d'abril de 2026."
+
+### Taxes variables o amb bonificacions
+- El camp Taxes és text pla, no taula
+- Estructura: import base + bonificació en una frase ("Import: 32,15 €. Bonificació del 50% per a famílies nombroses o monoparentals.")
+- Si hi ha més de 4-5 categories d'import, indicar l'import general i remetre a les bases reguladores amb enllaç
+
+### Fitxes multilingües
+- Els criteris s'apliquen a cada versió lingüística per separat (el límit de 80 caràcters del títol es compta en cada idioma)
+- Mantenir l'estructura del títol de modalitat (verb en infinitiu + tipus) en tots els idiomes
+- El tractament personal triat s'ha de mantenir coherent dins de cada versió

@@ -1,6 +1,6 @@
 ---
 name: gencat-tramits
-description: "Aplica el Manual de redacció i estil de fitxes de tràmit de la Generalitat de Catalunya (febrer 2026) quan redactis, revisis o generis contingut per a fitxes de tràmit al web gencat.cat. Usa aquesta skill sempre que l'usuari treballi amb tràmits administratius, fitxes de tràmit, modalitats, camps de tràmit (títol, descripció, requisits, documentació, terminis, taxes, passos), o demani redactar textos per a tràmits en línia. Activa-la també quan mencioni 'fitxa de tràmit', 'modalitat de tràmit', 'silenci administratiu', 'pas de tramitació', 'canal de tramitació', 'GECO', 'OGE', 'SAC' o qualsevol camp d'una fitxa de tràmit gencat. Activa-la també per al mode REVISAR WEB quan l'usuari proporcioni URLs de fitxes de tràmit de gencat.cat per revisar, auditar o avaluar, o mencioni 'revisió de tràmit', 'auditoria de tràmit', 'revisar tràmit web', 'llista d'URLs de tràmits', o enganxi directament una URL de tramit.gencat.cat o cat.gencat.cat."
+description: "Aplica el Manual de redacció i estil de fitxes de tràmit de la Generalitat (febrer 2026) quan redactis, revisis o auditis fitxes de tràmit de gencat.cat. Activa-la quan es mencioni fitxa de tràmit, modalitat, silenci administratiu, passos de tramitació, GECO, OGE, SAC, o quan l'usuari proporcioni URLs de tramit.gencat.cat per revisar."
 ---
 
 # Manual de Redacció de Fitxes de Tràmit — Gencat (febrer 2026)
@@ -25,16 +25,16 @@ El tractament ha de ser **coherent** al llarg de tot el tràmit (avisos, literal
 
 ### Estil de redacció
 
-- **Frases curtes: entre 20 i 30 paraules**
-- Ordre neutre: **subjecte + verb + complements**
-- **Veu activa** — evitar la passiva
+Els criteris generals de redacció (frases de 20-30 paraules, ordre subjecte + verb + complements, veu activa, nominalitzacions, verbs buits) són els de la skill **gencat-comunicacio-clara** — és la font d'autoritat; no els dupliquis.
+
+Específic de fitxes de tràmit:
 - **Frases en positiu** (les afirmatives són més clares)
-- Evita **nominalitzacions**: "s'activarà" > "es procedirà a l'activació"
-- Evita **verbs buits**: "hem investigat" > "hem dut a terme una investigació"
 - **Negreta** per a paraules clau (amb moderació)
 - **Llistes** per a enumeracions o informació llarga
 - Si uses sigles, desplega-les el primer cop: "idCAT Mòbil (identificació digital)"
 - Si cites normativa, usa denominació abreujada amb enllaç: "La Llei de transparència"
+
+Per a l'accessibilitat del contingut (textos d'enllaços descriptius, jerarquia de títols, instruccions no sensorials), usa **gencat-accessibilitat** — també en mode redacció, no només a REVISAR WEB.
 
 ---
 

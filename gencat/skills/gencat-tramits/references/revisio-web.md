@@ -102,6 +102,8 @@ Aplicar els criteris de `gencat-comunicacio-clara` al text de tots els camps:
 | **Vocabulari planer** | Termes administratius evitables (contrastar amb `gencat-comunicacio-clara/references/vocabulari.md`) | |
 | **Frases en positiu** | Dobles negatius ("no s'acceptarà si no s'adjunta") | |
 
+> **Com es mesura la mitjana de paraules per frase:** total de paraules del camp dividit pel nombre de frases del camp. S'avalua cada camp per separat (Descripció i Passos), no el conjunt del tràmit.
+
 ### Accessibilitat de contingut
 
 Aplicar els criteris de contingut de `gencat-accessibilitat` (no s'avalua el codi HTML, només el text visible):
@@ -121,7 +123,19 @@ Aplicar els criteris de contingut de `gencat-accessibilitat` (no s'avalua el cod
 Puntuació = (camps sense ❌) / (total camps trobats o absents) × 10
 ```
 
-> **Nota:** Un camp absent compta com a "trobat amb ❌", no s'exclou del denominador.
+> **Nota:** Un camp absent compta com a "trobat amb ❌" i no s'exclou del denominador, **excepte** els camps que la taula següent marca com a opcionals.
+
+### Obligatorietat dels camps (què passa si un camp és absent)
+
+| Camp | Si és absent |
+|------|--------------|
+| Títol, Descripció, A qui va dirigit, Terminis, Taxes, Passos | ❌ Error — sempre obligatoris |
+| Requisits | ✅ Correcte si el tràmit no té requisits específics; ❌ si la normativa en preveu i no consten |
+| Documentació | ✅ Correcte si el tràmit no demana documents a banda del formulari |
+| Avís general del tràmit | ✅ Correcte si el tràmit és només per a persones físiques (vegeu la taula de camps) |
+| Avís excepcional | ✅ Correcte — camp opcional |
+
+Els camps opcionals absents **no entren al denominador** de la puntuació.
 
 | Puntuació | Prioritat de revisió | Descripció |
 |-----------|---------------------|------------|
@@ -192,3 +206,76 @@ Quan es revisen múltiples tràmits, afegir al final:
 
 **Camps problemàtics comuns:** [llista dels camps amb més errors al conjunt]
 ```
+
+---
+
+## Exemple complet d'informe (cas fictici)
+
+URL revisada: `tramits.gencat.cat/...?id=ajut-material-escolar` (1 modalitat)
+
+~~~markdown
+# Revisió: Ajut per a l'adquisició de material escolar
+
+## Capa 1 — Avaluació per camp
+
+## Títol
+❌ Error — "Sol·licitud d'ajut per a l'adquisició de material escolar per al curs 2026-2027" conté "sol·licitud" (terme administratiu prohibit al títol) i supera els 80 caràcters.
+
+## Descripció
+❌ Error — Comença citant la normativa: "D'acord amb la Resolució EDU/123/2026...". La descripció ha d'explicar l'ajut, no la norma.
+⚠️ Millora — Frases de 38 paraules de mitjana.
+
+## A qui va dirigit
+✅ Correcte — Preposició "a" davant de cada destinatari, llista clara.
+
+## Terminis
+❌ Error — Format de data "15/04/2026" en lloc de "15 d'abril de 2026".
+
+## Documentació
+✅ Correcte — Llista esquemàtica, sense el formulari de sol·licitud.
+
+## Requisits
+❌ Error — Conté frase introductòria ("Per poder accedir a l'ajut cal complir els requisits següents:").
+
+## Taxes
+✅ Correcte — Indica "Gratuït".
+
+## Passos
+❌ Error — Falta la indicació de silenci administratiu al pas de resposta de l'Administració (Pas 3, tràmit gratuït).
+
+## Capa 2 — Puntuació global
+
+**Puntuació: 3/8 → 3,8/10**
+Camps correctes: 3 | Millores recomanades: 1 | Errors: 5
+Prioritat de revisió: ALTA
+
+## Capa 3 — Proposta de nova redacció
+
+### Títol — Proposta
+Ajut per a material escolar per al curs 2026-2027
+
+### Descripció — Proposta
+Ajut econòmic per a famílies amb infants matriculats a educació infantil i primària en centres públics o concertats. Cobreix part de la despesa en material escolar del curs.
+
+### Terminis — Proposta
+Del 15 d'abril de 2026 al 30 de juny de 2026.
+
+### Requisits — Proposta
+- Tenir fills matriculats en un centre públic o concertat
+- Estar empadronat a Catalunya
+- No superar el llindar de renda establert a la convocatòria
+
+### Passos — Proposta
+[Pas 3] Si en el termini de 6 mesos no heu rebut resposta, la sol·licitud s'entén desestimada (silenci administratiu negatiu).
+
+## Capa 4 — Avaluació transversal
+
+## Comunicació clara
+❌ Veu activa — Passiva sistemàtica a la Descripció: "serà valorada", "han estat establerts".
+⚠️ Llargada de frases — Mitjana de 38 paraules a la Descripció.
+✅ Tractament personal — "tu" coherent a tota la fitxa.
+
+## Accessibilitat de contingut
+❌ Textos d'enllaços — Dos enllaços amb el text "aquí".
+✅ Jerarquia de títols — Sense salts.
+~~~
