@@ -56,7 +56,7 @@ Skill per validar i orientar sobre els dos documents tècnics principals del cic
 
 ---
 
-## Checklist ràpida (mode REVISAR)
+## Llista de verificació ràpida (mode REVISAR)
 
 Abans de lliurar l'informe, verifica:
 
