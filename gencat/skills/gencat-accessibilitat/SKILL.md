@@ -1,6 +1,6 @@
 ---
 name: gencat-accessibilitat
-description: "Aplica les directrius d'accessibilitat digital de la Generalitat de Catalunya quan desenvolupes, revises o audites aplicacions web i mòbils per a serveis públics catalans. Usa aquesta skill sempre que implementis components, formularis, navegació, contingut multimèdia, documents PDF, o qualsevol interfície destinada a serveis Gencat. Activa-la quan l'usuari mencioni WCAG, accessibilitat, EN 301 549, IRA, a11y, daltonisme, lector de pantalla, contrast, focus, ARIA, o demani complir amb el Decret 216/2023. S'ha d'usar tant en fase de disseny com d'implementació i revisió."
+description: "Aplica les directrius d'accessibilitat digital de la Generalitat de Catalunya (WCAG 2.1 AA, EN 301 549, Decret 216/2023) quan implementis, revisis o auditis interfícies web i documents per a serveis Gencat. Activa-la quan es mencioni accessibilitat, WCAG, a11y, ARIA, contrast, focus, lector de pantalla, IRA o daltonisme."
 ---
 
 # Accessibilitat Digital — Generalitat de Catalunya
@@ -13,9 +13,11 @@ description: "Aplica les directrius d'accessibilitat digital de la Generalitat d
 | **Reial Decret 1112/2018** | Espanya | Transposició de la Directiva UE 2016/2102 |
 | **EN 301 549 V3.2.1** | Estàndard tècnic | 137 criteris d'avaluació (en vigor des de 12/02/2022) |
 | **WCAG 2.1 Nivell AA** | Referència tècnica | 50 criteris obligatoris (30×A + 20×AA) |
-| **WCAG 2.2** | Referència futura | Traducció oficial al català disponible (22/05/2024) |
+| **WCAG 2.2** | Recomanada | 6 criteris A/AA nous; traducció oficial al català disponible (22/05/2024) |
 
-**Nivell mínim obligatori: WCAG 2.1 AA** — tots els criteris A i AA.
+**Nivell mínim obligatori: WCAG 2.1 AA** — tots els criteris A i AA. Per a WCAG 2.2, verifica al portal d'accessibilitat de Gencat si ja és exigible; mentrestant, és recomanable complir els criteris nous.
+
+**Abast d'aquestes guies:** interfícies web i documents PDF. Les apps mòbils natives també estan subjectes al Decret 216/2023 (EN 301 549, clàusula 11), però els patrons específics de plataforma (VoiceOver/TalkBack) queden fora d'aquestes referències.
 
 ---
 
@@ -33,6 +35,7 @@ description: "Aplica les directrius d'accessibilitat digital de la Generalitat d
 - `references/wcag-criteris.md` — Els 50 criteris A+AA obligatoris amb implementació
 - `references/errors-habituals.md` — Errors més freqüents en webs Gencat i com corregir-los
 - `references/components-accessibles.md` — Patrons HTML/ARIA per a components concrets
+- `references/pdf-accessibilitat.md` — Documents PDF accessibles (etiquetatge, formularis, validació)
 - `references/eines-i-avaluacio.md` — Eines de verificació i metodologia IRA/WCAG-EM
 
 ---
@@ -47,14 +50,14 @@ description: "Aplica les directrius d'accessibilitat digital de la Generalitat d
 <!-- Skip link (primer element del body) -->
 <a href="#contingut-principal" class="skip-link">Ves al contingut principal</a>
 
-<!-- Punt d'ancoratge -->
-<main id="contingut-principal">
+<!-- Punt d'ancoratge (tabindex="-1" perquè pugui rebre el focus del skip link) -->
+<main id="contingut-principal" tabindex="-1">
 ```
 
 ### Contrast mínim
 - Text normal: **4.5:1**
 - Text gran (≥18pt o ≥14pt negreta): **3:1**
-- Components UI i elements gràfics: **3:1**
+- Components UI i elements gràfics: **3:1** — vores d'inputs, icones funcionals, indicadors de focus, parts significatives de gràfics; no aplica a elements decoratius ni desactivats
 
 ### Imatges
 ```html
@@ -73,7 +76,7 @@ description: "Aplica les directrius d'accessibilitat digital de la Generalitat d
 <!-- Label sempre associat -->
 <label for="dni">DNI o NIE *</label>
 <input type="text" id="dni" name="dni"
-       required aria-required="true"
+       required
        autocomplete="on"
        aria-describedby="dni-error">
 <span id="dni-error" role="alert" class="error"></span>

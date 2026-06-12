@@ -101,12 +101,14 @@ Per a taules complexes (capçaleres múltiples), usa `id` + `headers`:
 ```css
 /* ❌ Exemples que fallen */
 color: #999999 sobre #FFFFFF  /* 2.85:1 — FALLA */
-color: #767676 sobre #FFFFFF  /* 4.48:1 — QUASI (falla per poc) */
+
+/* ⚠️ Al límit */
+color: #767676 sobre #FFFFFF  /* 4.54:1 — passa AA pels pèls; no hi ha marge d'error */
 
 /* ✅ Exemples que superen */
 color: #595959 sobre #FFFFFF  /* 7.0:1 — Supera AA i AAA */
-color: #C00000 sobre #FFFFFF  /* 5.74:1 — Supera AA */
-color: #FFFFFF sobre #C00000  /* 5.74:1 — Supera AA */
+color: #C00000 sobre #FFFFFF  /* 6.5:1 — Supera AA */
+color: #FFFFFF sobre #C00000  /* 6.5:1 — Supera AA */
 color: #333333 sobre #FFFFFF  /* 12.6:1 — Excel·lent */
 ```
 
@@ -130,8 +132,7 @@ color: #333333 sobre #FFFFFF  /* 12.6:1 — Excel·lent */
 
 <!-- ✅ Correcte: label associat per id/for -->
 <label for="nom">Nom *</label>
-<input type="text" id="nom" name="nom"
-       required aria-required="true">
+<input type="text" id="nom" name="nom" required>
 
 <!-- ✅ Alternatiu: aria-label quan no hi ha label visual -->
 <input type="search" aria-label="Cercar al lloc web"
@@ -328,3 +329,31 @@ function tancarModal(modal) {
   <button>Cancel·lar</button>
 </div>
 ```
+
+---
+
+## Error 13: CAPTCHA sense alternativa accessible (1.1.1 — Nivell A)
+
+Un CAPTCHA només visual exclou les persones amb discapacitat visual; un de només auditiu, les persones amb discapacitat auditiva.
+
+Regles:
+- Prioritza mecanismes **sense repte per a l'usuari**: validació al servidor, camps honeypot, límits de freqüència
+- Si cal un repte, ofereix **dues modalitats com a mínim** (visual + àudio), operables per teclat i amb lector de pantalla
+- Instruccions clares en català i un canal alternatiu de contacte si l'usuari no el pot superar
+- Si uses un servei de tercers (p. ex. reCAPTCHA), comprova-ho igualment: la responsabilitat del compliment és del servei Gencat
+
+---
+
+## Antipatrons ARIA freqüents
+
+Primera regla d'ARIA: **no usis ARIA si l'HTML natiu ja ho fa**.
+
+| ❌ Antipatró | ✅ Correcte | Per què |
+|-------------|------------|---------|
+| `<button disabled aria-disabled="true">` | `<button disabled>` | `disabled` natiu ja exposa l'estat |
+| `<input required aria-required="true">` | `<input required>` | `required` natiu ja exposa l'estat |
+| `aria-label` que repeteix o canvia el text visible | Sense `aria-label` | `aria-label` SUBSTITUEIX el text visible, no l'amplia; si difereixen, els usuaris de control per veu no poden activar l'element |
+| `<button role="button">` | `<button>` | Rol redundant |
+| `tabindex` més gran que 0 | `tabindex="0"` o ordre natural del DOM | Trenca l'ordre de tabulació |
+| `aria-hidden="true"` en un element enfocable | Treure'l també del focus (`tabindex="-1"`, `disabled`) | El focus aterra en un element invisible per al lector de pantalla |
+| `aria-sort` al botó d'ordenació | `aria-sort` al `<th>` | L'atribut només és vàlid en capçaleres de columna/fila |

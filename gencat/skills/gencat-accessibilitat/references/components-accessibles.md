@@ -22,8 +22,8 @@ la implementació accessible és la mínima requerida.
   <svg aria-hidden="true" focusable="false">...</svg>
 </button>
 
-<!-- Botó amb estat de càrrega -->
-<button type="button" aria-busy="true" aria-disabled="true" disabled>
+<!-- Botó amb estat de càrrega (disabled natiu ja exposa l'estat; no hi afegeixis aria-disabled) -->
+<button type="button" aria-busy="true" disabled>
   <span aria-hidden="true">Processant...</span>
   <span class="visually-hidden">S'està enviant la sol·licitud, espereu</span>
 </button>
@@ -50,7 +50,7 @@ la implementació accessible és la mínima requerida.
         <span class="visually-hidden">(obligatori)</span>
       </label>
       <input type="text" id="nom" name="nom"
-             required aria-required="true"
+             required
              autocomplete="given-name"
              aria-describedby="nom-error nom-help">
       <span id="nom-help" class="help-text">
@@ -63,7 +63,7 @@ la implementació accessible és la mínima requerida.
     <div class="form-group">
       <label for="provincia">Província *</label>
       <select id="provincia" name="provincia"
-              required aria-required="true">
+              required>
         <option value="">Seleccioneu una província</option>
         <option value="bcn">Barcelona</option>
         <option value="gir">Girona</option>
@@ -87,8 +87,7 @@ la implementació accessible és la mínima requerida.
 
     <!-- Checkbox -->
     <div class="form-group">
-      <input type="checkbox" id="accepta" name="accepta" required
-             aria-required="true">
+      <input type="checkbox" id="accepta" name="accepta" required>
       <label for="accepta">
         He llegit i accepto la
         <a href="/politica-privacitat">política de privacitat</a>
@@ -188,7 +187,35 @@ la implementació accessible és la mínima requerida.
 </div>
 ```
 
-Gestió de teclat requerida: fletxes ←→ per moure's entre tabs, Tab per entrar al panell.
+**Gestió de teclat obligatòria** — sense aquest JavaScript el component NO és accessible (criteri 2.1.1):
+
+```javascript
+const tabs = [...document.querySelectorAll('[role="tab"]')];
+
+tabs.forEach(tab => {
+  tab.addEventListener('keydown', e => {
+    let nou = null;
+    if (e.key === 'ArrowRight') nou = tabs[(tabs.indexOf(tab) + 1) % tabs.length];
+    if (e.key === 'ArrowLeft')  nou = tabs[(tabs.indexOf(tab) - 1 + tabs.length) % tabs.length];
+    if (e.key === 'Home') nou = tabs[0];
+    if (e.key === 'End')  nou = tabs[tabs.length - 1];
+    if (nou) { e.preventDefault(); activarTab(nou); }
+  });
+  tab.addEventListener('click', () => activarTab(tab));
+});
+
+function activarTab(tab) {
+  tabs.forEach(t => {
+    const seleccionada = t === tab;
+    t.setAttribute('aria-selected', String(seleccionada));
+    t.tabIndex = seleccionada ? 0 : -1;
+    document.getElementById(t.getAttribute('aria-controls')).hidden = !seleccionada;
+  });
+  tab.focus();
+}
+```
+
+Comportament: fletxes ←→ mouen el focus entre pestanyes (amb cicle), Home/End van a la primera/última, Tab surt cap al panell. Només la pestanya activa té `tabindex="0"`.
 
 ---
 
@@ -245,6 +272,32 @@ Gestió de teclat requerida: fletxes ←→ per moure's entre tabs, Tab per entr
   </div>
 </div>
 ```
+
+---
+
+## Modal de temps de sessió (timeout)
+
+Criteri 2.2.1 (Temps ajustable): si la sessió caduca, cal avisar l'usuari i permetre estendre-la.
+
+```html
+<div role="alertdialog"
+     aria-modal="true"
+     aria-labelledby="timeout-titol"
+     aria-describedby="timeout-desc">
+  <h2 id="timeout-titol">La sessió està a punt de caducar</h2>
+  <p id="timeout-desc">
+    La vostra sessió caducarà en 5 minuts per inactivitat.
+    Si caduca, es perdran les dades que no hàgiu desat.
+  </p>
+  <button type="button">Continuar la sessió</button>
+  <button type="button">Tancar la sessió</button>
+</div>
+```
+
+Requisits:
+- Mostra l'avís amb prou antelació (mínim 2 minuts abans) i mou-hi el focus en obrir-se
+- "Continuar la sessió" estén el temps sense perdre les dades introduïdes
+- Gestió de focus i Escape com a qualsevol modal (vegeu `errors-habituals.md`, Error 12)
 
 ---
 
@@ -312,10 +365,12 @@ Gestió de teclat requerida: fletxes ←→ per moure's entre tabs, Tab per entr
     </caption>
     <thead>
       <tr>
-        <th scope="col">
-          <button aria-label="Ordenar per referència, ascendent"
-                  aria-sort="ascending">
+        <!-- aria-sort va al <th>, no al botó; el botó no necessita aria-label
+             (duplicaria el text visible) -->
+        <th scope="col" aria-sort="ascending">
+          <button>
             Referència
+            <span class="visually-hidden">(ordenat ascendentment; activeu per canviar l'ordre)</span>
           </button>
         </th>
         <th scope="col">Data</th>
