@@ -129,8 +129,9 @@ gencat-skills/
         │   ├── SKILL.md
         │   └── references/
         │       ├── wcag-criteris.md      ← 50 criteris A+AA + WCAG 2.2
-        │       ├── errors-habituals.md   ← 12 errors freqüents + correccions
+        │       ├── errors-habituals.md   ← 13 errors freqüents + antipatrons ARIA
         │       ├── components-accessibles.md ← patrons HTML/ARIA
+        │       ├── pdf-accessibilitat.md ← documents PDF accessibles
         │       └── eines-i-avaluacio.md  ← eines, IRA, metodologia
         ├── gencat-documentacio-ctti/
         │   ├── SKILL.md
@@ -156,6 +157,7 @@ gencat-skills/
         └── gencat-xarxes-socials/
             ├── SKILL.md
             └── references/
+                ├── normes-transversals.md ← normes comunes a totes les xarxes
                 ├── x-twitter.md          ← normes X (Twitter)
                 ├── facebook.md           ← normes Facebook
                 ├── instagram.md          ← normes Instagram
@@ -163,7 +165,7 @@ gencat-skills/
                 ├── youtube.md            ← normes YouTube (elements textuals)
                 ├── threads.md            ← normes Threads
                 ├── tiktok.md             ← normes TikTok (elements textuals)
-                └── plantilles.md         ← 6 plantilles reutilitzables
+                └── plantilles.md         ← 7 plantilles reutilitzables
 ```
 
 ## Contribució
