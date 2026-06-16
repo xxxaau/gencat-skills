@@ -12,6 +12,7 @@ Abans de revisar cap URL, llegir:
 - `references/vocabulari.md` — substitucions i bones pràctiques
 - Skill `gencat-comunicacio-clara` → `references/redaccio.md` i `references/vocabulari.md` — criteris de text clar i vocabulari planer
 - Skill `gencat-accessibilitat` → `references/wcag-criteris.md` i `references/errors-habituals.md` — criteris d'accessibilitat de contingut
+- `references/geo-seo.md` (Secció B) — criteris GEO/SEO on-page, spot-check i format de la Capa 5
 
 ---
 
@@ -44,7 +45,8 @@ Per obtenir totes les modalitats d'un tràmit, fer un fetch per a cada valor de 
 2. **Identificació de camps** → buscar els camps estàndard pels ancles `id=` de la pàgina (`id="que-es"`, `id="requisits"`, `id="documentacio"`, `id="taxes"`, `id="steps"`, etc.)
 3. **Avaluació camp per camp** → aplicar les normes de `camps.md`, `passos.md` i `vocabulari.md`
 4. **Avaluació transversal** → aplicar criteris de comunicació clara i accessibilitat de contingut (veure taula transversal)
-5. **Generació de l'informe** → quatre capes (veure format d'informe)
+5. **Avaluació GEO/SEO** → aplicar els 5 criteris on-page de `geo-seo.md` (Secció B) i, si l'usuari ho demana, el spot-check black-box → nota GEO/10 + etiqueta de risc
+6. **Generació de l'informe** → cinc capes (veure format d'informe)
 
 ---
 
@@ -190,6 +192,21 @@ Per a cada criteri transversal, indicar resultat i exemple del text problemàtic
 ✅ / ⚠️ / ❌ [Criteri] — [descripció del problema i exemple literal del text]
 ```
 
+### Capa 5 — GEO/SEO
+
+Aplicar els criteris de `geo-seo.md` (Secció B):
+
+```
+## Capa 5 — GEO/SEO
+✅/⚠️/❌ [Criteri] — [exemple literal]
+
+**Nota GEO/SEO: X/10** (independent de la nota editorial)
+Risc de desinformació (spot-check): Baix/Mitjà/Alt — [contradiccions, o "cap"]
+
+### Recomanacions GEO accionables
+- [recomanació concreta]
+```
+
 ---
 
 ## Informe consolidat (múltiples URLs)
@@ -199,10 +216,10 @@ Quan es revisen múltiples tràmits, afegir al final:
 ```markdown
 ## Resum de la revisió
 
-| Tràmit | Puntuació | Prioritat | Principals problemes |
-|--------|-----------|-----------|---------------------|
-| [Títol tràmit 1] | X/10 | ALTA | Taxes absent, Requisits amb frase introductòria |
-| [Títol tràmit 2] | X/10 | MITJANA | Frases llargues a Descripció |
+| Tràmit | Editorial | GEO/SEO | Risc | Prioritat | Principals problemes |
+|--------|-----------|---------|------|-----------|---------------------|
+| [Títol tràmit 1] | X/10 | X/10 | Alt | ALTA | Taxes absent, sense Schema.org |
+| [Títol tràmit 2] | X/10 | X/10 | Baix | MITJANA | Frases llargues a Descripció |
 
 **Camps problemàtics comuns:** [llista dels camps amb més errors al conjunt]
 ```
@@ -278,4 +295,19 @@ Del 15 d'abril de 2026 al 30 de juny de 2026.
 ## Accessibilitat de contingut
 ❌ Textos d'enllaços — Dos enllaços amb el text "aquí".
 ✅ Jerarquia de títols — Sense salts.
+
+## Capa 5 — GEO/SEO
+❌ Dades estructurades — La pàgina no inclou cap JSON-LD Schema.org.
+⚠️ Títol i metadades — meta description de 210 caràcters (fora del rang 120-160).
+✅ Atribució oficial — Departament d'Educació identificat al capçal.
+✅ Extractabilitat — Requisits, terminis i import en text pla.
+❌ Actualitat datada — La convocatòria no indica data d'actualització.
+
+**Nota GEO/SEO: 3/5 → 6,0/10**
+Risc de desinformació (spot-check): Mitjà — la resposta cega situava l'import en 100 € quan la fitxa diu 120 €.
+
+### Recomanacions GEO accionables
+- Afegir JSON-LD GovernmentService amb objecte, òrgan i canals del tràmit.
+- Escurçar la meta description a 120-160 caràcters.
+- Datar la convocatòria al cos de la fitxa.
 ~~~
