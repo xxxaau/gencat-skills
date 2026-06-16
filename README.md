@@ -66,6 +66,7 @@ Aplica el [Manual de redacció i estil de fitxes de tràmit](https://atenciociut
 - Passos de tramitació i textos estàndard obligatoris
 - Vocabulari i substitucions per a un llenguatge clar i proper
 - Tractament personal coherent (tu / vós) i frases de 20-30 paraules
+- Avaluació GEO/SEO: recuperabilitat per motors d'IA i de cerca (Schema.org, títols directes, dades datades) en redacció i en REVISAR WEB, amb nota independent i spot-check de risc de desinformació
 
 **S'activa** quan treballes amb tràmits administratius, fitxes de tràmit, GECO, OGE, SAC o qualsevol camp d'una fitxa de tràmit gencat.
 
@@ -153,7 +154,8 @@ gencat-skills/
         │       ├── camps.md              ← regles per a cada camp de la fitxa
         │       ├── passos.md             ← passos de tramitació i textos estàndard
         │       ├── vocabulari.md         ← substitucions i bones pràctiques
-        │       └── revisio-web.md        ← workflow revisió fitxes a gencat.cat
+        │       ├── revisio-web.md        ← workflow revisió fitxes a gencat.cat
+        │       └── geo-seo.md            ← criteris GEO/SEO de redacció i on-page
         └── gencat-xarxes-socials/
             ├── SKILL.md
             └── references/
