@@ -1,6 +1,6 @@
 ---
 name: gencat-tramits
-description: "Aplica el Manual de redacció i estil de fitxes de tràmit de la Generalitat (febrer 2026) quan redactis, revisis o auditis fitxes de tràmit de gencat.cat. Activa-la quan es mencioni fitxa de tràmit, modalitat, silenci administratiu, passos de tramitació, GECO, OGE, SAC, o quan l'usuari proporcioni URLs de tramit.gencat.cat per revisar."
+description: "Aplica el Manual de redacció i estil de fitxes de tràmit de la Generalitat (febrer 2026) quan redactis, revisis o auditis fitxes de tràmit de gencat.cat. Activa-la quan es mencioni fitxa de tràmit, modalitat, silenci administratiu, passos de tramitació, GECO, OGE, SAC, o quan l'usuari proporcioni URLs de tramit.gencat.cat per revisar. Inclou avaluació GEO/SEO (posicionament en motors d'IA i de cerca, Schema.org, recuperabilitat) tant en redacció com a REVISAR WEB."
 ---
 
 # Manual de Redacció de Fitxes de Tràmit — Gencat (febrer 2026)
@@ -43,6 +43,7 @@ Per a l'accessibilitat del contingut (textos d'enllaços descriptius, jerarquia 
 Llegeix `references/camps.md` per a les regles de redacció detallades de cada camp.
 Llegeix `references/passos.md` per als passos de tramitació i els textos estàndard.
 Llegeix `references/vocabulari.md` per a substitucions de vocabulari i bones pràctiques.
+Llegeix `references/geo-seo.md` per als principis GEO/SEO de redacció i per a l'avaluació GEO/SEO on-page.
 
 ---
 
@@ -72,6 +73,14 @@ Llegeix `references/vocabulari.md` per a substitucions de vocabulari i bones pr�
 - [ ] **Passos**: avisos obligatoris sobre tramitació per internet inclosos?
 - [ ] **Silenci administratiu**: positiu o negatiu indicat al pas 4?
 
+### GEO/SEO en redacció
+- [ ] Títol directe i comprensible sense context?
+- [ ] Cada camp és autocontingut i citable per separat?
+- [ ] Imports, terminis i convocatòria amb data concreta?
+- [ ] Cap dada crítica només en PDF o imatge?
+
+Vegeu `references/geo-seo.md` (Secció A) per al detall.
+
 ---
 
 ## Mode REVISAR WEB
@@ -81,3 +90,5 @@ S'activa quan l'usuari proporciona una o més URLs de fitxes de tràmit de genca
 Pas 0 obligatori: llegir `references/camps.md`, `references/passos.md` i `references/vocabulari.md` per tenir les normes carregades. Carregar també els criteris dels skills `gencat-comunicacio-clara` i `gencat-accessibilitat` per a l'avaluació transversal de qualitat lingüística i accessibilitat de contingut.
 
 Llegeix `references/revisio-web.md` per al workflow complet, el criteri de puntuació i el format de l'informe.
+
+La revisió inclou una **Capa 5 — GEO/SEO** amb nota independent i spot-check de risc de desinformació. Vegeu `references/geo-seo.md` (Secció B).
