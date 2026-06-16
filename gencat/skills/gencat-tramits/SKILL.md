@@ -78,6 +78,7 @@ Llegeix `references/geo-seo.md` per als principis GEO/SEO de redacció i per a l
 - [ ] Cada camp és autocontingut i citable per separat?
 - [ ] Imports, terminis i convocatòria amb data concreta?
 - [ ] Cap dada crítica només en PDF o imatge?
+- [ ] Encapçalaments en forma de pregunta on tingui sentit?
 
 Vegeu `references/geo-seo.md` (Secció A) per al detall.
 
@@ -87,7 +88,7 @@ Vegeu `references/geo-seo.md` (Secció A) per al detall.
 
 S'activa quan l'usuari proporciona una o més URLs de fitxes de tràmit de gencat.cat.
 
-Pas 0 obligatori: llegir `references/camps.md`, `references/passos.md` i `references/vocabulari.md` per tenir les normes carregades. Carregar també els criteris dels skills `gencat-comunicacio-clara` i `gencat-accessibilitat` per a l'avaluació transversal de qualitat lingüística i accessibilitat de contingut.
+Pas 0 obligatori: llegir `references/camps.md`, `references/passos.md`, `references/vocabulari.md` i `references/geo-seo.md` (Secció B) per tenir les normes carregades. Carregar també els criteris dels skills `gencat-comunicacio-clara` i `gencat-accessibilitat` per a l'avaluació transversal de qualitat lingüística i accessibilitat de contingut.
 
 Llegeix `references/revisio-web.md` per al workflow complet, el criteri de puntuació i el format de l'informe.
 

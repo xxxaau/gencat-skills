@@ -1,6 +1,6 @@
 # Revisió Web de Fitxes de Tràmit — Workflow
 
-Font de normes: `camps.md`, `passos.md`, `vocabulari.md`, `gencat-comunicacio-clara`, `gencat-accessibilitat`
+Font de normes: `camps.md`, `passos.md`, `vocabulari.md`, `geo-seo.md`, `gencat-comunicacio-clara`, `gencat-accessibilitat`
 
 ---
 

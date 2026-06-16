@@ -34,7 +34,7 @@ Principis controlables per qui redacta el text (Schema.org, `canonical` i `meta 
 
 ### Criteris puntuables (nota GEO/SEO /10)
 
-5 criteris, cadascun val **1 punt** si passa sense ❌. Nota = (criteris sense ❌) / 5 × 10.
+5 criteris, cadascun val **1 punt** si passa sense ❌. Nota = (criteris sense ❌) / 5 × 10, expressada amb un decimal (p. ex. 3/5 → 6,0/10).
 
 | # | Criteri | ❌ Error | ⚠️ Millora | Serveix |
 |---|---------|---------|-----------|---------|
