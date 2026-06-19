@@ -6,7 +6,7 @@ Plugin de Claude Code amb les skills corporatives de la **Generalitat de Catalun
 
 ```bash
 # Registra el marketplace
-/plugin marketplace add gencat/gencat-skills
+/plugin marketplace add xxxaau/gencat-skills
 
 # Instal·la el plugin
 /plugin install gencat@gencat-skills
@@ -19,7 +19,7 @@ O afegeix manualment a `~/.claude/settings.json`:
   "gencat-skills": {
     "source": {
       "source": "github",
-      "repo": "gencat/gencat-skills"
+      "repo": "xxxaau/gencat-skills"
     }
   }
 }
