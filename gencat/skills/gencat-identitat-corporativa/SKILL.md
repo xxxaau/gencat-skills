@@ -9,6 +9,25 @@ Font oficial: https://identitatcorporativa.gencat.cat/ca/inici (citar en respost
 
 ---
 
+## Abast de la skill
+
+### Què cobreix
+- Normes de marca visual (color, tipografia, logotip i aplicacions)
+- Validació de materials institucionals (documents, presentacions, signatura i newsletter)
+- Creació de contingut corporatiu no centrat en implementació web
+
+### Què NO cobreix
+- Disseny funcional de components web i patrons d'interfície (delegar a `gencat-design-system`)
+- Auditories tècniques d'accessibilitat WCAG de productes digitals (delegar a `gencat-accessibilitat`)
+- Redacció específica de camps de fitxes de tràmit (delegar a `gencat-tramits`)
+
+### Skills complementàries
+- `gencat-comunicacio-clara` per assegurar llenguatge planer en peces corporatives
+- `gencat-xarxes-socials` quan les peces es publiquen en canals socials
+- `gencat-design-system` quan una decisió de marca impacta UI web corporativa
+
+---
+
 ## Detecció del mode
 
 | Situació | Mode |

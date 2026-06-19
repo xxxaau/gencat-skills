@@ -9,6 +9,25 @@ Font oficial: https://atenciociutadana.gencat.cat/web/.content/manuals/xarxes/gu
 
 ---
 
+## Abast de la skill
+
+### Què cobreix
+- Generació i revisió de publicacions per xarxes socials institucionals
+- Adaptació de missatges al format i límits de cada plataforma
+- Validació de normes transversals de to, llengua i accessibilitat social
+
+### Què NO cobreix
+- Redacció formal de fitxes de tràmit administratiu (delegar a `gencat-tramits`)
+- Definició de components i pantalles de producte digital (delegar a `gencat-design-system`)
+- Validació de marca en documents ofimàtics o peces institucionals no socials (delegar a `gencat-identitat-corporativa`)
+
+### Skills complementàries
+- `gencat-comunicacio-clara` per simplificar i fer més entenedors els missatges
+- `gencat-identitat-corporativa` per coherència de marca en campanyes institucionals
+- `gencat-accessibilitat` per reforçar bones pràctiques d'alt text i llegibilitat
+
+---
+
 ## Detecció del mode
 
 - **Text existent proporcionat** → mode REVISAR (revisar i proposar versió corregida)

@@ -12,6 +12,25 @@ Tots els textos de les aplicacions Gencat han de complir la **Guia de Comunicaci
 
 ---
 
+## Abast de la skill
+
+### Què cobreix
+- Redacció i revisió de textos UI: botons, errors, formularis, avisos, confirmacions
+- Simplificació de llenguatge administratiu i aplicació de llenguatge planer
+- Coherència de tractament, to i estructura textual
+
+### Què NO cobreix
+- Definició visual de components i patrons d'interfície (delegar a `gencat-design-system`)
+- Verificació tècnica WCAG/ARIA o auditories d'accessibilitat (delegar a `gencat-accessibilitat`)
+- Validació formal d'estructures documentals ERQ/DA (delegar a `gencat-documentacio-ctti`)
+
+### Skills complementàries
+- `gencat-tramits` per adaptar el llenguatge als camps i passos de fitxes de tràmit
+- `gencat-xarxes-socials` per adaptar missatges a plataformes concretes
+- `gencat-accessibilitat` per reforçar comprensió i accessibilitat textual en context de producte
+
+---
+
 ## Els 4 principis fonamentals (ISO 24495-1)
 
 1. **Rellevància** — Inclou només la informació que el lector necessita

@@ -10,6 +10,25 @@ Contacte: tramits@gencat.cat
 
 ---
 
+## Abast de la skill
+
+### Què cobreix
+- Redacció i revisió dels camps de fitxes de tràmit de gencat.cat
+- Passos de tramitació, vocabulari i criteris formals del manual oficial
+- Revisió web de fitxes amb informe de compliment
+
+### Què NO cobreix
+- Definició de components o arquitectura d'interfície (delegar a `gencat-design-system`)
+- Auditoria tècnica completa de compliment WCAG fora del contingut de la fitxa (delegar a `gencat-accessibilitat`)
+- Estratègia de publicació per xarxes socials o campanyes (delegar a `gencat-xarxes-socials`)
+
+### Skills complementàries
+- `gencat-comunicacio-clara` per reforçar llenguatge planer en tots els camps
+- `gencat-accessibilitat` per validar comprensió i accessibilitat del contingut publicat
+- `gencat-design-system` si la fitxa es tradueix en fluxos o pantalles noves de tramitació
+
+---
+
 ## Criteris generals de redacció
 
 ### Tractament personal
