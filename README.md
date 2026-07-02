@@ -1,8 +1,24 @@
 # gencat-skills
 
-Plugin de Claude Code amb les skills corporatives de la **Generalitat de Catalunya**.
+Skills corporatives de la **Generalitat de Catalunya** en format obert [Agent Skills](https://agentskills.io), compatibles amb Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot i altres agents.
+
+> ⚠️ **Fase d'investigació**: aquest conjunt de skills és un projecte experimental en fase d'exploració. El contingut i l'estructura poden canviar sense avís, i no constitueix cap eina oficial de la Generalitat de Catalunya.
 
 ## Instal·lació
+
+### Qualsevol agent (recomanat)
+
+Les skills segueixen l'estàndard obert [Agent Skills](https://agentskills.io) (`SKILL.md`). Amb el CLI [`skills`](https://github.com/vercel-labs/skills) pots instal·lar-les a l'agent que facis servir (Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI, Windsurf i 70+ més):
+
+```bash
+# Totes les skills (detecta automàticament els agents instal·lats)
+npx skills add xxxaau/gencat-skills
+
+# Només una skill concreta
+npx skills add xxxaau/gencat-skills --skill gencat-tramits
+```
+
+### Claude Code (plugin)
 
 ```bash
 # Registra el marketplace
@@ -84,7 +100,7 @@ Genera i revisa contingut per a xarxes socials seguint la [Guia de Xarxes Social
 ---
 
 ### `gencat-identitat-corporativa`
-Aplica les normes d'[Identitat Corporativa](https://www.gencat.cat/web/.content/manuals/guia_identitatcorporativa_2023.pdf) de la Generalitat quan crees o revises materials de comunicació. Inclou:
+Aplica les normes d'[Identitat Corporativa](https://identitatcorporativa.gencat.cat/ca/inici) de la Generalitat quan crees o revises materials de comunicació. Inclou:
 - Colors corporatius (Pantone, CMYK, RGB, Hex), tipografia per suport i normes d'ús del senyal
 - Normes per a documents Word, PowerPoint i PDF institucionals
 - Signatures de correu electrònic i newsletters
@@ -126,6 +142,12 @@ Combinacions recomanades més habituals:
 
 ```
 gencat-skills/
+├── .claude-plugin/                  ← manifests de marketplace i plugin (Claude Code)
+│   ├── marketplace.json
+│   └── plugin.json
+├── .github/
+│   └── workflows/
+│       └── validate-skills.yml      ← CI: validació de les skills (skills-ref)
 └── gencat/                          ← plugin
     ├── README.md
     ├── package.json
@@ -189,7 +211,7 @@ gencat-skills/
 
 ## Contribució
 
-Les skills segueixen el format estàndard de Claude Code. Consulta la [documentació de skills](https://docs.anthropic.com/claude-code/plugins) per a contribuir.
+Les skills segueixen l'[especificació oberta Agent Skills](https://agentskills.io/specification) (`SKILL.md` + `references/`). Per a la distribució com a plugin de Claude Code, consulta la [documentació de plugins](https://docs.anthropic.com/claude-code/plugins).
 
 ## Llicència
 

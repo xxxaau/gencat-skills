@@ -1,6 +1,10 @@
 ---
 name: gencat-identitat-corporativa
 description: "Aplica les normes d'identitat corporativa de la Generalitat quan creïs o validis material institucional fora del web: documents, presentacions, signatures de correu, cartes o newsletters. Activa-la quan es mencioni identitat corporativa, marca o logotip Gencat, colors o tipografia corporativa, o quan l'usuari enviï una imatge o fitxer per validar-ne el compliment de marca."
+license: CC0-1.0
+metadata:
+  author: Generalitat de Catalunya
+  version: "1.0"
 ---
 
 # Identitat Corporativa — Generalitat de Catalunya

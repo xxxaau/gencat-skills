@@ -24,8 +24,8 @@ Carregar el fitxer de referència corresponent:
 | Input | Com l'aporta l'usuari | Valida |
 |-------|----------------------|--------|
 | Imatge (captura de pantalla) | Adjunt a la conversa | Colors, logotip, tipografia aparent, composició |
-| Fitxer PDF | Ruta de fitxer local (Claude usa `Read`) o adjunt | Estructura, elements obligatoris, clàusules |
-| Fitxer .docx / .pptx | Ruta de fitxer local (Claude usa `Read` sobre el XML intern) | Estructura i elements obligatoris |
+| Fitxer PDF | Ruta de fitxer local (l'agent el llegeix directament) o adjunt | Estructura, elements obligatoris, clàusules |
+| Fitxer .docx / .pptx | Ruta de fitxer local (l'agent llegeix el XML intern) | Estructura i elements obligatoris |
 | Text enganxat | Text directament a la conversa | Contingut textual, elements obligatoris |
 | Combinació imatge + fitxer/text | Ambdós en la mateixa conversa | Validació completa visual + contingut |
 

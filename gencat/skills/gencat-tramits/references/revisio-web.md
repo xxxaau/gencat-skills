@@ -12,6 +12,8 @@ Abans de revisar cap URL, llegir:
 - `references/vocabulari.md` — substitucions i bones pràctiques
 - Skill `gencat-comunicacio-clara` → `references/redaccio.md` i `references/vocabulari.md` — criteris de text clar i vocabulari planer
 - Skill `gencat-accessibilitat` → `references/wcag-criteris.md` i `references/errors-habituals.md` — criteris d'accessibilitat de contingut
+
+Si aquestes dues skills no estan instal·lades, continua igualment: aplica els criteris resumits a la taula transversal d'aquest fitxer i indica-ho a l'informe.
 - `references/geo-seo.md` (Secció B) — criteris GEO/SEO on-page, spot-check i format de la Capa 5
 
 ---
@@ -29,19 +31,19 @@ Abans de revisar cap URL, llegir:
 
 El contingut de tramits.gencat.cat és **server-side rendered**: tot el text (incloent el contingut dels passos expandibles) és present al HTML inicial sense necessitat de JavaScript ni de navegador complet.
 
-**Mètode preferit: WebFetch directe a la URL HTML** (temps de resposta ~200ms). No cal Playwright.
+**Mètode preferit: fetch directe de la URL HTML amb l'eina de lectura web de l'agent** (a Claude Code, `WebFetch`; temps de resposta ~200ms). No cal navegador automatitzat.
 
 El contingut dels passos "Saber-ne més" ja és al DOM (classe `step-hidden-content`) — no cal fer clic per expandir-lo.
 
 Per obtenir totes les modalitats d'un tràmit, fer un fetch per a cada valor de `moda=N` (1, 2, 3...) fins que no hi hagi contingut.
 
-**Playwright només cal si WebFetch no retorna el contingut** (pàgines amb renderitzat client-side excepcional). En aquest cas, usar navegador i expandir manualment els passos.
+**Un navegador automatitzat (p. ex. Playwright) només cal si el fetch directe no retorna el contingut** (pàgines amb renderitzat client-side excepcional). En aquest cas, usar navegador i expandir manualment els passos.
 
 ---
 
 ## Workflow per a cada URL
 
-1. **Fetch** → WebFetch directe a la URL HTML (un fetch per modalitat: `?moda=1`, `?moda=2`, etc.)
+1. **Fetch** → lectura directa de la URL HTML amb l'eina web de l'agent (un fetch per modalitat: `?moda=1`, `?moda=2`, etc.)
 2. **Identificació de camps** → buscar els camps estàndard pels ancles `id=` de la pàgina (`id="que-es"`, `id="requisits"`, `id="documentacio"`, `id="taxes"`, `id="steps"`, etc.)
 3. **Avaluació camp per camp** → aplicar les normes de `camps.md`, `passos.md` i `vocabulari.md`
 4. **Avaluació transversal** → aplicar criteris de comunicació clara i accessibilitat de contingut (veure taula transversal)

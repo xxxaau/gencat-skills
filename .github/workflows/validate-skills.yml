@@ -1,0 +1,33 @@
+name: Valida les skills
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "gencat/skills/**"
+      - ".github/workflows/validate-skills.yml"
+  pull_request:
+    paths:
+      - "gencat/skills/**"
+      - ".github/workflows/validate-skills.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instal·la skills-ref (validador de referència Agent Skills)
+        run: pip install "skills-ref @ git+https://github.com/agentskills/agentskills.git#subdirectory=skills-ref"
+
+      - name: Valida cada skill
+        run: |
+          set -e
+          for skill in gencat/skills/*/; do
+            echo "== Validant $skill"
+            skills-ref validate "$skill"
+          done

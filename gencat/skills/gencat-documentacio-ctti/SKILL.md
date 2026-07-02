@@ -1,6 +1,10 @@
 ---
 name: gencat-documentacio-ctti
 description: "Valida i orienta sobre documents tècnics CTTI: l'Especificació de Requisits (ERQ/DT_ERQ) i la Descripció d'Arquitectura (DA). Activa-la quan es mencioni ERQ, DA, document funcional, especificació de requisits o vistes d'arquitectura, o quan l'usuari enganxi un document tècnic per revisar o pregunti com redactar-lo."
+license: CC0-1.0
+metadata:
+  author: Generalitat de Catalunya
+  version: "1.0"
 ---
 
 # Documentació Tècnica CTTI — Generalitat de Catalunya

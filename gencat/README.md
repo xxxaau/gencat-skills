@@ -1,6 +1,6 @@
 # gencat
 
-Plugin de Claude Code amb les skills corporatives de la Generalitat de Catalunya per al desenvolupament d'aplicacions i serveis digitals.
+Skills corporatives de la Generalitat de Catalunya per al desenvolupament d'aplicacions i serveis digitals, en format obert [Agent Skills](https://agentskills.io) — compatibles amb Claude Code, Codex, Cursor, Gemini CLI, GitHub Copilot i altres agents.
 
 ## Skills
 
@@ -27,7 +27,7 @@ Plugin de Claude Code amb les skills corporatives de la Generalitat de Catalunya
 - Sistema de Disseny: https://sistemadedisseny.gencat.cat
 - Comunicació Clara: https://atenciociutadana.gencat.cat/ca/comunicacio-clara/
 - Guia de Comunicació Clara (PDF): https://presidencia.bibliotecadigital.gencat.cat/handle/20.500.14623/1156
-- Accessibilitat digital: https://atenciociutadana.gencat.cat/ca/accessibilitat/
+- Accessibilitat digital: https://atenciociutadana.gencat.cat/ca/serveis/webs/accessibilitat/
 - Especificació de Requisits (ERQ): https://qualitat.solucions.gencat.cat/procediments/analisi-disseny/especificacio_requisits/
 - Descripció d'Arquitectura (DA / AiDA): https://canigo.ctti.gencat.cat/arquitectura/da/aida/
 - Manual de redacció de tràmits: https://atenciociutadana.gencat.cat/ca/serveis/tramits/manuals-i-guies/

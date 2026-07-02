@@ -1,6 +1,10 @@
 ---
 name: gencat-tramits
 description: "Aplica el Manual de redacció i estil de fitxes de tràmit de la Generalitat (febrer 2026) quan redactis, revisis o auditis fitxes de tràmit de gencat.cat. Activa-la quan es mencioni fitxa de tràmit, modalitat, silenci administratiu, passos de tramitació, GECO, OGE, SAC, o quan l'usuari proporcioni URLs de tramit.gencat.cat per revisar. Inclou avaluació GEO/SEO (posicionament en motors d'IA i de cerca, Schema.org, recuperabilitat) tant en redacció com a REVISAR WEB."
+license: CC0-1.0
+metadata:
+  author: Generalitat de Catalunya
+  version: "1.0"
 ---
 
 # Manual de Redacció de Fitxes de Tràmit — Gencat (febrer 2026)

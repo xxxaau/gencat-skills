@@ -116,7 +116,7 @@ Patrons recomanats per als casos d'ús més habituals en aplicacions de la Gener
 ```
 
 ### Botons d'acció en àrea privada
-- **Acció principal** (crear, guardar): Botó primari (color brand `#C00000`)
+- **Acció principal** (crear, guardar): Botó primari (token `--color-brand-primary`)
 - **Acció secundària** (editar, filtrar): Botó secundari (outline)
 - **Acció destructiva** (eliminar): Botó de perill + confirmació amb Modal
 

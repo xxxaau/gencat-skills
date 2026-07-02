@@ -60,4 +60,4 @@ El Decret 216/2023 i l'EN 301 549 (clàusula 10) cobreixen també els **document
 
 - EN 301 549, clàusula 10 (documents no web)
 - PDF/UA (ISO 14289) — estàndard d'accessibilitat per a PDF
-- Portal d'accessibilitat de Gencat: https://atenciociutadana.gencat.cat/ca/accessibilitat/
+- Portal d'accessibilitat de Gencat: https://atenciociutadana.gencat.cat/ca/serveis/webs/accessibilitat/

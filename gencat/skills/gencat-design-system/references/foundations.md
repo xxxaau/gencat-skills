@@ -7,6 +7,8 @@
 |-------|-------|-----|
 | `--color-brand-primary` | `#C00000` | Vermell Gencat — accions, links, accents, CTA |
 
+> El valor deriva del vermell corporatiu (Pantone 485) definit a la normativa d'identitat corporativa (font canònica: https://identitatcorporativa.gencat.cat i la skill `gencat-identitat-corporativa`). Si la marca canvia, actualitzar-lo allà primer i sincronitzar aquest token.
+
 ### Colors de text
 | Token | Valor | Ús |
 |-------|-------|-----|

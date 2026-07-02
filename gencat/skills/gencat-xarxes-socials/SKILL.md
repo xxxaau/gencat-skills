@@ -1,6 +1,10 @@
 ---
 name: gencat-xarxes-socials
 description: "Aplica la Guia de Xarxes Socials de la Generalitat quan generis, revisis o adaptis contingut per a X, Facebook, Instagram, LinkedIn, YouTube, Threads o TikTok en comunicació institucional. Activa-la quan es mencioni post, publicació, hashtag, fil, reel, story o l'adaptació de comunicats i tràmits a xarxes socials."
+license: CC0-1.0
+metadata:
+  author: Generalitat de Catalunya
+  version: "1.0"
 ---
 
 # Xarxes Socials — Generalitat de Catalunya

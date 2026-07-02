@@ -1,6 +1,10 @@
 ---
 name: gencat-comunicacio-clara
 description: "Aplica la Guia de Comunicació Clara de la Generalitat quan redactis o revisis textos per a serveis digitals Gencat: literals d'UI, missatges d'error, formularis, avisos i notificacions. Activa-la quan es mencioni comunicació clara, llenguatge planer, literals, microcopy o textos administratius per simplificar."
+license: CC0-1.0
+metadata:
+  author: Generalitat de Catalunya
+  version: "1.0"
 ---
 
 # Comunicació Clara — Generalitat de Catalunya

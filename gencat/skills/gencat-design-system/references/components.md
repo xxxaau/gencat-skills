@@ -1,7 +1,7 @@
 # Catàleg de Components — Sistema de Disseny Gencat
 
 Referència completa dels components oficials. Consulta el Storybook per a exemples visuals:
-https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com (build de Chromatic — si no respon, busca l'enllaç vigent a https://sistemadedisseny.gencat.cat)
+https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com (build de Chromatic amb accés restringit — actualment demana inici de sessió; si no hi tens accés, usa https://sistemadedisseny.gencat.cat)
 
 ---
 

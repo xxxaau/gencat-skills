@@ -1,6 +1,10 @@
 ---
 name: gencat-accessibilitat
 description: "Aplica les directrius d'accessibilitat digital de la Generalitat de Catalunya (WCAG 2.1 AA, EN 301 549, Decret 216/2023) quan implementis, revisis o auditis interfícies web i documents per a serveis Gencat. Activa-la quan es mencioni accessibilitat, WCAG, a11y, ARIA, contrast, focus, lector de pantalla, IRA o daltonisme."
+license: CC0-1.0
+metadata:
+  author: Generalitat de Catalunya
+  version: "1.0"
 ---
 
 # Accessibilitat Digital — Generalitat de Catalunya
@@ -106,9 +110,9 @@ description: "Aplica les directrius d'accessibilitat digital de la Generalitat d
 /* MAI fer això */
 :focus { outline: none; }
 
-/* SÍ: focus visible personalitzat */
+/* SÍ: focus visible personalitzat (color de marca via token del sistema de disseny) */
 :focus-visible {
-  outline: 3px solid #C00000;
+  outline: 3px solid var(--color-brand-primary, currentColor);
   outline-offset: 2px;
 }
 ```

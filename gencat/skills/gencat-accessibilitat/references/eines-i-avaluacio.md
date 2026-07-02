@@ -11,7 +11,7 @@
 | **Siteimprove** | En línia + extensió | Ús intern Gencat; WCAG A/AA/AAA + qualitat | https://siteimprove.com |
 | **HTML CodeSniffer** | Bookmarklet | Sense instal·lació | https://squizlabs.github.io/HTML_CodeSniffer/ |
 | **TAW** | En línia | Disponible en català; WCAG 2.0 | https://www.tawdis.net |
-| **AChecker** | En línia | Avaluació d'accessibilitat | https://achecker.achecks.ca |
+| **AChecker** | En línia | Avaluació d'accessibilitat | https://achecker.org |
 
 ### Validació de codi
 
@@ -20,7 +20,6 @@
 | **W3C HTML Validator** | Validació HTML | https://validator.w3.org |
 | **W3C CSS Validator** | Validació CSS | https://jigsaw.w3.org/css-validator/ |
 | **Nu Html Checker** | Validador W3C millorat | https://validator.w3.org/nu/ |
-| **W3C Unicorn** | HTML + CSS combinat | https://validator.w3.org/unicorn/ |
 
 ### Anàlisi manual (extensió de navegador)
 

@@ -1,13 +1,17 @@
 ---
 name: gencat-design-system
 description: "Aplica el Sistema de Disseny oficial de la Generalitat de Catalunya quan construeixis, estilitzis o revisis interfícies web per a serveis digitals Gencat. Activa-la quan es mencioni Gencat, sistema de disseny, components UI, tokens, colors o tipografia corporativa en el desenvolupament web per a la Generalitat de Catalunya."
+license: CC0-1.0
+metadata:
+  author: Generalitat de Catalunya
+  version: "1.0"
 ---
 
 # Sistema de Disseny de la Generalitat de Catalunya
 
 Quan desenvolupis aplicacions per a la Generalitat de Catalunya, **sempre** has de seguir el Sistema de Disseny oficial. Documenta't en:
 - Documentació principal: https://sistemadedisseny.gencat.cat
-- Storybook de components: https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com (enllaç de build de Chromatic — si no respon, busca l'enllaç vigent a sistemadedisseny.gencat.cat)
+- Storybook de components: https://664dd24b10b47825ed57745e-tpikyjfnns.chromatic.com (build de Chromatic amb accés restringit — actualment demana inici de sessió; si no hi tens accés, usa la documentació de sistemadedisseny.gencat.cat)
 
 ## Abast de la skill
 
@@ -101,4 +105,4 @@ Mínims en escriure qualsevol component (cobertura completa a la skill `gencat-a
 Si necessites un component que no està al catàleg:
 1. Segueix els `foundations` (colors, tipografia, espaiat, arrodoniment)
 2. Mantén l'estètica consistent amb els components existents
-3. Proposa-ho per sol·licitud a: https://sistemadedisseny.gencat.cat/p/sol·licituds
+3. Proposa'l a l'equip del Sistema de Disseny via el canal de sol·licituds de https://sistemadedisseny.gencat.cat

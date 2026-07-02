@@ -1,11 +1,11 @@
 {
   "name": "gencat",
   "version": "1.0.0",
-  "description": "Skills corporatives de la Generalitat de Catalunya per a Claude Code",
+  "description": "Skills corporatives de la Generalitat de Catalunya en format obert Agent Skills, compatibles amb Claude Code, Codex, Cursor, Gemini CLI i altres agents",
   "author": "Generalitat de Catalunya",
   "license": "CC0-1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gencat/gencat-skills"
+    "url": "https://github.com/xxxaau/gencat-skills"
   }
 }
