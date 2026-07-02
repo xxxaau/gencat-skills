@@ -34,3 +34,7 @@ Repo de skills corporatives de la Generalitat en format obert [Agent Skills](htt
 - Multi-agent: `npx skills add xxxaau/gencat-skills` (estàndard Agent Skills, 70+ agents).
 - Claude Code: `/plugin marketplace add xxxaau/gencat-skills` + `/plugin install gencat@gencat-skills`.
 - Els warnings `LF will be replaced by CRLF` de git a Windows són normals (autocrlf), no un problema.
+
+## Pendents
+
+- [ ] **Comprovar periòdicament si Claude Code ja llegeix `AGENTS.md` de forma nativa** (seguiment: [issue #34235](https://github.com/anthropics/claude-code/issues/34235)). Quan es confirmi, esborrar el `CLAUDE.md` pont (només conté l'import `@AGENTS.md`) i aquesta entrada. Anotat el juliol de 2026.
