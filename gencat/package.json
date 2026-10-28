@@ -1,6 +1,6 @@
 {
   "name": "gencat",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Skills corporatives de la Generalitat de Catalunya en format obert Agent Skills, compatibles amb Claude Code, Codex, Cursor, Gemini CLI i altres agents",
   "author": "Generalitat de Catalunya",
   "license": "CC0-1.0",
