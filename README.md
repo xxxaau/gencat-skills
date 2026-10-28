@@ -44,13 +44,15 @@ O afegeix manualment a `~/.claude/settings.json`:
 ## Skills disponibles
 
 ### `gencat-design-system`
-Aplica el [Sistema de Disseny](https://sistemadedisseny.gencat.cat) oficial de la Generalitat quan desenvolupes interfícies web. Inclou:
-- Colors, tipografia i tokens CSS corporatius
-- Catàleg complet de components (60+) amb nomenclatura oficial en català
-- Patrons per a formularis, àrea privada, cercadors i gestió interna
-- Regles d'accessibilitat WCAG
+Aplica el [Sistema de Disseny](https://sistemadedisseny.gencat.cat) oficial de la Generalitat quan desenvolupes interfícies web. Conté la documentació completa del sistema, perquè no calgui tornar-la a consultar al web:
+- Fonaments: colors (primitives, tokens semàntics i modes per marca), tipografia, espaiat, quadrícules, radis, elevacions, iconografia, imatge, il·lustracions i visualització de dades
+- Catàleg de 78 components (core i conversacionals; 91 web components) amb nomenclatura oficial en català: ús, variants, estats, accessibilitat, tokens i API dels web components
+- Patrons i exemples d'ús (formularis, cercador, àrea privada, gestió interna, xat, notificacions, errors…)
+- Desenvolupament (Vue, React, Angular), personalització de textos, claus d'idioma i historial de versions
 
-**S'activa** quan menciones Gencat, Generalitat de Catalunya, o desarrolles components per a serveis digitals catalans.
+> **Última actualització:** 28 d'octubre de 2026 · Sistema de Disseny: llibreria de components v12.6.0, Fonaments v6.2.1, components conversacionals v5.1.0, codi v12.1.2.
+
+**S'activa** quan menciones Gencat, Generalitat de Catalunya, o desenvolupes components per a serveis digitals catalans.
 
 ---
 
@@ -154,10 +156,17 @@ gencat-skills/
     └── skills/
         ├── gencat-design-system/
         │   ├── SKILL.md
-        │   └── references/
-        │       ├── foundations.md        ← colors, tipografia, tokens CSS
-        │       ├── components.md         ← catàleg de components
-        │       └── patterns.md           ← patrons d'ús
+        │   └── references/           ← 153 fitxers plans, un per tema
+        │       ├── foundations.md        ← font canònica: primitives, tokens, CSS, escales
+        │       ├── fonaments-*.md        ← colors, tipografia, espaiat, iconografia, imatge…
+        │       ├── components.md         ← índex del catàleg de components
+        │       ├── component-*.md        ← un fitxer per component (core i conversacionals)
+        │       ├── patterns.md           ← índex de patrons i exemples d'ús
+        │       ├── patro-*.md, exemple-*.md ← patrons i pàgines tipus
+        │       ├── dev-*.md              ← Vue, React, Angular, textos, claus i idioma
+        │       ├── figma-*.md            ← biblioteques i organització de Figma
+        │       ├── sobre-*.md, suport-*.md ← context, principis, accessibilitat, suport
+        │       └── versions-actualitzacions.md ← historial de versions i estat
         ├── gencat-comunicacio-clara/
         │   ├── SKILL.md
         │   └── references/

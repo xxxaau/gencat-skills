@@ -1,208 +1,44 @@
-# Patrons d'ús — Sistema de Disseny Gencat
+# Patrons i exemples d'ús — Sistema de Disseny Gencat
 
-Patrons recomanats per als casos d'ús més habituals en aplicacions de la Generalitat de Catalunya.
+> Índex dels patrons (solucions reutilitzables que combinen components, estils i comportaments) i dels exemples d'ús (plantilles de pàgina) del Sistema de Disseny. Extret el 2026-10-28. Visió general oficial: [sobre-patrons.md](sobre-patrons.md).
 
----
 
-## Formularis
+## Patrons core
 
-### Estructura base d'un formulari
+| Patró | Descripció |
+|---|---|
+| [Arbre de decisions (Decision tree)](patro-arbre-de-decisions.md) | Patró que serveix per guiar l'usuari a través d'una selecció complexa, mostrant només les opcions rellevants en funció de decisions prèvies, fins arribar a un resultat fi |
+| [Botó de compartir (Share button)](patro-boto-de-compartir.md) | El botó de compartir és un element interactiu que permet a l'usuari distribuir el contingut de la pàgina a xarxes socials o altres canals. |
+| [Emergències (Emergencies)](patro-emergencies.md) | Serveix per informar l'usuari sobre situacions d'urgència o risc imminent com alguna DANA, terratrèmols, activitat volcànica o emergències sanitàries. |
+| [Introducció de dades (Data input)](patro-introduccio-de-dades.md) | Patró que defineix com utilitzar els camps d'entrada quan l'usuari ha d'introduir dades amb una unitat, un prefix, un sufix o un format específic. |
+| [Introducció guiada (Onboarding)](patro-introduccio-guiada.md) | Solució d'orientació breu que acompanya la persona usuària en el primer accés a un servei, espai o experiència digital per ajudar-la a entendre què hi pot fer i com comen |
+| [Notificacions (Notifications)](patro-notificacions.md) | El patró de notificacions permet informar l'usuari sobre novetats, avisos o canvis rellevants relacionats amb la seva activitat dins d'un entorn logat. |
+| [Pàgines d'error i manteniment (Error and Maintenance page)](patro-pagines-d-error-i-manteniment.md) | Pàgines que ajuden l'usuari a entendre quin problema hi ha al lloc web. |
+| [Saltar al contingut principal (Skip button)](patro-saltar-al-contingut-principal.md) | Botó d'accessibilitat que permet als usuaris que naveguen per teclat o lectors de pantalla saltar directament al contingut principal, evitant la navegació repetitiva de l |
+| [Selector d'hora (Time picker)](patro-selector-d-hora.md) | Permet a la persona usuària seleccionar una hora dins una llista de valors predefinits o introduir-la manualment. |
+| [Sortida ràpida (Quick exit)](patro-sortida-rapida.md) | El botó de sortida ràpida permet als usuaris abandonar un servei, lloc web o aplicació de forma immediata i segura. |
 
-```html
-<form>
-  <!-- Títol del formulari -->
-  <h1>Títol del formulari</h1>
+Visió general: [patro-patrons-core.md](patro-patrons-core.md).
 
-  <!-- Camp d'entrada estàndard -->
-  <div class="form-group">
-    <label for="nom">Nom complet *</label>
-    <input type="text" id="nom" name="nom" required
-           aria-describedby="nom-error" />
-    <span id="nom-error" class="error-message" role="alert"></span>
-  </div>
+## Patrons conversacionals
 
-  <!-- Selector -->
-  <div class="form-group">
-    <label for="provincia">Província *</label>
-    <select id="provincia" name="provincia" required>
-      <option value="">Selecciona una opció</option>
-      <option value="bcn">Barcelona</option>
-      <option value="gir">Girona</option>
-      <option value="llei">Lleida</option>
-      <option value="tar">Tarragona</option>
-    </select>
-  </div>
+| Patró | Descripció |
+|---|---|
+| [Interacció veu a text (Voice-to-text interaction)](patro-interaccio-veu-a-text.md) | Patró que defineix la interacció que permet a l'usuari dictar el seu missatge activant el micròfon en lloc d'escriure'l manualment. |
+| [Xat a pantalla completa (Full width chat)](patro-xat-a-pantalla-completa.md) | El xat de pantalla completa aprofita l'espai disponible de pantalla i és útil quan el xat és el producte, no funciona com una eina de suport. |
+| [Xat flotant (Floating chat)](patro-xat-flotant.md) | El xat flotant és una eina d'ajuda transversal, però simple. |
+| [Xat lateral (Side panel chat)](patro-xat-lateral.md) | El xat lateral és una eina d'ajuda integrada en un panell lateral que permet consultar, generar o complementar informació sense abandonar completament la tasca principal  |
 
-  <!-- Botons d'acció -->
-  <div class="form-actions">
-    <button type="submit" class="btn btn-primary">Enviar</button>
-    <button type="button" class="btn btn-secondary">Cancel·lar</button>
-  </div>
-</form>
-```
+Visió general: [patro-patrons-conversacional.md](patro-patrons-conversacional.md).
 
-### Regles per a formularis
-- Tots els camps requerits s'indiquen amb `*` i el text "Els camps marcats amb * són obligatoris"
-- La validació es mostra sota el camp afectat
-- Els missatges d'error han de ser descriptius: "El DNI ha de tenir 8 dígits i una lletra"
-- Usa `required` natiu (no cal duplicar-lo amb `aria-required`); marca els camps amb error amb `aria-invalid="true"` i associa el missatge amb `aria-describedby`
+## Exemples d'ús (pàgines tipus)
 
----
-
-## Pàgines de contingut
-
-### Estructura típica de pàgina
-
-```
-[Capçalera web pública]
-[Fils d'Ariadna]
-[Títol H1]
-[Cos del contingut]
-  - Seccions H2
-  - Subseccions H3
-[Taula de continguts] (si la pàgina és llarga)
-[Peu de pàgina]
-```
-
----
-
-## Cercador
-
-### Estructura del cercador
-
-```html
-<section aria-label="Cercador">
-  <!-- Camp de cerca -->
-  <div class="search-input-group">
-    <label for="cerca" class="visually-hidden">Cercar</label>
-    <input type="search" id="cerca" placeholder="Escriu el que cerques..."
-           aria-controls="resultats-cerca" />
-    <button type="submit" aria-label="Cercar">
-      <span aria-hidden="true">🔍</span>
-    </button>
-  </div>
-
-  <!-- Filtres -->
-  <div class="filtres" aria-label="Filtres de cerca">
-    <!-- Filtres per categoria, data, etc. -->
-  </div>
-
-  <!-- Resultats -->
-  <div id="resultats-cerca" role="region" aria-live="polite">
-    <p>[N] resultats trobats</p>
-    <!-- Llistat de resultats -->
-    <!-- Paginació -->
-  </div>
-</section>
-```
-
----
-
-## Àrea privada (Dashboard)
-
-### Estructura típica
-
-```
-[Capçalera per aplicacions internes]
-  - Logo + nom aplicació
-  - Navegació principal
-  - Perfil d'usuari + logout
-
-[Contenidor principal]
-  [Menú lateral] | [Contingut principal]
-                   [Breadcrumbs]
-                   [Títol de la secció]
-                   [Contingut]
-```
-
-### Botons d'acció en àrea privada
-- **Acció principal** (crear, guardar): Botó primari (token `--color-brand-primary`)
-- **Acció secundària** (editar, filtrar): Botó secundari (outline)
-- **Acció destructiva** (eliminar): Botó de perill + confirmació amb Modal
-
----
-
-## Gestió interna
-
-### Taules de dades amb accions
-
-```html
-<table aria-label="Llistat de sol·licituds">
-  <caption>Sol·licituds pendents de revisió</caption>
-  <thead>
-    <tr>
-      <th scope="col">Referència</th>
-      <th scope="col">Data</th>
-      <th scope="col">Estat</th>
-      <th scope="col">Accions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>REF-2024-001</td>
-      <td>15/01/2024</td>
-      <td><span class="insígnia insígnia--pendent">Pendent</span></td>
-      <td>
-        <button class="btn btn-sm btn-secondary">Veure</button>
-        <button class="btn btn-sm btn-primary">Aprovar</button>
-      </td>
-    </tr>
-  </tbody>
-</table>
-```
-
----
-
-## Pàgines d'error
-
-### Error 404
-```
-Títol: "Pàgina no trobada"
-Missatge: "La pàgina que cerques no existeix o ha estat moguda."
-Accions: [Tornar a l'inici] [Contactar suport]
-```
-
-### Error 500
-```
-Títol: "Hi ha hagut un error"
-Missatge: "S'ha produït un error intern. Torna-ho a intentar en uns moments."
-Accions: [Tornar enrere] [Tornar a l'inici]
-```
-
----
-
-## Accessibilitat: mínims abans de lliurar
-
-- [ ] Inputs amb `<label>` associat i imatges amb `alt` (o `alt=""` si són decoratives)
-- [ ] Navegable completament amb teclat, amb `:focus` visible
-- [ ] Errors anunciats amb `role="alert"` o `aria-live`
-- [ ] Contrast ≥ 4.5:1 (text normal) / ≥ 3:1 (text gran i components UI)
-
-La llista de verificació completa, els patrons ARIA i els errors freqüents són a la skill **gencat-accessibilitat** — usa-la per a qualsevol auditoria.
-
----
-
-## Idioma i textos
-
-### Regles de redacció
-- Llengua principal: **català** (`lang="ca"`)
-- Tractament: **vós** en textos administratius (criteri de la Guia de Comunicació Clara); "tu" només en aplicacions dirigides a joves o contextos informals
-- Missatges d'error: clars, concrets, i orientats a la solució
-  - ❌ "Error de validació"
-  - ✅ "El número de DNI ha de tenir 8 dígits seguits d'una lletra majúscula"
-
-Per a la redacció de literals, to i vocabulari, usa la skill **gencat-comunicacio-clara**.
-
-### Textos habituals
-| Context | Text recomanat |
-|---------|---------------|
-| Enviar formulari | "Enviar" / "Desar" |
-| Cancel·lar | "Cancel·lar" |
-| Confirmar acció | "Confirmar" |
-| Eliminar | "Eliminar" |
-| Editar | "Editar" |
-| Tornar enrere | "Tornar" |
-| Veure més | "Veure més" |
-| Càrrega | "S'està carregant..." |
-| Sense resultats | "No s'han trobat resultats" |
-| Camp requerit | "Aquest camp és obligatori" |
+| Patró | Descripció |
+|---|---|
+| [Àrea privada (exemple d'ús)](exemple-area-privada.md) | Pàgina tipus d'exemple d'ús, amb les maquetacions i els components que s'hi apliquen. |
+| [Cercador (exemple d'ús)](exemple-cercador.md) | Exemple d'ús per a pàgines de cerca amb llistat de resultats, filtres i paginació, incloent-hi el cercador amb mapa. |
+| [Continguts (exemple d'ús)](exemple-continguts.md) | Pàgina tipus d'exemple d'ús, amb les maquetacions i els components que s'hi apliquen. |
+| [Exemples d'ús](exemple-exemples-d-us.md) | Exemples d'ús aplicant els components del sistema de disseny. |
+| [Formularis (exemple d'ús)](exemple-formularis.md) | Directrius essencials per al disseny de formularis, amb l'objectiu de crear experiències d'usuari eficients i accessibles. |
+| [Gestió interna (exemple d'ús, back-office)](exemple-gestio-interna.md) | Exemple d'ús per a pàgines d'aplicacions de gestió interna (back-office): maquetació amb menú lateral, retícula en l'espai de contingut, formularis i taules. |
+| [Xat conversacional (exemple d'ús)](exemple-xat-conversacional.md) | Pàgina tipus d'exemple d'ús, amb les maquetacions i els components que s'hi apliquen. |

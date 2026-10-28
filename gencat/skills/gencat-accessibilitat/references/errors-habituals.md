@@ -107,7 +107,7 @@ color: #767676 sobre #FFFFFF  /* 4.54:1 — passa AA pels pèls; no hi ha marge 
 
 /* ✅ Exemples que superen */
 color: #595959 sobre #FFFFFF  /* 7.0:1 — Supera AA i AAA */
-color: #C00000 sobre #FFFFFF  /* 6.5:1 — Supera AA (vermell corporatiu, token --color-brand-primary) */
+color: #C00000 sobre #FFFFFF  /* 6.5:1 — Supera AA (vermell corporatiu, token --color-brand-primary-500) */
 color: #FFFFFF sobre #C00000  /* 6.5:1 — Supera AA */
 color: #333333 sobre #FFFFFF  /* 12.6:1 — Excel·lent */
 ```
@@ -199,7 +199,7 @@ a:focus { outline: none; }
 
 /* ✅ Focus visible personalitzat amb colors corporatius */
 :focus-visible {
-  outline: 3px solid var(--color-brand-primary, currentColor);
+  outline: 3px solid var(--color-brand-primary-500, currentColor);
   outline-offset: 2px;
   border-radius: 2px;
 }

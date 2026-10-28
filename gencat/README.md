@@ -14,7 +14,7 @@ Skills corporatives de la Generalitat de Catalunya per al desenvolupament d'apli
 
 | Skill | Descripció |
 |-------|-----------|
-| <a name="gencat-design-system"></a>`gencat-design-system` | Sistema de Disseny oficial — components, colors, tipografia, patrons |
+| <a name="gencat-design-system"></a>`gencat-design-system` | Sistema de Disseny oficial (documentació completa) — fonaments, tokens, 78 components amb API de web component, patrons, guies Vue/React/Angular i versions. *Última actualització: 2026-10-28 (llibreria v12.6.0)* |
 | <a name="gencat-comunicacio-clara"></a>`gencat-comunicacio-clara` | Comunicació Clara — literals UI, redacció planera, vocabulari |
 | <a name="gencat-accessibilitat"></a>`gencat-accessibilitat` | Accessibilitat digital — WCAG 2.1 AA, Decret 216/2023, components accessibles |
 | <a name="gencat-documentacio-ctti"></a>`gencat-documentacio-ctti` | Documentació Tècnica CTTI — valida i orienta sobre ERQ (Especificació de Requisits) i DA (Descripció d'Arquitectura) |

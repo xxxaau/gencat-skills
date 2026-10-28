@@ -1,6 +1,6 @@
 # Identitat Visual — Marca Corporativa Generalitat de Catalunya
 
-Font canònica per a colors i tipografia de marca — d'aquest skill i de tot el conjunt gencat-skills (el token digital `--color-brand-primary` de `gencat-design-system` deriva del vermell definit aquí).
+Font canònica per a colors i tipografia de marca — d'aquest skill i de tot el conjunt gencat-skills (el token digital `--color-brand-primary-500` de `gencat-design-system` deriva del vermell definit aquí).
 
 Font oficial: https://identitatcorporativa.gencat.cat/ca/identitat-visual/ (citar en respostes de consulta i informes de validació)
 

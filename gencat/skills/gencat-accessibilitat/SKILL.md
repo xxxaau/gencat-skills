@@ -112,7 +112,7 @@ metadata:
 
 /* SÍ: focus visible personalitzat (color de marca via token del sistema de disseny) */
 :focus-visible {
-  outline: 3px solid var(--color-brand-primary, currentColor);
+  outline: 3px solid var(--color-brand-primary-500, currentColor);
   outline-offset: 2px;
 }
 ```
